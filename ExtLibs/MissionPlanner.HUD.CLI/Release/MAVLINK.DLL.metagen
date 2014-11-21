@@ -1,0 +1,2106 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly MAVLink, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MAVLink: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Byte[] MAVLINK_MESSAGE_LENGTHS : Public, Static, InitOnly
+    Byte[] MAVLINK_MESSAGE_CRCS : Public, Static, InitOnly
+    System.Type[] MAVLINK_MESSAGE_INFO : Public, Static, InitOnly
+    System.String[] MAVLINK_NAMES : Public, Static, InitOnly
+    System.String MAVLINK_BUILD_DATE = Mon Oct 20 06:26:45 2014 : Public, Static, Literal, HasDefault
+    System.String MAVLINK_WIRE_PROTOCOL_VERSION = 1.0 : Public, Static, Literal, HasDefault
+    Int32 MAVLINK_MAX_DIALECT_PAYLOAD_SIZE = 255 : Public, Static, Literal, HasDefault
+    Int32 MAVLINK_LITTLE_ENDIAN = 1 : Public, Static, Literal, HasDefault
+    Int32 MAVLINK_BIG_ENDIAN = 0 : Public, Static, Literal, HasDefault
+    Byte MAVLINK_STX = 254 : Public, Static, Literal, HasDefault
+    Byte MAVLINK_ENDIAN = 1 : Public, Static, Literal, HasDefault
+    Boolean MAVLINK_ALIGNED_FIELDS = True : Public, Static, Literal, HasDefault
+    Byte MAVLINK_CRC_EXTRA = 1 : Public, Static, Literal, HasDefault
+    Boolean MAVLINK_NEED_BYTE_SWAP = True : Public, Static, Literal, HasDefault
+    Byte MAVLINK_VERSION = 2 : Public, Static, Literal, HasDefault
+Class MAVLink+MavlinkCRC: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    crc_accumulate(Byte, UInt16): PrivateScope, Public, Static, HideBySig
+    crc_calculate(Byte[], Int32): PrivateScope, Public, Static, HideBySig
+Struct MAVLink+MAVLINK_MSG_ID: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAVLINK_MSG_ID HEARTBEAT = 0 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SYS_STATUS = 1 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SYSTEM_TIME = 2 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID PING = 4 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID CHANGE_OPERATOR_CONTROL = 5 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID CHANGE_OPERATOR_CONTROL_ACK = 6 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AUTH_KEY = 7 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_MODE = 11 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID PARAM_REQUEST_READ = 20 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID PARAM_REQUEST_LIST = 21 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID PARAM_VALUE = 22 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID PARAM_SET = 23 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS_RAW_INT = 24 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS_STATUS = 25 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SCALED_IMU = 26 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RAW_IMU = 27 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RAW_PRESSURE = 28 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SCALED_PRESSURE = 29 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID ATTITUDE = 30 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID ATTITUDE_QUATERNION = 31 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOCAL_POSITION_NED = 32 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GLOBAL_POSITION_INT = 33 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RC_CHANNELS_SCALED = 34 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RC_CHANNELS_RAW = 35 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SERVO_OUTPUT_RAW = 36 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_REQUEST_PARTIAL_LIST = 37 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_WRITE_PARTIAL_LIST = 38 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_ITEM = 39 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_REQUEST = 40 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_SET_CURRENT = 41 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_CURRENT = 42 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_REQUEST_LIST = 43 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_COUNT = 44 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_CLEAR_ALL = 45 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_ITEM_REACHED = 46 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_ACK = 47 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_GPS_GLOBAL_ORIGIN = 48 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS_GLOBAL_ORIGIN = 49 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SAFETY_SET_ALLOWED_AREA = 54 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SAFETY_ALLOWED_AREA = 55 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID ATTITUDE_QUATERNION_COV = 61 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID NAV_CONTROLLER_OUTPUT = 62 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GLOBAL_POSITION_INT_COV = 63 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOCAL_POSITION_NED_COV = 64 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RC_CHANNELS = 65 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID REQUEST_DATA_STREAM = 66 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA_STREAM = 67 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MANUAL_CONTROL = 69 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RC_CHANNELS_OVERRIDE = 70 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MISSION_ITEM_INT = 73 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID VFR_HUD = 74 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID COMMAND_INT = 75 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID COMMAND_LONG = 76 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID COMMAND_ACK = 77 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MANUAL_SETPOINT = 81 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_ATTITUDE_TARGET = 82 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID ATTITUDE_TARGET = 83 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_POSITION_TARGET_LOCAL_NED = 84 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID POSITION_TARGET_LOCAL_NED = 85 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_POSITION_TARGET_GLOBAL_INT = 86 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID POSITION_TARGET_GLOBAL_INT = 87 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET = 89 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_STATE = 90 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_CONTROLS = 91 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_RC_INPUTS_RAW = 92 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID OPTICAL_FLOW = 100 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GLOBAL_VISION_POSITION_ESTIMATE = 101 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID VISION_POSITION_ESTIMATE = 102 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID VISION_SPEED_ESTIMATE = 103 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID VICON_POSITION_ESTIMATE = 104 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIGHRES_IMU = 105 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID OMNIDIRECTIONAL_FLOW = 106 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_SENSOR = 107 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SIM_STATE = 108 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RADIO_STATUS = 109 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID FILE_TRANSFER_PROTOCOL = 110 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_GPS = 113 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_OPTICAL_FLOW = 114 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HIL_STATE_QUATERNION = 115 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SCALED_IMU2 = 116 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_REQUEST_LIST = 117 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_ENTRY = 118 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_REQUEST_DATA = 119 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_DATA = 120 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_ERASE = 121 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LOG_REQUEST_END = 122 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS_INJECT_DATA = 123 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS2_RAW = 124 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID POWER_STATUS = 125 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SERIAL_CONTROL = 126 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS_RTK = 127 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID GPS2_RTK = 128 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA_TRANSMISSION_HANDSHAKE = 130 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID ENCAPSULATED_DATA = 131 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DISTANCE_SENSOR = 132 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID TERRAIN_REQUEST = 133 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID TERRAIN_DATA = 134 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID TERRAIN_CHECK = 135 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID TERRAIN_REPORT = 136 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID BATTERY_STATUS = 147 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AUTOPILOT_VERSION = 148 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SENSOR_OFFSETS = 150 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SET_MAG_OFFSETS = 151 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MEMINFO = 152 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AP_ADC = 153 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DIGICAM_CONFIGURE = 154 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DIGICAM_CONTROL = 155 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MOUNT_CONFIGURE = 156 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MOUNT_CONTROL = 157 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MOUNT_STATUS = 158 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID FENCE_POINT = 160 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID FENCE_FETCH_POINT = 161 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID FENCE_STATUS = 162 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AHRS = 163 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID SIMSTATE = 164 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID HWSTATUS = 165 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RADIO = 166 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID LIMITS_STATUS = 167 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID WIND = 168 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA16 = 169 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA32 = 170 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA64 = 171 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DATA96 = 172 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RANGEFINDER = 173 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AIRSPEED_AUTOCAL = 174 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RALLY_POINT = 175 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID RALLY_FETCH_POINT = 176 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID COMPASSMOT_STATUS = 177 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID AHRS2 = 178 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID CAMERA_STATUS = 179 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID CAMERA_FEEDBACK = 180 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID BATTERY2 = 181 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID V2_EXTENSION = 248 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID MEMORY_VECT = 249 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DEBUG_VECT = 250 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID NAMED_VALUE_FLOAT = 251 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID NAMED_VALUE_INT = 252 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID STATUSTEXT = 253 : Public, Static, Literal, HasDefault
+    MAVLINK_MSG_ID DEBUG = 254 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_CMD: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_CMD WAYPOINT = 16 : Public, Static, Literal, HasDefault
+    MAV_CMD LOITER_UNLIM = 17 : Public, Static, Literal, HasDefault
+    MAV_CMD LOITER_TURNS = 18 : Public, Static, Literal, HasDefault
+    MAV_CMD LOITER_TIME = 19 : Public, Static, Literal, HasDefault
+    MAV_CMD RETURN_TO_LAUNCH = 20 : Public, Static, Literal, HasDefault
+    MAV_CMD LAND = 21 : Public, Static, Literal, HasDefault
+    MAV_CMD TAKEOFF = 22 : Public, Static, Literal, HasDefault
+    MAV_CMD ROI = 80 : Public, Static, Literal, HasDefault
+    MAV_CMD PATHPLANNING = 81 : Public, Static, Literal, HasDefault
+    MAV_CMD SPLINE_WAYPOINT = 82 : Public, Static, Literal, HasDefault
+    MAV_CMD GUIDED_ENABLE = 92 : Public, Static, Literal, HasDefault
+    MAV_CMD LAST = 95 : Public, Static, Literal, HasDefault
+    MAV_CMD CONDITION_DELAY = 112 : Public, Static, Literal, HasDefault
+    MAV_CMD CONDITION_CHANGE_ALT = 113 : Public, Static, Literal, HasDefault
+    MAV_CMD CONDITION_DISTANCE = 114 : Public, Static, Literal, HasDefault
+    MAV_CMD CONDITION_YAW = 115 : Public, Static, Literal, HasDefault
+    MAV_CMD CONDITION_LAST = 159 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_MODE = 176 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_JUMP = 177 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_CHANGE_SPEED = 178 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_HOME = 179 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_PARAMETER = 180 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_RELAY = 181 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_REPEAT_RELAY = 182 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_SERVO = 183 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_REPEAT_SERVO = 184 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_FLIGHTTERMINATION = 185 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_LAND_START = 189 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_RALLY_LAND = 190 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_GO_AROUND = 191 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_CONTROL_VIDEO = 200 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_ROI = 201 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_DIGICAM_CONFIGURE = 202 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_DIGICAM_CONTROL = 203 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_MOUNT_CONFIGURE = 204 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_MOUNT_CONTROL = 205 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_SET_CAM_TRIGG_DIST = 206 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_FENCE_ENABLE = 207 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_PARACHUTE = 208 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_MOTOR_TEST = 209 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_INVERTED_FLIGHT = 210 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_GRIPPER = 211 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_MOUNT_CONTROL_QUAT = 220 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_GUIDED_MASTER = 221 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_GUIDED_LIMITS = 222 : Public, Static, Literal, HasDefault
+    MAV_CMD DO_LAST = 240 : Public, Static, Literal, HasDefault
+    MAV_CMD PREFLIGHT_CALIBRATION = 241 : Public, Static, Literal, HasDefault
+    MAV_CMD PREFLIGHT_SET_SENSOR_OFFSETS = 242 : Public, Static, Literal, HasDefault
+    MAV_CMD PREFLIGHT_STORAGE = 245 : Public, Static, Literal, HasDefault
+    MAV_CMD PREFLIGHT_REBOOT_SHUTDOWN = 246 : Public, Static, Literal, HasDefault
+    MAV_CMD OVERRIDE_GOTO = 252 : Public, Static, Literal, HasDefault
+    MAV_CMD MISSION_START = 300 : Public, Static, Literal, HasDefault
+    MAV_CMD COMPONENT_ARM_DISARM = 400 : Public, Static, Literal, HasDefault
+    MAV_CMD START_RX_PAIR = 500 : Public, Static, Literal, HasDefault
+    MAV_CMD IMAGE_START_CAPTURE = 2000 : Public, Static, Literal, HasDefault
+    MAV_CMD IMAGE_STOP_CAPTURE = 2001 : Public, Static, Literal, HasDefault
+    MAV_CMD VIDEO_START_CAPTURE = 2500 : Public, Static, Literal, HasDefault
+    MAV_CMD VIDEO_STOP_CAPTURE = 2501 : Public, Static, Literal, HasDefault
+    MAV_CMD PANORAMA_CREATE = 2800 : Public, Static, Literal, HasDefault
+    MAV_CMD PAYLOAD_PREPARE_DEPLOY = 30001 : Public, Static, Literal, HasDefault
+    MAV_CMD PAYLOAD_CONTROL_DEPLOY = 30002 : Public, Static, Literal, HasDefault
+    MAV_CMD ENUM_END = 30003 : Public, Static, Literal, HasDefault
+Struct MAVLink+LIMITS_STATE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LIMITS_STATE LIMITS_INIT = 0 : Public, Static, Literal, HasDefault
+    LIMITS_STATE LIMITS_DISABLED = 1 : Public, Static, Literal, HasDefault
+    LIMITS_STATE LIMITS_ENABLED = 2 : Public, Static, Literal, HasDefault
+    LIMITS_STATE LIMITS_TRIGGERED = 3 : Public, Static, Literal, HasDefault
+    LIMITS_STATE LIMITS_RECOVERING = 4 : Public, Static, Literal, HasDefault
+    LIMITS_STATE LIMITS_RECOVERED = 5 : Public, Static, Literal, HasDefault
+    LIMITS_STATE ENUM_END = 6 : Public, Static, Literal, HasDefault
+Struct MAVLink+LIMIT_MODULE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LIMIT_MODULE LIMIT_GPSLOCK = 1 : Public, Static, Literal, HasDefault
+    LIMIT_MODULE LIMIT_GEOFENCE = 2 : Public, Static, Literal, HasDefault
+    LIMIT_MODULE LIMIT_ALTITUDE = 4 : Public, Static, Literal, HasDefault
+    LIMIT_MODULE ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+RALLY_FLAGS: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RALLY_FLAGS FAVORABLE_WIND = 1 : Public, Static, Literal, HasDefault
+    RALLY_FLAGS LAND_IMMEDIATELY = 2 : Public, Static, Literal, HasDefault
+    RALLY_FLAGS ENUM_END = 3 : Public, Static, Literal, HasDefault
+Struct MAVLink+PARACHUTE_ACTION: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    PARACHUTE_ACTION PARACHUTE_DISABLE = 0 : Public, Static, Literal, HasDefault
+    PARACHUTE_ACTION PARACHUTE_ENABLE = 1 : Public, Static, Literal, HasDefault
+    PARACHUTE_ACTION PARACHUTE_RELEASE = 2 : Public, Static, Literal, HasDefault
+    PARACHUTE_ACTION ENUM_END = 3 : Public, Static, Literal, HasDefault
+Struct MAVLink+MOTOR_TEST_THROTTLE_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MOTOR_TEST_THROTTLE_TYPE MOTOR_TEST_THROTTLE_PERCENT = 0 : Public, Static, Literal, HasDefault
+    MOTOR_TEST_THROTTLE_TYPE MOTOR_TEST_THROTTLE_PWM = 1 : Public, Static, Literal, HasDefault
+    MOTOR_TEST_THROTTLE_TYPE MOTOR_TEST_THROTTLE_PILOT = 2 : Public, Static, Literal, HasDefault
+    MOTOR_TEST_THROTTLE_TYPE ENUM_END = 3 : Public, Static, Literal, HasDefault
+Struct MAVLink+GRIPPER_ACTIONS: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GRIPPER_ACTIONS GRIPPER_ACTION_RELEASE = 0 : Public, Static, Literal, HasDefault
+    GRIPPER_ACTIONS GRIPPER_ACTION_GRAB = 1 : Public, Static, Literal, HasDefault
+    GRIPPER_ACTIONS ENUM_END = 2 : Public, Static, Literal, HasDefault
+Struct MAVLink+CAMERA_STATUS_TYPES: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_HEARTBEAT = 0 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_TRIGGER = 1 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_DISCONNECT = 2 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_ERROR = 3 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_LOWBATT = 4 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_LOWSTORE = 5 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES CAMERA_STATUS_TYPE_LOWSTOREV = 6 : Public, Static, Literal, HasDefault
+    CAMERA_STATUS_TYPES ENUM_END = 7 : Public, Static, Literal, HasDefault
+Struct MAVLink+CAMERA_FEEDBACK_FLAGS: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CAMERA_FEEDBACK_FLAGS VIDEO = 1 : Public, Static, Literal, HasDefault
+    CAMERA_FEEDBACK_FLAGS BADEXPOSURE = 2 : Public, Static, Literal, HasDefault
+    CAMERA_FEEDBACK_FLAGS CLOSEDLOOP = 3 : Public, Static, Literal, HasDefault
+    CAMERA_FEEDBACK_FLAGS OPENLOOP = 4 : Public, Static, Literal, HasDefault
+    CAMERA_FEEDBACK_FLAGS ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_AUTOPILOT: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_AUTOPILOT GENERIC = 0 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT PIXHAWK = 1 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT SLUGS = 2 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT ARDUPILOTMEGA = 3 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT OPENPILOT = 4 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT GENERIC_WAYPOINTS_ONLY = 5 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT GENERIC_WAYPOINTS_AND_SIMPLE_NAVIGATION_ONLY = 6 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT GENERIC_MISSION_FULL = 7 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT INVALID = 8 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT PPZ = 9 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT UDB = 10 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT FP = 11 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT PX4 = 12 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT SMACCMPILOT = 13 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT AUTOQUAD = 14 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT ARMAZILA = 15 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT AEROB = 16 : Public, Static, Literal, HasDefault
+    MAV_AUTOPILOT ENUM_END = 17 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_TYPE GENERIC = 0 : Public, Static, Literal, HasDefault
+    MAV_TYPE FIXED_WING = 1 : Public, Static, Literal, HasDefault
+    MAV_TYPE QUADROTOR = 2 : Public, Static, Literal, HasDefault
+    MAV_TYPE COAXIAL = 3 : Public, Static, Literal, HasDefault
+    MAV_TYPE HELICOPTER = 4 : Public, Static, Literal, HasDefault
+    MAV_TYPE ANTENNA_TRACKER = 5 : Public, Static, Literal, HasDefault
+    MAV_TYPE GCS = 6 : Public, Static, Literal, HasDefault
+    MAV_TYPE AIRSHIP = 7 : Public, Static, Literal, HasDefault
+    MAV_TYPE FREE_BALLOON = 8 : Public, Static, Literal, HasDefault
+    MAV_TYPE ROCKET = 9 : Public, Static, Literal, HasDefault
+    MAV_TYPE GROUND_ROVER = 10 : Public, Static, Literal, HasDefault
+    MAV_TYPE SURFACE_BOAT = 11 : Public, Static, Literal, HasDefault
+    MAV_TYPE SUBMARINE = 12 : Public, Static, Literal, HasDefault
+    MAV_TYPE HEXAROTOR = 13 : Public, Static, Literal, HasDefault
+    MAV_TYPE OCTOROTOR = 14 : Public, Static, Literal, HasDefault
+    MAV_TYPE TRICOPTER = 15 : Public, Static, Literal, HasDefault
+    MAV_TYPE FLAPPING_WING = 16 : Public, Static, Literal, HasDefault
+    MAV_TYPE KITE = 17 : Public, Static, Literal, HasDefault
+    MAV_TYPE ONBOARD_CONTROLLER = 18 : Public, Static, Literal, HasDefault
+    MAV_TYPE VTOL_DUOROTOR = 19 : Public, Static, Literal, HasDefault
+    MAV_TYPE VTOL_QUADROTOR = 20 : Public, Static, Literal, HasDefault
+    MAV_TYPE ENUM_END = 21 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_MODE_FLAG: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_MODE_FLAG CUSTOM_MODE_ENABLED = 1 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG TEST_ENABLED = 2 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG AUTO_ENABLED = 4 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG GUIDED_ENABLED = 8 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG STABILIZE_ENABLED = 16 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG HIL_ENABLED = 32 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG MANUAL_INPUT_ENABLED = 64 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG SAFETY_ARMED = 128 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG ENUM_END = 129 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_MODE_FLAG_DECODE_POSITION: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_MODE_FLAG_DECODE_POSITION CUSTOM_MODE = 1 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION TEST = 2 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION AUTO = 4 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION GUIDED = 8 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION STABILIZE = 16 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION HIL = 32 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION MANUAL = 64 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION SAFETY = 128 : Public, Static, Literal, HasDefault
+    MAV_MODE_FLAG_DECODE_POSITION ENUM_END = 129 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_GOTO: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_GOTO DO_HOLD = 0 : Public, Static, Literal, HasDefault
+    MAV_GOTO DO_CONTINUE = 1 : Public, Static, Literal, HasDefault
+    MAV_GOTO HOLD_AT_CURRENT_POSITION = 2 : Public, Static, Literal, HasDefault
+    MAV_GOTO HOLD_AT_SPECIFIED_POSITION = 3 : Public, Static, Literal, HasDefault
+    MAV_GOTO ENUM_END = 4 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_MODE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_MODE PREFLIGHT = 0 : Public, Static, Literal, HasDefault
+    MAV_MODE MANUAL_DISARMED = 64 : Public, Static, Literal, HasDefault
+    MAV_MODE TEST_DISARMED = 66 : Public, Static, Literal, HasDefault
+    MAV_MODE STABILIZE_DISARMED = 80 : Public, Static, Literal, HasDefault
+    MAV_MODE GUIDED_DISARMED = 88 : Public, Static, Literal, HasDefault
+    MAV_MODE AUTO_DISARMED = 92 : Public, Static, Literal, HasDefault
+    MAV_MODE MANUAL_ARMED = 192 : Public, Static, Literal, HasDefault
+    MAV_MODE TEST_ARMED = 194 : Public, Static, Literal, HasDefault
+    MAV_MODE STABILIZE_ARMED = 208 : Public, Static, Literal, HasDefault
+    MAV_MODE GUIDED_ARMED = 216 : Public, Static, Literal, HasDefault
+    MAV_MODE AUTO_ARMED = 220 : Public, Static, Literal, HasDefault
+    MAV_MODE ENUM_END = 221 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_STATE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_STATE UNINIT = 0 : Public, Static, Literal, HasDefault
+    MAV_STATE BOOT = 1 : Public, Static, Literal, HasDefault
+    MAV_STATE CALIBRATING = 2 : Public, Static, Literal, HasDefault
+    MAV_STATE STANDBY = 3 : Public, Static, Literal, HasDefault
+    MAV_STATE ACTIVE = 4 : Public, Static, Literal, HasDefault
+    MAV_STATE CRITICAL = 5 : Public, Static, Literal, HasDefault
+    MAV_STATE EMERGENCY = 6 : Public, Static, Literal, HasDefault
+    MAV_STATE POWEROFF = 7 : Public, Static, Literal, HasDefault
+    MAV_STATE ENUM_END = 8 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_COMPONENT: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_COMPONENT MAV_COMP_ID_ALL = 0 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_CAMERA = 100 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO1 = 140 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO2 = 141 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO3 = 142 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO4 = 143 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO5 = 144 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO6 = 145 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO7 = 146 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO8 = 147 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO9 = 148 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO10 = 149 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO11 = 150 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO12 = 151 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO13 = 152 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SERVO14 = 153 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_MAPPER = 180 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_MISSIONPLANNER = 190 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_PATHPLANNER = 195 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_IMU = 200 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_IMU_2 = 201 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_IMU_3 = 202 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_GPS = 220 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_UDP_BRIDGE = 240 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_UART_BRIDGE = 241 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT MAV_COMP_ID_SYSTEM_CONTROL = 250 : Public, Static, Literal, HasDefault
+    MAV_COMPONENT ENUM_END = 251 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_SYS_STATUS_SENSOR: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_SYS_STATUS_SENSOR _3D_GYRO = 1 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR _3D_ACCEL = 2 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR _3D_MAG = 4 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR ABSOLUTE_PRESSURE = 8 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR DIFFERENTIAL_PRESSURE = 16 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR GPS = 32 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR OPTICAL_FLOW = 64 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR VISION_POSITION = 128 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR LASER_POSITION = 256 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR EXTERNAL_GROUND_TRUTH = 512 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR ANGULAR_RATE_CONTROL = 1024 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR ATTITUDE_STABILIZATION = 2048 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR YAW_POSITION = 4096 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR Z_ALTITUDE_CONTROL = 8192 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR XY_POSITION_CONTROL = 16384 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR MOTOR_OUTPUTS = 32768 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR RC_RECEIVER = 65536 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR _3D_GYRO2 = 131072 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR _3D_ACCEL2 = 262144 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR _3D_MAG2 = 524288 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR MAV_SYS_STATUS_GEOFENCE = 1048576 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR MAV_SYS_STATUS_AHRS = 2097152 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR MAV_SYS_STATUS_TERRAIN = 4194304 : Public, Static, Literal, HasDefault
+    MAV_SYS_STATUS_SENSOR ENUM_END = 4194305 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_FRAME: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_FRAME GLOBAL = 0 : Public, Static, Literal, HasDefault
+    MAV_FRAME LOCAL_NED = 1 : Public, Static, Literal, HasDefault
+    MAV_FRAME MISSION = 2 : Public, Static, Literal, HasDefault
+    MAV_FRAME GLOBAL_RELATIVE_ALT = 3 : Public, Static, Literal, HasDefault
+    MAV_FRAME LOCAL_ENU = 4 : Public, Static, Literal, HasDefault
+    MAV_FRAME LOCAL_OFFSET_NED = 7 : Public, Static, Literal, HasDefault
+    MAV_FRAME BODY_NED = 8 : Public, Static, Literal, HasDefault
+    MAV_FRAME BODY_OFFSET_NED = 9 : Public, Static, Literal, HasDefault
+    MAV_FRAME GLOBAL_TERRAIN_ALT = 10 : Public, Static, Literal, HasDefault
+    MAV_FRAME ENUM_END = 11 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAVLINK_DATA_STREAM_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_JPEG = 1 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_BMP = 2 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_RAW8U = 3 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_RAW32U = 4 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_PGM = 5 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE MAVLINK_DATA_STREAM_IMG_PNG = 6 : Public, Static, Literal, HasDefault
+    MAVLINK_DATA_STREAM_TYPE ENUM_END = 7 : Public, Static, Literal, HasDefault
+Struct MAVLink+FENCE_ACTION: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FENCE_ACTION NONE = 0 : Public, Static, Literal, HasDefault
+    FENCE_ACTION GUIDED = 1 : Public, Static, Literal, HasDefault
+    FENCE_ACTION REPORT = 2 : Public, Static, Literal, HasDefault
+    FENCE_ACTION GUIDED_THR_PASS = 3 : Public, Static, Literal, HasDefault
+    FENCE_ACTION ENUM_END = 4 : Public, Static, Literal, HasDefault
+Struct MAVLink+FENCE_BREACH: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    FENCE_BREACH NONE = 0 : Public, Static, Literal, HasDefault
+    FENCE_BREACH MINALT = 1 : Public, Static, Literal, HasDefault
+    FENCE_BREACH MAXALT = 2 : Public, Static, Literal, HasDefault
+    FENCE_BREACH BOUNDARY = 3 : Public, Static, Literal, HasDefault
+    FENCE_BREACH ENUM_END = 4 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_MOUNT_MODE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_MOUNT_MODE RETRACT = 0 : Public, Static, Literal, HasDefault
+    MAV_MOUNT_MODE NEUTRAL = 1 : Public, Static, Literal, HasDefault
+    MAV_MOUNT_MODE MAVLINK_TARGETING = 2 : Public, Static, Literal, HasDefault
+    MAV_MOUNT_MODE RC_TARGETING = 3 : Public, Static, Literal, HasDefault
+    MAV_MOUNT_MODE GPS_POINT = 4 : Public, Static, Literal, HasDefault
+    MAV_MOUNT_MODE ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_DATA_STREAM: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_DATA_STREAM ALL = 0 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM RAW_SENSORS = 1 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM EXTENDED_STATUS = 2 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM RC_CHANNELS = 3 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM RAW_CONTROLLER = 4 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM POSITION = 6 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM EXTRA1 = 10 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM EXTRA2 = 11 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM EXTRA3 = 12 : Public, Static, Literal, HasDefault
+    MAV_DATA_STREAM ENUM_END = 13 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_ROI: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_ROI NONE = 0 : Public, Static, Literal, HasDefault
+    MAV_ROI WPNEXT = 1 : Public, Static, Literal, HasDefault
+    MAV_ROI WPINDEX = 2 : Public, Static, Literal, HasDefault
+    MAV_ROI LOCATION = 3 : Public, Static, Literal, HasDefault
+    MAV_ROI TARGET = 4 : Public, Static, Literal, HasDefault
+    MAV_ROI ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_CMD_ACK: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_CMD_ACK OK = 1 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_FAIL = 2 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_ACCESS_DENIED = 3 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_NOT_SUPPORTED = 4 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_COORDINATE_FRAME_NOT_SUPPORTED = 5 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_COORDINATES_OUT_OF_RANGE = 6 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_X_LAT_OUT_OF_RANGE = 7 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_Y_LON_OUT_OF_RANGE = 8 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ERR_Z_ALT_OUT_OF_RANGE = 9 : Public, Static, Literal, HasDefault
+    MAV_CMD_ACK ENUM_END = 10 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_PARAM_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_PARAM_TYPE UINT8 = 1 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE INT8 = 2 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE UINT16 = 3 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE INT16 = 4 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE UINT32 = 5 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE INT32 = 6 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE UINT64 = 7 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE INT64 = 8 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE REAL32 = 9 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE REAL64 = 10 : Public, Static, Literal, HasDefault
+    MAV_PARAM_TYPE ENUM_END = 11 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_RESULT: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_RESULT ACCEPTED = 0 : Public, Static, Literal, HasDefault
+    MAV_RESULT TEMPORARILY_REJECTED = 1 : Public, Static, Literal, HasDefault
+    MAV_RESULT DENIED = 2 : Public, Static, Literal, HasDefault
+    MAV_RESULT UNSUPPORTED = 3 : Public, Static, Literal, HasDefault
+    MAV_RESULT FAILED = 4 : Public, Static, Literal, HasDefault
+    MAV_RESULT ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_MISSION_RESULT: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_MISSION_RESULT MAV_MISSION_ACCEPTED = 0 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_ERROR = 1 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_UNSUPPORTED_FRAME = 2 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_UNSUPPORTED = 3 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_NO_SPACE = 4 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID = 5 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM1 = 6 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM2 = 7 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM3 = 8 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM4 = 9 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM5_X = 10 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM6_Y = 11 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_PARAM7 = 12 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_INVALID_SEQUENCE = 13 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT MAV_MISSION_DENIED = 14 : Public, Static, Literal, HasDefault
+    MAV_MISSION_RESULT ENUM_END = 15 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_SEVERITY: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_SEVERITY EMERGENCY = 0 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY ALERT = 1 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY CRITICAL = 2 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY ERROR = 3 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY WARNING = 4 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY NOTICE = 5 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY INFO = 6 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY DEBUG = 7 : Public, Static, Literal, HasDefault
+    MAV_SEVERITY ENUM_END = 8 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_POWER_STATUS: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_POWER_STATUS BRICK_VALID = 1 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS SERVO_VALID = 2 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS USB_CONNECTED = 4 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS PERIPH_OVERCURRENT = 8 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS PERIPH_HIPOWER_OVERCURRENT = 16 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS CHANGED = 32 : Public, Static, Literal, HasDefault
+    MAV_POWER_STATUS ENUM_END = 33 : Public, Static, Literal, HasDefault
+Struct MAVLink+SERIAL_CONTROL_DEV: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SERIAL_CONTROL_DEV TELEM1 = 0 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_DEV TELEM2 = 1 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_DEV GPS1 = 2 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_DEV GPS2 = 3 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_DEV ENUM_END = 4 : Public, Static, Literal, HasDefault
+Struct MAVLink+SERIAL_CONTROL_FLAG: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SERIAL_CONTROL_FLAG REPLY = 1 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_FLAG RESPOND = 2 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_FLAG EXCLUSIVE = 4 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_FLAG BLOCKING = 8 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_FLAG MULTI = 16 : Public, Static, Literal, HasDefault
+    SERIAL_CONTROL_FLAG ENUM_END = 17 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_DISTANCE_SENSOR: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_DISTANCE_SENSOR LASER = 0 : Public, Static, Literal, HasDefault
+    MAV_DISTANCE_SENSOR ULTRASOUND = 1 : Public, Static, Literal, HasDefault
+    MAV_DISTANCE_SENSOR ENUM_END = 2 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_PROTOCOL_CAPABILITY: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_PROTOCOL_CAPABILITY MISSION_FLOAT = 1 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY PARAM_FLOAT = 2 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY MISSION_INT = 4 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY COMMAND_INT = 8 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY PARAM_UNION = 16 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY FTP = 32 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY SET_ATTITUDE_TARGET = 64 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY SET_POSITION_TARGET_LOCAL_NED = 128 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY SET_POSITION_TARGET_GLOBAL_INT = 256 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY TERRAIN = 512 : Public, Static, Literal, HasDefault
+    MAV_PROTOCOL_CAPABILITY ENUM_END = 513 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_ESTIMATOR_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_ESTIMATOR_TYPE NAIVE = 1 : Public, Static, Literal, HasDefault
+    MAV_ESTIMATOR_TYPE VISION = 2 : Public, Static, Literal, HasDefault
+    MAV_ESTIMATOR_TYPE VIO = 3 : Public, Static, Literal, HasDefault
+    MAV_ESTIMATOR_TYPE GPS = 4 : Public, Static, Literal, HasDefault
+    MAV_ESTIMATOR_TYPE GPS_INS = 5 : Public, Static, Literal, HasDefault
+    MAV_ESTIMATOR_TYPE ENUM_END = 6 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_BATTERY_TYPE: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_BATTERY_TYPE UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_TYPE LIPO = 1 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_TYPE LIFE = 2 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_TYPE LION = 3 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_TYPE NIMH = 4 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_TYPE ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+MAV_BATTERY_FUNCTION: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MAV_BATTERY_FUNCTION UNKNOWN = 0 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_FUNCTION ALL = 1 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_FUNCTION PROPULSION = 2 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_FUNCTION AVIONICS = 3 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_FUNCTION MAV_BATTERY_TYPE_PAYLOAD = 4 : Public, Static, Literal, HasDefault
+    MAV_BATTERY_FUNCTION ENUM_END = 5 : Public, Static, Literal, HasDefault
+Struct MAVLink+mavlink_sensor_offsets_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single mag_declination : Public
+    Int32 raw_press : Public
+    Int32 raw_temp : Public
+    Single gyro_cal_x : Public
+    Single gyro_cal_y : Public
+    Single gyro_cal_z : Public
+    Single accel_cal_x : Public
+    Single accel_cal_y : Public
+    Single accel_cal_z : Public
+    Int16 mag_ofs_x : Public
+    Int16 mag_ofs_y : Public
+    Int16 mag_ofs_z : Public
+Struct MAVLink+mavlink_set_mag_offsets_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 mag_ofs_x : Public
+    Int16 mag_ofs_y : Public
+    Int16 mag_ofs_z : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_meminfo_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 brkval : Public
+    UInt16 freemem : Public
+Struct MAVLink+mavlink_ap_adc_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 adc1 : Public
+    UInt16 adc2 : Public
+    UInt16 adc3 : Public
+    UInt16 adc4 : Public
+    UInt16 adc5 : Public
+    UInt16 adc6 : Public
+Struct MAVLink+mavlink_digicam_configure_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single extra_value : Public
+    UInt16 shutter_speed : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte mode : Public
+    Byte aperture : Public
+    Byte iso : Public
+    Byte exposure_type : Public
+    Byte command_id : Public
+    Byte engine_cut_off : Public
+    Byte extra_param : Public
+Struct MAVLink+mavlink_digicam_control_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single extra_value : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte session : Public
+    Byte zoom_pos : Public
+    Byte zoom_step : Public
+    Byte focus_lock : Public
+    Byte shot : Public
+    Byte command_id : Public
+    Byte extra_param : Public
+Struct MAVLink+mavlink_mount_configure_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte mount_mode : Public
+    Byte stab_roll : Public
+    Byte stab_pitch : Public
+    Byte stab_yaw : Public
+Struct MAVLink+mavlink_mount_control_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 input_a : Public
+    Int32 input_b : Public
+    Int32 input_c : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte save_position : Public
+Struct MAVLink+mavlink_mount_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 pointing_a : Public
+    Int32 pointing_b : Public
+    Int32 pointing_c : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_fence_point_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single lat : Public
+    Single lng : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte idx : Public
+    Byte count : Public
+Struct MAVLink+mavlink_fence_fetch_point_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte idx : Public
+Struct MAVLink+mavlink_fence_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 breach_time : Public
+    UInt16 breach_count : Public
+    Byte breach_status : Public
+    Byte breach_type : Public
+Struct MAVLink+mavlink_ahrs_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single omegaIx : Public
+    Single omegaIy : Public
+    Single omegaIz : Public
+    Single accel_weight : Public
+    Single renorm_val : Public
+    Single error_rp : Public
+    Single error_yaw : Public
+Struct MAVLink+mavlink_simstate_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single xacc : Public
+    Single yacc : Public
+    Single zacc : Public
+    Single xgyro : Public
+    Single ygyro : Public
+    Single zgyro : Public
+    Int32 lat : Public
+    Int32 lng : Public
+Struct MAVLink+mavlink_hwstatus_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 Vcc : Public
+    Byte I2Cerr : Public
+Struct MAVLink+mavlink_radio_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 rxerrors : Public
+    UInt16 fixed : Public
+    Byte rssi : Public
+    Byte remrssi : Public
+    Byte txbuf : Public
+    Byte noise : Public
+    Byte remnoise : Public
+Struct MAVLink+mavlink_limits_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 last_trigger : Public
+    UInt32 last_action : Public
+    UInt32 last_recovery : Public
+    UInt32 last_clear : Public
+    UInt16 breach_count : Public
+    Byte limits_state : Public
+    Byte mods_enabled : Public
+    Byte mods_required : Public
+    Byte mods_triggered : Public
+Struct MAVLink+mavlink_wind_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single direction : Public
+    Single speed : Public
+    Single speed_z : Public
+Struct MAVLink+mavlink_data16_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte type : Public
+    Byte len : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_data32_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte type : Public
+    Byte len : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_data64_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte type : Public
+    Byte len : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_data96_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte type : Public
+    Byte len : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_rangefinder_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single distance : Public
+    Single voltage : Public
+Struct MAVLink+mavlink_airspeed_autocal_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single diff_pressure : Public
+    Single EAS2TAS : Public
+    Single ratio : Public
+    Single state_x : Public
+    Single state_y : Public
+    Single state_z : Public
+    Single Pax : Public
+    Single Pby : Public
+    Single Pcz : Public
+Struct MAVLink+mavlink_rally_point_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 lat : Public
+    Int32 lng : Public
+    Int16 alt : Public
+    Int16 break_alt : Public
+    UInt16 land_dir : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte idx : Public
+    Byte count : Public
+    Byte flags : Public
+Struct MAVLink+mavlink_rally_fetch_point_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte idx : Public
+Struct MAVLink+mavlink_compassmot_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single current : Public
+    Single CompensationX : Public
+    Single CompensationY : Public
+    Single CompensationZ : Public
+    UInt16 throttle : Public
+    UInt16 interference : Public
+Struct MAVLink+mavlink_ahrs2_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single altitude : Public
+    Int32 lat : Public
+    Int32 lng : Public
+Struct MAVLink+mavlink_camera_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single p1 : Public
+    Single p2 : Public
+    Single p3 : Public
+    Single p4 : Public
+    UInt16 img_idx : Public
+    Byte target_system : Public
+    Byte cam_idx : Public
+    Byte event_id : Public
+Struct MAVLink+mavlink_camera_feedback_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int32 lat : Public
+    Int32 lng : Public
+    Single alt_msl : Public
+    Single alt_rel : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single foc_len : Public
+    UInt16 img_idx : Public
+    Byte target_system : Public
+    Byte cam_idx : Public
+    Byte flags : Public
+Struct MAVLink+mavlink_battery2_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 voltage : Public
+    Int16 current_battery : Public
+Struct MAVLink+mavlink_heartbeat_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 custom_mode : Public
+    Byte type : Public
+    Byte autopilot : Public
+    Byte base_mode : Public
+    Byte system_status : Public
+    Byte mavlink_version : Public
+Struct MAVLink+mavlink_sys_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 onboard_control_sensors_present : Public
+    UInt32 onboard_control_sensors_enabled : Public
+    UInt32 onboard_control_sensors_health : Public
+    UInt16 load : Public
+    UInt16 voltage_battery : Public
+    Int16 current_battery : Public
+    UInt16 drop_rate_comm : Public
+    UInt16 errors_comm : Public
+    UInt16 errors_count1 : Public
+    UInt16 errors_count2 : Public
+    UInt16 errors_count3 : Public
+    UInt16 errors_count4 : Public
+    Byte battery_remaining : Public
+Struct MAVLink+mavlink_system_time_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_unix_usec : Public
+    UInt32 time_boot_ms : Public
+Struct MAVLink+mavlink_ping_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    UInt32 seq : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_change_operator_control_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte control_request : Public
+    Byte version : Public
+    Byte[] passkey : Public, HasFieldMarshal
+Struct MAVLink+mavlink_change_operator_control_ack_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte gcs_system_id : Public
+    Byte control_request : Public
+    Byte ack : Public
+Struct MAVLink+mavlink_auth_key_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte[] key : Public, HasFieldMarshal
+Struct MAVLink+mavlink_set_mode_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 custom_mode : Public
+    Byte target_system : Public
+    Byte base_mode : Public
+Struct MAVLink+mavlink_param_request_read_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 param_index : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte[] param_id : Public, HasFieldMarshal
+Struct MAVLink+mavlink_param_request_list_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_param_value_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param_value : Public
+    UInt16 param_count : Public
+    UInt16 param_index : Public
+    Byte[] param_id : Public, HasFieldMarshal
+    Byte param_type : Public
+Struct MAVLink+mavlink_param_set_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param_value : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte[] param_id : Public, HasFieldMarshal
+    Byte param_type : Public
+Struct MAVLink+mavlink_gps_raw_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    UInt16 eph : Public
+    UInt16 epv : Public
+    UInt16 vel : Public
+    UInt16 cog : Public
+    Byte fix_type : Public
+    Byte satellites_visible : Public
+Struct MAVLink+mavlink_gps_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte satellites_visible : Public
+    Byte[] satellite_prn : Public, HasFieldMarshal
+    Byte[] satellite_used : Public, HasFieldMarshal
+    Byte[] satellite_elevation : Public, HasFieldMarshal
+    Byte[] satellite_azimuth : Public, HasFieldMarshal
+    Byte[] satellite_snr : Public, HasFieldMarshal
+Struct MAVLink+mavlink_scaled_imu_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int16 xacc : Public
+    Int16 yacc : Public
+    Int16 zacc : Public
+    Int16 xgyro : Public
+    Int16 ygyro : Public
+    Int16 zgyro : Public
+    Int16 xmag : Public
+    Int16 ymag : Public
+    Int16 zmag : Public
+Struct MAVLink+mavlink_raw_imu_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int16 xacc : Public
+    Int16 yacc : Public
+    Int16 zacc : Public
+    Int16 xgyro : Public
+    Int16 ygyro : Public
+    Int16 zgyro : Public
+    Int16 xmag : Public
+    Int16 ymag : Public
+    Int16 zmag : Public
+Struct MAVLink+mavlink_raw_pressure_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int16 press_abs : Public
+    Int16 press_diff1 : Public
+    Int16 press_diff2 : Public
+    Int16 temperature : Public
+Struct MAVLink+mavlink_scaled_pressure_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single press_abs : Public
+    Single press_diff : Public
+    Int16 temperature : Public
+Struct MAVLink+mavlink_attitude_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single rollspeed : Public
+    Single pitchspeed : Public
+    Single yawspeed : Public
+Struct MAVLink+mavlink_attitude_quaternion_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single q1 : Public
+    Single q2 : Public
+    Single q3 : Public
+    Single q4 : Public
+    Single rollspeed : Public
+    Single pitchspeed : Public
+    Single yawspeed : Public
+Struct MAVLink+mavlink_local_position_ned_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+Struct MAVLink+mavlink_global_position_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    Int32 relative_alt : Public
+    Int16 vx : Public
+    Int16 vy : Public
+    Int16 vz : Public
+    UInt16 hdg : Public
+Struct MAVLink+mavlink_rc_channels_scaled_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int16 chan1_scaled : Public
+    Int16 chan2_scaled : Public
+    Int16 chan3_scaled : Public
+    Int16 chan4_scaled : Public
+    Int16 chan5_scaled : Public
+    Int16 chan6_scaled : Public
+    Int16 chan7_scaled : Public
+    Int16 chan8_scaled : Public
+    Byte port : Public
+    Byte rssi : Public
+Struct MAVLink+mavlink_rc_channels_raw_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    UInt16 chan1_raw : Public
+    UInt16 chan2_raw : Public
+    UInt16 chan3_raw : Public
+    UInt16 chan4_raw : Public
+    UInt16 chan5_raw : Public
+    UInt16 chan6_raw : Public
+    UInt16 chan7_raw : Public
+    UInt16 chan8_raw : Public
+    Byte port : Public
+    Byte rssi : Public
+Struct MAVLink+mavlink_servo_output_raw_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_usec : Public
+    UInt16 servo1_raw : Public
+    UInt16 servo2_raw : Public
+    UInt16 servo3_raw : Public
+    UInt16 servo4_raw : Public
+    UInt16 servo5_raw : Public
+    UInt16 servo6_raw : Public
+    UInt16 servo7_raw : Public
+    UInt16 servo8_raw : Public
+    Byte port : Public
+Struct MAVLink+mavlink_mission_request_partial_list_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 start_index : Public
+    Int16 end_index : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_write_partial_list_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 start_index : Public
+    Int16 end_index : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_item_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param1 : Public
+    Single param2 : Public
+    Single param3 : Public
+    Single param4 : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    UInt16 seq : Public
+    UInt16 command : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte frame : Public
+    Byte current : Public
+    Byte autocontinue : Public
+Struct MAVLink+mavlink_mission_request_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 seq : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_set_current_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 seq : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_current_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 seq : Public
+Struct MAVLink+mavlink_mission_request_list_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_count_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 count : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_clear_all_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_item_reached_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 seq : Public
+Struct MAVLink+mavlink_mission_ack_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte type : Public
+Struct MAVLink+mavlink_set_gps_global_origin_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 latitude : Public
+    Int32 longitude : Public
+    Int32 altitude : Public
+    Byte target_system : Public
+Struct MAVLink+mavlink_gps_global_origin_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 latitude : Public
+    Int32 longitude : Public
+    Int32 altitude : Public
+Struct MAVLink+mavlink_safety_set_allowed_area_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single p1x : Public
+    Single p1y : Public
+    Single p1z : Public
+    Single p2x : Public
+    Single p2y : Public
+    Single p2z : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte frame : Public
+Struct MAVLink+mavlink_safety_allowed_area_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single p1x : Public
+    Single p1y : Public
+    Single p1z : Public
+    Single p2x : Public
+    Single p2y : Public
+    Single p2z : Public
+    Byte frame : Public
+Struct MAVLink+mavlink_attitude_quaternion_cov_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single q : Public, HasFieldMarshal
+    Single rollspeed : Public
+    Single pitchspeed : Public
+    Single yawspeed : Public
+    Single covariance : Public, HasFieldMarshal
+Struct MAVLink+mavlink_nav_controller_output_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single nav_roll : Public
+    Single nav_pitch : Public
+    Single alt_error : Public
+    Single aspd_error : Public
+    Single xtrack_error : Public
+    Int16 nav_bearing : Public
+    Int16 target_bearing : Public
+    UInt16 wp_dist : Public
+Struct MAVLink+mavlink_global_position_int_cov_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_utc : Public
+    UInt32 time_boot_ms : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    Int32 relative_alt : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single covariance : Public, HasFieldMarshal
+    Byte estimator_type : Public
+Struct MAVLink+mavlink_local_position_ned_cov_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_utc : Public
+    UInt32 time_boot_ms : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single covariance : Public, HasFieldMarshal
+    Byte estimator_type : Public
+Struct MAVLink+mavlink_rc_channels_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    UInt16 chan1_raw : Public
+    UInt16 chan2_raw : Public
+    UInt16 chan3_raw : Public
+    UInt16 chan4_raw : Public
+    UInt16 chan5_raw : Public
+    UInt16 chan6_raw : Public
+    UInt16 chan7_raw : Public
+    UInt16 chan8_raw : Public
+    UInt16 chan9_raw : Public
+    UInt16 chan10_raw : Public
+    UInt16 chan11_raw : Public
+    UInt16 chan12_raw : Public
+    UInt16 chan13_raw : Public
+    UInt16 chan14_raw : Public
+    UInt16 chan15_raw : Public
+    UInt16 chan16_raw : Public
+    UInt16 chan17_raw : Public
+    UInt16 chan18_raw : Public
+    Byte chancount : Public
+    Byte rssi : Public
+Struct MAVLink+mavlink_request_data_stream_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 req_message_rate : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte req_stream_id : Public
+    Byte start_stop : Public
+Struct MAVLink+mavlink_data_stream_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 message_rate : Public
+    Byte stream_id : Public
+    Byte on_off : Public
+Struct MAVLink+mavlink_manual_control_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 x : Public
+    Int16 y : Public
+    Int16 z : Public
+    Int16 r : Public
+    UInt16 buttons : Public
+    Byte target : Public
+Struct MAVLink+mavlink_rc_channels_override_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 chan1_raw : Public
+    UInt16 chan2_raw : Public
+    UInt16 chan3_raw : Public
+    UInt16 chan4_raw : Public
+    UInt16 chan5_raw : Public
+    UInt16 chan6_raw : Public
+    UInt16 chan7_raw : Public
+    UInt16 chan8_raw : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_mission_item_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param1 : Public
+    Single param2 : Public
+    Single param3 : Public
+    Single param4 : Public
+    Int32 x : Public
+    Int32 y : Public
+    Single z : Public
+    UInt16 seq : Public
+    UInt16 command : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte frame : Public
+    Byte current : Public
+    Byte autocontinue : Public
+Struct MAVLink+mavlink_vfr_hud_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single airspeed : Public
+    Single groundspeed : Public
+    Single alt : Public
+    Single climb : Public
+    Int16 heading : Public
+    UInt16 throttle : Public
+Struct MAVLink+mavlink_command_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param1 : Public
+    Single param2 : Public
+    Single param3 : Public
+    Single param4 : Public
+    Int32 x : Public
+    Int32 y : Public
+    Single z : Public
+    UInt16 command : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte frame : Public
+    Byte current : Public
+    Byte autocontinue : Public
+Struct MAVLink+mavlink_command_long_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single param1 : Public
+    Single param2 : Public
+    Single param3 : Public
+    Single param4 : Public
+    Single param5 : Public
+    Single param6 : Public
+    Single param7 : Public
+    UInt16 command : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte confirmation : Public
+Struct MAVLink+mavlink_command_ack_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 command : Public
+    Byte result : Public
+Struct MAVLink+mavlink_manual_setpoint_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single thrust : Public
+    Byte mode_switch : Public
+    Byte manual_override_switch : Public
+Struct MAVLink+mavlink_set_attitude_target_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single q : Public, HasFieldMarshal
+    Single body_roll_rate : Public
+    Single body_pitch_rate : Public
+    Single body_yaw_rate : Public
+    Single thrust : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte type_mask : Public
+Struct MAVLink+mavlink_attitude_target_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single q : Public, HasFieldMarshal
+    Single body_roll_rate : Public
+    Single body_pitch_rate : Public
+    Single body_yaw_rate : Public
+    Single thrust : Public
+    Byte type_mask : Public
+Struct MAVLink+mavlink_set_position_target_local_ned_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single afx : Public
+    Single afy : Public
+    Single afz : Public
+    Single yaw : Public
+    Single yaw_rate : Public
+    UInt16 type_mask : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte coordinate_frame : Public
+Struct MAVLink+mavlink_position_target_local_ned_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single afx : Public
+    Single afy : Public
+    Single afz : Public
+    Single yaw : Public
+    Single yaw_rate : Public
+    UInt16 type_mask : Public
+    Byte coordinate_frame : Public
+Struct MAVLink+mavlink_set_position_target_global_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int32 lat_int : Public
+    Int32 lon_int : Public
+    Single alt : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single afx : Public
+    Single afy : Public
+    Single afz : Public
+    Single yaw : Public
+    Single yaw_rate : Public
+    UInt16 type_mask : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte coordinate_frame : Public
+Struct MAVLink+mavlink_position_target_global_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int32 lat_int : Public
+    Int32 lon_int : Public
+    Single alt : Public
+    Single vx : Public
+    Single vy : Public
+    Single vz : Public
+    Single afx : Public
+    Single afy : Public
+    Single afz : Public
+    Single yaw : Public
+    Single yaw_rate : Public
+    UInt16 type_mask : Public
+    Byte coordinate_frame : Public
+Struct MAVLink+mavlink_local_position_ned_system_global_offset_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+Struct MAVLink+mavlink_hil_state_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single rollspeed : Public
+    Single pitchspeed : Public
+    Single yawspeed : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    Int16 vx : Public
+    Int16 vy : Public
+    Int16 vz : Public
+    Int16 xacc : Public
+    Int16 yacc : Public
+    Int16 zacc : Public
+Struct MAVLink+mavlink_hil_controls_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single roll_ailerons : Public
+    Single pitch_elevator : Public
+    Single yaw_rudder : Public
+    Single throttle : Public
+    Single aux1 : Public
+    Single aux2 : Public
+    Single aux3 : Public
+    Single aux4 : Public
+    Byte mode : Public
+    Byte nav_mode : Public
+Struct MAVLink+mavlink_hil_rc_inputs_raw_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    UInt16 chan1_raw : Public
+    UInt16 chan2_raw : Public
+    UInt16 chan3_raw : Public
+    UInt16 chan4_raw : Public
+    UInt16 chan5_raw : Public
+    UInt16 chan6_raw : Public
+    UInt16 chan7_raw : Public
+    UInt16 chan8_raw : Public
+    UInt16 chan9_raw : Public
+    UInt16 chan10_raw : Public
+    UInt16 chan11_raw : Public
+    UInt16 chan12_raw : Public
+    Byte rssi : Public
+Struct MAVLink+mavlink_optical_flow_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single flow_comp_m_x : Public
+    Single flow_comp_m_y : Public
+    Single ground_distance : Public
+    Int16 flow_x : Public
+    Int16 flow_y : Public
+    Byte sensor_id : Public
+    Byte quality : Public
+Struct MAVLink+mavlink_global_vision_position_estimate_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 usec : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+Struct MAVLink+mavlink_vision_position_estimate_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 usec : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+Struct MAVLink+mavlink_vision_speed_estimate_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 usec : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+Struct MAVLink+mavlink_vicon_position_estimate_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 usec : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+Struct MAVLink+mavlink_highres_imu_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single xacc : Public
+    Single yacc : Public
+    Single zacc : Public
+    Single xgyro : Public
+    Single ygyro : Public
+    Single zgyro : Public
+    Single xmag : Public
+    Single ymag : Public
+    Single zmag : Public
+    Single abs_pressure : Public
+    Single diff_pressure : Public
+    Single pressure_alt : Public
+    Single temperature : Public
+    UInt16 fields_updated : Public
+Struct MAVLink+mavlink_omnidirectional_flow_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single front_distance_m : Public
+    Int16[] left : Public, HasFieldMarshal
+    Int16[] right : Public, HasFieldMarshal
+    Byte sensor_id : Public
+    Byte quality : Public
+Struct MAVLink+mavlink_hil_sensor_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single xacc : Public
+    Single yacc : Public
+    Single zacc : Public
+    Single xgyro : Public
+    Single ygyro : Public
+    Single zgyro : Public
+    Single xmag : Public
+    Single ymag : Public
+    Single zmag : Public
+    Single abs_pressure : Public
+    Single diff_pressure : Public
+    Single pressure_alt : Public
+    Single temperature : Public
+    UInt32 fields_updated : Public
+Struct MAVLink+mavlink_sim_state_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Single q1 : Public
+    Single q2 : Public
+    Single q3 : Public
+    Single q4 : Public
+    Single roll : Public
+    Single pitch : Public
+    Single yaw : Public
+    Single xacc : Public
+    Single yacc : Public
+    Single zacc : Public
+    Single xgyro : Public
+    Single ygyro : Public
+    Single zgyro : Public
+    Single lat : Public
+    Single lon : Public
+    Single alt : Public
+    Single std_dev_horz : Public
+    Single std_dev_vert : Public
+    Single vn : Public
+    Single ve : Public
+    Single vd : Public
+Struct MAVLink+mavlink_radio_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 rxerrors : Public
+    UInt16 fixed : Public
+    Byte rssi : Public
+    Byte remrssi : Public
+    Byte txbuf : Public
+    Byte noise : Public
+    Byte remnoise : Public
+Struct MAVLink+mavlink_file_transfer_protocol_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_network : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte[] payload : Public, HasFieldMarshal
+Struct MAVLink+mavlink_hil_gps_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    UInt16 eph : Public
+    UInt16 epv : Public
+    UInt16 vel : Public
+    Int16 vn : Public
+    Int16 ve : Public
+    Int16 vd : Public
+    UInt16 cog : Public
+    Byte fix_type : Public
+    Byte satellites_visible : Public
+Struct MAVLink+mavlink_hil_optical_flow_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single flow_comp_m_x : Public
+    Single flow_comp_m_y : Public
+    Single ground_distance : Public
+    Int16 flow_x : Public
+    Int16 flow_y : Public
+    Byte sensor_id : Public
+    Byte quality : Public
+Struct MAVLink+mavlink_hil_state_quaternion_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single attitude_quaternion : Public, HasFieldMarshal
+    Single rollspeed : Public
+    Single pitchspeed : Public
+    Single yawspeed : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    Int16 vx : Public
+    Int16 vy : Public
+    Int16 vz : Public
+    UInt16 ind_airspeed : Public
+    UInt16 true_airspeed : Public
+    Int16 xacc : Public
+    Int16 yacc : Public
+    Int16 zacc : Public
+Struct MAVLink+mavlink_scaled_imu2_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int16 xacc : Public
+    Int16 yacc : Public
+    Int16 zacc : Public
+    Int16 xgyro : Public
+    Int16 ygyro : Public
+    Int16 zgyro : Public
+    Int16 xmag : Public
+    Int16 ymag : Public
+    Int16 zmag : Public
+Struct MAVLink+mavlink_log_request_list_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 start : Public
+    UInt16 end : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_log_entry_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_utc : Public
+    UInt32 size : Public
+    UInt16 id : Public
+    UInt16 num_logs : Public
+    UInt16 last_log_num : Public
+Struct MAVLink+mavlink_log_request_data_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 ofs : Public
+    UInt32 count : Public
+    UInt16 id : Public
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_log_data_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 ofs : Public
+    UInt16 id : Public
+    Byte count : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_log_erase_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_log_request_end_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+Struct MAVLink+mavlink_gps_inject_data_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte len : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_gps2_raw_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    Int32 alt : Public
+    UInt32 dgps_age : Public
+    UInt16 eph : Public
+    UInt16 epv : Public
+    UInt16 vel : Public
+    UInt16 cog : Public
+    Byte fix_type : Public
+    Byte satellites_visible : Public
+    Byte dgps_numch : Public
+Struct MAVLink+mavlink_power_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 Vcc : Public
+    UInt16 Vservo : Public
+    UInt16 flags : Public
+Struct MAVLink+mavlink_serial_control_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 baudrate : Public
+    UInt16 timeout : Public
+    Byte device : Public
+    Byte flags : Public
+    Byte count : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_gps_rtk_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_last_baseline_ms : Public
+    UInt32 tow : Public
+    Int32 baseline_a_mm : Public
+    Int32 baseline_b_mm : Public
+    Int32 baseline_c_mm : Public
+    UInt32 accuracy : Public
+    Int32 iar_num_hypotheses : Public
+    UInt16 wn : Public
+    Byte rtk_receiver_id : Public
+    Byte rtk_health : Public
+    Byte rtk_rate : Public
+    Byte nsats : Public
+    Byte baseline_coords_type : Public
+Struct MAVLink+mavlink_gps2_rtk_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_last_baseline_ms : Public
+    UInt32 tow : Public
+    Int32 baseline_a_mm : Public
+    Int32 baseline_b_mm : Public
+    Int32 baseline_c_mm : Public
+    UInt32 accuracy : Public
+    Int32 iar_num_hypotheses : Public
+    UInt16 wn : Public
+    Byte rtk_receiver_id : Public
+    Byte rtk_health : Public
+    Byte rtk_rate : Public
+    Byte nsats : Public
+    Byte baseline_coords_type : Public
+Struct MAVLink+mavlink_data_transmission_handshake_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 size : Public
+    UInt16 width : Public
+    UInt16 height : Public
+    UInt16 packets : Public
+    Byte type : Public
+    Byte payload : Public
+    Byte jpg_quality : Public
+Struct MAVLink+mavlink_encapsulated_data_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 seqnr : Public
+    Byte[] data : Public, HasFieldMarshal
+Struct MAVLink+mavlink_distance_sensor_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    UInt16 min_distance : Public
+    UInt16 max_distance : Public
+    UInt16 current_distance : Public
+    Byte type : Public
+    Byte id : Public
+    Byte orientation : Public
+    Byte covariance : Public
+Struct MAVLink+mavlink_terrain_request_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 mask : Public
+    Int32 lat : Public
+    Int32 lon : Public
+    UInt16 grid_spacing : Public
+Struct MAVLink+mavlink_terrain_data_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 lat : Public
+    Int32 lon : Public
+    UInt16 grid_spacing : Public
+    Int16[] data : Public, HasFieldMarshal
+    Byte gridbit : Public
+Struct MAVLink+mavlink_terrain_check_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 lat : Public
+    Int32 lon : Public
+Struct MAVLink+mavlink_terrain_report_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 lat : Public
+    Int32 lon : Public
+    Single terrain_height : Public
+    Single current_height : Public
+    UInt16 spacing : Public
+    UInt16 pending : Public
+    UInt16 loaded : Public
+Struct MAVLink+mavlink_battery_status_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 current_consumed : Public
+    Int32 energy_consumed : Public
+    Int16 temperature : Public
+    UInt16[] voltages : Public, HasFieldMarshal
+    Int16 current_battery : Public
+    Byte id : Public
+    Byte battery_function : Public
+    Byte type : Public
+    Byte battery_remaining : Public
+Struct MAVLink+mavlink_autopilot_version_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 capabilities : Public
+    UInt32 version : Public
+    Byte[] custom_version : Public, HasFieldMarshal
+Struct MAVLink+mavlink_v2_extension_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 message_type : Public
+    Byte target_network : Public
+    Byte target_system : Public
+    Byte target_component : Public
+    Byte[] payload : Public, HasFieldMarshal
+Struct MAVLink+mavlink_memory_vect_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 address : Public
+    Byte ver : Public
+    Byte type : Public
+    Byte[] value : Public, HasFieldMarshal
+Struct MAVLink+mavlink_debug_vect_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt64 time_usec : Public
+    Single x : Public
+    Single y : Public
+    Single z : Public
+    Byte[] name : Public, HasFieldMarshal
+Struct MAVLink+mavlink_named_value_float_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single value : Public
+    Byte[] name : Public, HasFieldMarshal
+Struct MAVLink+mavlink_named_value_int_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Int32 value : Public
+    Byte[] name : Public, HasFieldMarshal
+Struct MAVLink+mavlink_statustext_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte severity : Public
+    Byte[] text : Public, HasFieldMarshal
+Struct MAVLink+mavlink_debug_t: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 time_boot_ms : Public
+    Single value : Public
+    Byte ind : Public
+Class MAVLink+MavlinkParse: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 packetcount : Public, Static
+  Methods:
+    GenerateMAVLinkPacket(Byte, Object): PrivateScope, Public, HideBySig
+    GenerateMAVLinkPacket(MAVLINK_MSG_ID, Object): PrivateScope, Public, HideBySig
+Class MavlinkUtil: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ByteArrayToStructure(Byte[], Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ByteArrayToStructureBigEndian(Byte[], Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ByteArrayToStructure(Byte[], Object&, Int32): PrivateScope, Public, Static, HideBySig
+    ByteArrayToStructureEndian(Byte[], Object&, Int32): PrivateScope, Public, Static, HideBySig
+    StructureToByteArray(Object): PrivateScope, Public, Static, HideBySig
+    StructureToByteArrayBigEndian(Object[]): PrivateScope, Public, Static, HideBySig

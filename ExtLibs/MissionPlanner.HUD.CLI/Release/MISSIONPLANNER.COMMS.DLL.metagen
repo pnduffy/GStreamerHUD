@@ -1,0 +1,306 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly MissionPlanner.Comms, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a: 
+	hash=None, flags=None
+Assembly MissionPlanner.Controls, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MissionPlanner.Comms.SettingsOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, String, Boolean(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(String, String, Boolean, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Comms.CommsBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Events:
+    MissionPlanner.Comms.SettingsOption Settings: 
+  Methods:
+    add_Settings(SettingsOption): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_Settings(SettingsOption): PrivateScope, Public, Static, HideBySig, SpecialName
+Interface MissionPlanner.Comms.ICommsSerial: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.IO.Stream BaseStream 'get ' : 
+    Int32 BaudRate 'get set' : 
+    Int32 BytesToRead 'get ' : 
+    Int32 BytesToWrite 'get ' : 
+    Int32 DataBits 'get set' : 
+    Boolean DtrEnable 'get set' : 
+    Boolean IsOpen 'get ' : 
+    System.IO.Ports.Parity Parity 'get set' : 
+    System.String PortName 'get set' : 
+    Int32 ReadBufferSize 'get set' : 
+    Int32 ReadTimeout 'get set' : 
+    Boolean RtsEnable 'get set' : 
+    System.IO.Ports.StopBits StopBits 'get set' : 
+    Int32 WriteBufferSize 'get set' : 
+    Int32 WriteTimeout 'get set' : 
+  Methods:
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DiscardInBuffer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Open(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Read(Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReadByte(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReadChar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReadExisting(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReadLine(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(Byte[], Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteLine(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    toggleDTR(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_BaseStream(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BaudRate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BaudRate(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BytesToRead(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BytesToWrite(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataBits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataBits(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DtrEnable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DtrEnable(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsOpen(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Parity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Parity(Parity): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PortName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PortName(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReadBufferSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReadBufferSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReadTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReadTimeout(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RtsEnable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RtsEnable(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StopBits(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StopBits(StopBits): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_WriteBufferSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_WriteBufferSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_WriteTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_WriteTimeout(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class MissionPlanner.Comms.CommsFile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Comms.CommsBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Comms.ICommsSerial
+  Properties:
+    Int32 bps  'get set' : 
+    System.IO.Stream BaseStream 'get set' : 
+    Int32 BaudRate 'get set' : 
+    Int32 BytesToRead 'get ' : 
+    Int32 BytesToWrite 'get set' : 
+    Int32 DataBits 'get set' : 
+    Boolean DtrEnable 'get set' : 
+    Boolean IsOpen 'get ' : 
+    System.IO.Ports.Parity Parity 'get set' : 
+    System.String PortName 'get set' : 
+    Int32 ReadBufferSize 'get set' : 
+    Int32 ReadTimeout 'get set' : 
+    Boolean RtsEnable 'get set' : 
+    System.IO.Ports.StopBits StopBits 'get set' : 
+    Int32 WriteBufferSize 'get set' : 
+    Int32 WriteTimeout 'get set' : 
+  Methods:
+    Close(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DiscardInBuffer(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_bps(): PrivateScope, Public, HideBySig, SpecialName
+    set_bps(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Open(String): PrivateScope, Public, HideBySig
+    Open(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadByte(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadChar(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadExisting(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadLine(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteLine(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    toggleDTR(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_BaseStream(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaudRate(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BaudRate(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToRead(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToWrite(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BytesToWrite(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_DataBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataBits(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DtrEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DtrEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsOpen(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Parity(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Parity(Parity): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PortName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PortName(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReadBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReadTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RtsEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RtsEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StopBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StopBits(StopBits): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WriteBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WriteTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class MissionPlanner.Comms.SerialPort: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.IO.Ports.SerialPort
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Comms.ICommsSerial
+  Properties:
+    Boolean DtrEnable 'get set' : 
+    Boolean RtsEnable 'get set' : 
+  Methods:
+    get_DtrEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DtrEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RtsEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RtsEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Open(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    toggleDTR(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPortNames(): PrivateScope, Public, Static, HideBySig
+    GetNiceName(String): PrivateScope, Public, Static, HideBySig
+Class MissionPlanner.Comms.SerialPortFixer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Execute(String): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Comms.TcpSerial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Comms.CommsBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Comms.ICommsSerial
+    System.IDisposable
+  Fields:
+    System.Net.Sockets.TcpClient client : Public
+  Properties:
+    Int32 WriteBufferSize 'get set' : 
+    Int32 WriteTimeout 'get set' : 
+    Boolean RtsEnable 'get set' : 
+    System.IO.Stream BaseStream 'get ' : 
+    System.String Port 'get set' : 
+    Int32 ReadTimeout 'get set' : 
+    Int32 ReadBufferSize 'get set' : 
+    Int32 BaudRate 'get set' : 
+    System.IO.Ports.StopBits StopBits 'get set' : 
+    System.IO.Ports.Parity Parity 'get set' : 
+    Int32 DataBits 'get set' : 
+    System.String PortName 'get set' : 
+    Int32 BytesToRead 'get ' : 
+    Int32 BytesToWrite 'get ' : 
+    Boolean IsOpen 'get ' : 
+    Boolean DtrEnable 'get set' : 
+  Methods:
+    get_WriteBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WriteTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RtsEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RtsEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaseStream(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    toggleDTR(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_Port(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReadBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaudRate(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BaudRate(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StopBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StopBits(StopBits): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Parity(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Parity(Parity): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataBits(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PortName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PortName(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToRead(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToWrite(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsOpen(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DtrEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DtrEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Open(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadByte(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadChar(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadExisting(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteLine(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DiscardInBuffer(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadLine(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Comms.UdpSerial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Comms.CommsBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Comms.ICommsSerial
+    System.IDisposable
+  Properties:
+    Int32 WriteBufferSize 'get set' : 
+    Int32 WriteTimeout 'get set' : 
+    Boolean RtsEnable 'get set' : 
+    System.IO.Stream BaseStream 'get ' : 
+    System.String Port 'get set' : 
+    Int32 ReadTimeout 'get set' : 
+    Int32 ReadBufferSize 'get set' : 
+    Int32 BaudRate 'get set' : 
+    System.IO.Ports.StopBits StopBits 'get set' : 
+    System.IO.Ports.Parity Parity 'get set' : 
+    Int32 DataBits 'get set' : 
+    System.String PortName 'get set' : 
+    Int32 BytesToRead 'get ' : 
+    Int32 BytesToWrite 'get ' : 
+    Boolean IsOpen 'get ' : 
+    Boolean DtrEnable 'get set' : 
+  Methods:
+    get_WriteBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_WriteTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_WriteTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RtsEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RtsEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaseStream(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    toggleDTR(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_Port(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadTimeout(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadTimeout(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReadBufferSize(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadBufferSize(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BaudRate(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BaudRate(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StopBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StopBits(StopBits): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Parity(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Parity(Parity): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataBits(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataBits(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PortName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PortName(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToRead(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BytesToWrite(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsOpen(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DtrEnable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DtrEnable(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Open(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadByte(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadChar(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadExisting(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    WriteLine(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(Byte[], Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    DiscardInBuffer(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ReadLine(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask

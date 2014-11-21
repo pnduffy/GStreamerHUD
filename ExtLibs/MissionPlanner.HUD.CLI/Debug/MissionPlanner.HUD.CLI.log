@@ -1,0 +1,37 @@
+﻿Build started 11/1/2014 11:18:54 PM.
+     1>Project "C:\Users\papa\MissionPlanner\ExtLibs\MissionPlanner.HUD.CLI\MissionPlanner.HUD.CLI.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\MissionPlanner.HUD.CLI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManagedIncrementalBuildPostProcessDependencyGraph:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'MissionPlanner, Version=1.1.5395.42120, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'MissionPlanner.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\Debug\plugins\MissionPlanner.HUD.CLI.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\bin\Debug\plugins\ QtGStreamerHUD.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MissionPlanner.HUD.CLI.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\papa\MissionPlanner\bin\Debug\plugins\MissionPlanner.HUD.CLI.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\MissionPlanner.HUD.CLI.obj
+         Debug\Stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         MissionPlanner.HUD.CLI.vcxproj -> C:\Users\papa\MissionPlanner\ExtLibs\MissionPlanner.HUD.CLI\..\..\bin\Debug\plugins\MissionPlanner.HUD.CLI.dll
+       MetaGen:
+         To improve incremental build performance for managed components, please make sure that the 'VC++ Directories->Reference Directories' points to all the paths which contain the referenced managed assemblies.
+         Could not load file or assembly 'MissionPlanner.HUD.CLI, Version=1.0.5418.40168, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\bin\Debug\plugins\MissionPlanner.HUD.CLI.dll;#2" /manifest Debug\MissionPlanner.HUD.CLI.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\MissionPlanner.HUD.CLI.unsuccessfulbuild".
+         Touching "Debug\MissionPlanner.HUD.CLI.lastbuildstate".
+     1>Done Building Project "C:\Users\papa\MissionPlanner\ExtLibs\MissionPlanner.HUD.CLI\MissionPlanner.HUD.CLI.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.89

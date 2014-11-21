@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MissionPlanner.HUD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PipelineString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">udpsrc port=%d ! application/x-rtp,encoding-name=H264,payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink</Value>
+    </Setting>
+    <Setting Name="PipelineStringRecord" Type="System.String" Scope="User">
+      <Value Profile="(Default)">udpsrc port=%d  buffer-size=60000 ! application/x-rtp,encoding-name=H264,payload=96 ! rtph264depay ! h264parse ! tee name=record ! queue ! avdec_h264 ! video/x-raw, format=I420 ! d3dvideosink sync=false record. ! queue ! mp4mux ! filesink location = %s</Value>
+    </Setting>
+    <Setting Name="UDPPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

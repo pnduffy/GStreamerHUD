@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B91D793A-B0C6-42AD-80C4-DB430DC0D6A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QtGstreamerHUD</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Debug\plugins\</OutDir>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\Release\plugins\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QTGSTREAMERHUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\qt-gstreamer-1.2.0\src;C:\Program Files\boost\boost_1_43_0;C:\Qt\5.3\msvc2010_opengl\include;C:\Qt\5.3\msvc2010_opengl\include\QtGui;C:\Qt\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;C:\Qt\5.3\msvc2010_opengl\include\QtCore;C:\Qt\5.3\msvc2010_opengl\include\QtWidgets;.\mavlink\include\mavlink\v1.0\ardupilotmega;.\lib\msinttypes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>c:\qt-gstreamer-1.2.0\build\src\QGst\Debug\Qt5GStreamerUi-1.0.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Cored.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Guid.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Widgetsd.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Quickd.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5QuickWidgetsd.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Qmld.lib;c:\qt-gstreamer-1.2.0\build\src\QGst\Debug\Qt5GStreamer-1.0.lib;c:\qt-gstreamer-1.2.0\build\src\QGlib\Debug\Qt5GLib-2.0.lib;C:\qt-gstreamer-1.2.0\build\src\QGst\Debug\Qt5GStreamerQuick-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>setlocal
+cd C:\Users\papa\MissionPlanner\QtGstreamerHUD
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe mediaapp.h -o moc_mediaapp.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe player.h -o moc_player.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe GStreamerPlayer.h -o moc_GStreamerPlayer.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe PrimaryFlightDisplayQML.h -o moc_PrimaryFlightDisplayQML.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe UASInterface.h -o moc_UASInterface.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe LinkInterface.h -o moc_LinkInterface.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QtGstreamerHUD.h -o moc_QtGstreamerHUD.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QCurrentState.h -o moc_QCurrentState.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe HUDApplication.h -o moc_HUDApplication.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QTGSTREAMERHUD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>c:\qt-gstreamer-1.2.0\src;C:\Program Files\boost\boost_1_43_0;C:\Qt\5.3\msvc2010_opengl\include;C:\Qt\5.3\msvc2010_opengl\include\QtGui;C:\Qt\5.3\msvc2010_opengl\mkspecs\win32-msvc2010;C:\Qt\5.3\msvc2010_opengl\include\QtCore;C:\Qt\5.3\msvc2010_opengl\include\QtWidgets;.\mavlink\include\mavlink\v1.0\ardupilotmega;.\lib\msinttypes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalDependencies>c:\qt-gstreamer-1.2.0\build\src\QGst\Release\Qt5GStreamerUi-1.0.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Core.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Gui.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Widgets.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Quick.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5QuickWidgets.lib;C:\Qt\5.3\msvc2010_opengl\lib\Qt5Qml.lib;c:\qt-gstreamer-1.2.0\build\src\QGst\Release\Qt5GStreamer-1.0.lib;c:\qt-gstreamer-1.2.0\build\src\QGlib\Release\Qt5GLib-2.0.lib;C:\qt-gstreamer-1.2.0\build\src\QGst\Release\Qt5GStreamerQuick-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>setlocal
+cd C:\Users\papa\MissionPlanner\QtGstreamerHUD
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe mediaapp.h -o moc_mediaapp.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe player.h -o moc_player.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe GStreamerPlayer.h -o moc_GStreamerPlayer.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe PrimaryFlightDisplayQML.h -o moc_PrimaryFlightDisplayQML.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe UASInterface.h -o moc_UASInterface.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe LinkInterface.h -o moc_LinkInterface.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QtGstreamerHUD.h -o moc_QtGstreamerHUD.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QCurrentState.h -o moc_QCurrentState.cpp
+C:\Qt\5.3\msvc2010_opengl\bin\moc.exe HUDApplication.h -o moc_HUDApplication.cpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="qml\ApmToolBar.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\AltitudeIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\Button.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\CompassIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\DigitalDisplay.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\HeartbeatDisplay.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\InformationOverlayIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\ModeDisplay.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\PitchIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\RollPitchIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\RollPitchIndicatorWithVideo.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\SpeedIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\StatusDisplay.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\StatusMessageIndicator.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\components\TextButton.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\HudQML.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\PrimaryFlightDisplayQML.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\PrimaryFlightDisplayWithVideoQML.qml">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\quick1\qmldir" />
+    <None Include="qml\quick1\QtGStreamer\qmldir" />
+    <None Include="qml\quick1\QtGStreamer\QtGStreamerQuick1.dll" />
+    <None Include="qml\quick2\qmldir" />
+    <None Include="qml\quick2\QtGStreamer\qmldir">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\quick2\QtGStreamer\QtGStreamerQuick2.dll">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\primaryFlightDisplay\pause.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\primaryFlightDisplay\play.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\primaryFlightDisplay\stop.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\artGroundSky.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\compass.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\compassIndicator.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\crossHair.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\rollGraticule.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\resources\components\rollPitchIndicator\rollPointer.svg">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="qml\Storage.js">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CCurrentState.h" />
+    <ClInclude Include="HUDApplication.h" />
+    <ClInclude Include="QCurrentState.h" />
+    <ClInclude Include="GStreamerPlayer.h" />
+    <ClInclude Include="LinkInterface.h" />
+    <ClInclude Include="mediaapp.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="PrimaryFlightDisplayQML.h" />
+    <ClInclude Include="ProtocolInterface.h" />
+    <ClInclude Include="QtGStreamerHUD.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UASInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CCurrentState.cpp" />
+    <ClCompile Include="HUDApplicaton.cpp" />
+    <ClCompile Include="QCurrentState.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GStreamerPlayer.cpp" />
+    <ClCompile Include="LinkInterface.cpp" />
+    <ClCompile Include="mediaapp.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="PrimaryFlightDisplayQML.cpp" />
+    <ClCompile Include="QtGstreamerHUD.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UASInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="qml\resources\apmplanner\toolbar\connect.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\disconnect.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\donate.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\flightdata.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\flightplanner.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\hardwareconfig.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\helpwizard.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\light_initialsetup_icon.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\light_tuningconfig_icon.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\simulation.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\softwareconfig.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\terminal.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\background.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\background_old.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\needle.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\needle_shadow.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\overlay.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\pitchGraticule.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\quit.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

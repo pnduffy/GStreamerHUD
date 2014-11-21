@@ -1,0 +1,504 @@
+  GeoUtility.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+  GeoUtility.Resources.earthpointer.ico - Embedded, ContainedInManifestFile, 
+  GeoUtility.Resources.global.ico - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly GeoUtility, Version=3.1.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class GeoUtility.GeoSystem.Base.BaseSystem: AutoLayout, AnsiClass, Class, Public, Abstract
+Class GeoUtility.GeoSystem.MapService: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.BaseSystem
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.Geographic): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.Geographic, MapServer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.Geographic, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.Geographic, Int32, MapServer): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(MapServiceTileBase): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[GeoUtility.GeoSystem.MapService]
+  Properties:
+    GeoUtility.GeoSystem.Geographic Geo 'get set' : 
+    Int32 Zoom 'get set' : 
+    MapServer MapServer 'get set' : 
+    Boolean Center 'get set' : 
+    TileInfo TileInfo 'get ' : 
+    MapServiceTileBase Tile 'get set' : 
+    Images Images 'get ' : 
+  Methods:
+    get_Geo(): PrivateScope, Public, HideBySig, SpecialName
+    set_Geo(Geographic): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MapServer(): PrivateScope, Public, HideBySig, SpecialName
+    set_MapServer(MapServer): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    set_Center(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_TileInfo(): PrivateScope, Public, HideBySig, SpecialName
+    get_Tile(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tile(MapServiceTileBase): PrivateScope, Public, HideBySig, SpecialName
+    get_Images(): PrivateScope, Public, HideBySig, SpecialName
+    PixelToGeographic(Int32, Int32): PrivateScope, Public, HideBySig
+    PixelToGeographic2(Int32, Int32): PrivateScope, Public, HideBySig
+    CoordsOnSameTile(Geographic): PrivateScope, Public, HideBySig
+    CalculateCommonTile(Geographic, MapServer): PrivateScope, Public, HideBySig
+    CalculateCommonTile(Geographic): PrivateScope, Public, HideBySig
+    Move(MapDirection, Int32, Boolean): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+    ToLongString(): PrivateScope, Public, HideBySig
+    op_Explicit(MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConvertFrom(T): PrivateScope, Public, HideBySig
+    ConvertTo(): PrivateScope, Public, HideBySig
+    MemberwiseClone(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(MapService): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Equality(MapService, MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(MapService, MapService): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GeoUtility.GeoSystem.MapService+Helper: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GeoUtility.GeoSystem.MapService+Helper+Images: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.MapService): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cached 'get set' : 
+    Int32 CacheSize 'get set' : 
+  Methods:
+    get_Cached(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cached(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CacheSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_CacheSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Load(): PrivateScope, Public, HideBySig
+    Load(Int32, Boolean): PrivateScope, Public, HideBySig
+    Load(Boolean): PrivateScope, Public, HideBySig
+    Load(Boolean, Int32, Boolean): PrivateScope, Public, HideBySig
+    Load(MapServiceTileBase, Boolean): PrivateScope, Public, HideBySig
+    Merge(Image[,]): PrivateScope, Public, HideBySig
+    Merge(Image[,], Rectangle): PrivateScope, Public, HideBySig
+    Area(MapDirection, Boolean): PrivateScope, Public, HideBySig
+    Area(MapDirection, Boolean, GeoPoint&(Out)): PrivateScope, Public, HideBySig
+Class GeoUtility.GeoSystem.MapService+Helper+Images+Cache: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    Boolean Enabled 'get set' : 
+    Int32 Size 'get set' : 
+    Int32 Count 'get ' : 
+    KeyCollection Maps 'get ' : 
+    ValueCollection Images 'get ' : 
+    CacheEqualityMode EqualityMode 'get set' : 
+  Methods:
+    get_Enabled(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Size(Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Maps(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Images(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_EqualityMode(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_EqualityMode(CacheEqualityMode): PrivateScope, Public, Static, HideBySig, SpecialName
+    Shrink(Int32): PrivateScope, Public, Static, HideBySig
+    Remove(MapService): PrivateScope, Public, Static, HideBySig
+    GetImage(MapService): PrivateScope, Public, Static, HideBySig
+Class GeoUtility.GeoSystem.MapService+Helper+Images+CacheItem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GeoUtility.GeoSystem.MapService, System.Drawing.Image): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Image SatImage 'get set' : 
+    GeoUtility.GeoSystem.MapService Map 'get set' : 
+  Methods:
+    get_SatImage(): PrivateScope, Public, HideBySig, SpecialName
+    set_SatImage(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_Map(): PrivateScope, Public, HideBySig, SpecialName
+    set_Map(MapService): PrivateScope, Public, HideBySig, SpecialName
+Struct GeoUtility.GeoSystem.MapService+Helper+Images+CacheEqualityMode: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CacheEqualityMode Image = 0 : Public, Static, Literal, HasDefault
+    CacheEqualityMode MapService = 1 : Public, Static, Literal, HasDefault
+Class GeoUtility.GeoSystem.MapService+Info: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceTileBase: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, BeforeFieldInit
+  Properties:
+    System.String URL 'get ' : 
+  Methods:
+    get_URL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceInternalMapTile: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :GeoUtility.GeoSystem.MapService+Info+MapServiceTileBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Key 'get set' : 
+    System.String URL 'get ' : 
+  Methods:
+    get_Key(): PrivateScope, Public, HideBySig, SpecialName
+    set_Key(String): PrivateScope, Public, HideBySig, SpecialName
+    get_URL(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceGoogleMapsTile: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :GeoUtility.GeoSystem.MapService+Info+MapServiceTileBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+    Int32 Zoom 'get set' : 
+    System.String URL 'get ' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_URL(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceVirtualEarthMapsTile: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :GeoUtility.GeoSystem.MapService+Info+MapServiceTileBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Key 'get set' : 
+    System.String URL 'get ' : 
+  Methods:
+    get_Key(): PrivateScope, Public, HideBySig, SpecialName
+    set_Key(String): PrivateScope, Public, HideBySig, SpecialName
+    get_URL(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceYahooMapsTile: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :GeoUtility.GeoSystem.MapService+Info+MapServiceTileBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+    Int32 Zoom 'get set' : 
+    System.String URL 'get ' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_URL(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GeoUtility.GeoSystem.MapService+Info+TileInfo: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GeoUtility.GeoSystem.Helper.GeoRect Dimension 'get set' : 
+    GeoUtility.GeoSystem.Helper.GeoPoint GeoPosition 'get set' : 
+    MapServiceInternalMapTile InternalMap 'get set' : 
+    MapServiceGoogleMapsTile GoogleMaps 'get set' : 
+    MapServiceVirtualEarthMapsTile VirtualEarth 'get set' : 
+    MapServiceYahooMapsTile YahooMaps 'get set' : 
+    Int32 Zoom 'get set' : 
+    MapServiceURL URL 'get set' : 
+  Methods:
+    get_Dimension(): PrivateScope, Public, HideBySig, SpecialName
+    set_Dimension(GeoRect): PrivateScope, Public, HideBySig, SpecialName
+    get_GeoPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_GeoPosition(GeoPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_InternalMap(): PrivateScope, Public, HideBySig, SpecialName
+    set_InternalMap(MapServiceInternalMapTile): PrivateScope, Public, HideBySig, SpecialName
+    get_GoogleMaps(): PrivateScope, Public, HideBySig, SpecialName
+    set_GoogleMaps(MapServiceGoogleMapsTile): PrivateScope, Public, HideBySig, SpecialName
+    get_VirtualEarth(): PrivateScope, Public, HideBySig, SpecialName
+    set_VirtualEarth(MapServiceVirtualEarthMapsTile): PrivateScope, Public, HideBySig, SpecialName
+    get_YahooMaps(): PrivateScope, Public, HideBySig, SpecialName
+    set_YahooMaps(MapServiceYahooMapsTile): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_URL(): PrivateScope, Public, HideBySig, SpecialName
+    set_URL(MapServiceURL): PrivateScope, Public, HideBySig, SpecialName
+Class GeoUtility.GeoSystem.MapService+Info+MapServiceURL: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String GoogleMaps 'get set' : 
+    System.String VirtualEarth 'get set' : 
+    System.String YahooMaps 'get set' : 
+  Methods:
+    get_GoogleMaps(): PrivateScope, Public, HideBySig, SpecialName
+    set_GoogleMaps(String): PrivateScope, Public, HideBySig, SpecialName
+    get_VirtualEarth(): PrivateScope, Public, HideBySig, SpecialName
+    set_VirtualEarth(String): PrivateScope, Public, HideBySig, SpecialName
+    get_YahooMaps(): PrivateScope, Public, HideBySig, SpecialName
+    set_YahooMaps(String): PrivateScope, Public, HideBySig, SpecialName
+Struct GeoUtility.GeoSystem.MapService+Info+MapServer: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MapServer GoogleMaps = 0 : Public, Static, Literal, HasDefault
+    MapServer VirtualEarth = 1 : Public, Static, Literal, HasDefault
+    MapServer YahooMaps = 2 : Public, Static, Literal, HasDefault
+Struct GeoUtility.GeoSystem.MapService+Info+MapDirection: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MapDirection North = 0 : Public, Static, Literal, HasDefault
+    MapDirection Northeast = 1 : Public, Static, Literal, HasDefault
+    MapDirection East = 2 : Public, Static, Literal, HasDefault
+    MapDirection Southeast = 3 : Public, Static, Literal, HasDefault
+    MapDirection South = 4 : Public, Static, Literal, HasDefault
+    MapDirection Southwest = 5 : Public, Static, Literal, HasDefault
+    MapDirection West = 6 : Public, Static, Literal, HasDefault
+    MapDirection Northwest = 7 : Public, Static, Literal, HasDefault
+    MapDirection Center = 8 : Public, Static, Literal, HasDefault
+Class GeoUtility.GeoSystem.Base.Geocentric: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.BaseSystem
+  Properties:
+    Double East 'get set' : 
+    Double North 'get set' : 
+    Int32 Zone 'get set' : 
+    System.String Band 'get set' : 
+    System.String Zoneband 'get ' : 
+    System.String EastString 'get set' : 
+    System.String NorthString 'get set' : 
+    Int32 Precision 'get set' : 
+  Methods:
+    get_East(): PrivateScope, Public, HideBySig, SpecialName
+    set_East(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_North(): PrivateScope, Public, HideBySig, SpecialName
+    set_North(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Zone(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zone(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Band(): PrivateScope, Public, HideBySig, SpecialName
+    set_Band(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoneband(): PrivateScope, Public, HideBySig, SpecialName
+    get_EastString(): PrivateScope, Public, HideBySig, SpecialName
+    set_EastString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_NorthString(): PrivateScope, Public, HideBySig, SpecialName
+    set_NorthString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Precision(): PrivateScope, Public, HideBySig, SpecialName
+    set_Precision(Int32): PrivateScope, Public, HideBySig, SpecialName
+    ToLongString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GeoUtility.GeoSystem.Base.Geocentric+Hemisphere: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Hemisphere North = 0 : Public, Static, Literal, HasDefault
+    Hemisphere South = 1 : Public, Static, Literal, HasDefault
+Struct GeoUtility.GeoSystem.Base.Geocentric+Target: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Target All = 0 : Public, Static, Literal, HasDefault
+    Target East = 1 : Public, Static, Literal, HasDefault
+    Target North = 2 : Public, Static, Literal, HasDefault
+    Target Nothing = 3 : Public, Static, Literal, HasDefault
+Class GeoUtility.GeoSystem.GaussKrueger: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.BaseSystem
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double East 'get set' : 
+    Double North 'get set' : 
+    System.String EastString 'get ' : 
+    System.String NorthString 'get ' : 
+    Int32 Precision 'get set' : 
+    Boolean isEmpty 'get ' : 
+  Methods:
+    get_East(): PrivateScope, Public, HideBySig, SpecialName
+    set_East(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_North(): PrivateScope, Public, HideBySig, SpecialName
+    set_North(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_EastString(): PrivateScope, Public, HideBySig, SpecialName
+    get_NorthString(): PrivateScope, Public, HideBySig, SpecialName
+    get_Precision(): PrivateScope, Public, HideBySig, SpecialName
+    set_Precision(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_isEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    ValidRange(Geographic): PrivateScope, Public, Static, HideBySig
+    ValidRange(BaseSystem): PrivateScope, Public, Static, HideBySig
+    TryParse(String, String, GaussKrueger&(Out), String&(Out), Dictionary`2&(Out)): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+    ToShortString(): PrivateScope, Public, HideBySig
+    ToLongString(): PrivateScope, Public, HideBySig
+    op_Explicit(GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConvertFrom(T): PrivateScope, Public, HideBySig
+    ConvertTo(): PrivateScope, Public, HideBySig
+    MemberwiseClone(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(GaussKrueger, GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GaussKrueger, GaussKrueger): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GeoUtility.GeoSystem.Geographic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.BaseSystem
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, GeoUtility.GeoSystem.Helper.GeoDatum): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Longitude 'get set' : 
+    Double Latitude 'get set' : 
+    System.String LonString 'get ' : 
+    System.String LatString 'get ' : 
+    GeoUtility.GeoSystem.Helper.Sexagesimal LonSexagesimal 'get ' : 
+    GeoUtility.GeoSystem.Helper.Sexagesimal LatSexagesimal 'get ' : 
+    GeoUtility.GeoSystem.Helper.GeoDatum Datum 'get set' : 
+    Boolean isEmpty 'get ' : 
+  Methods:
+    get_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Longitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Latitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LonString(): PrivateScope, Public, HideBySig, SpecialName
+    get_LatString(): PrivateScope, Public, HideBySig, SpecialName
+    get_LonSexagesimal(): PrivateScope, Public, HideBySig, SpecialName
+    get_LatSexagesimal(): PrivateScope, Public, HideBySig, SpecialName
+    get_Datum(): PrivateScope, Public, HideBySig, SpecialName
+    get_isEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    TryParse(String, String, Geographic&(Out), String&(Out), Dictionary`2&(Out)): PrivateScope, Public, Static, HideBySig
+    SetDatum(GeoDatum): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+    ToLongString(): PrivateScope, Public, HideBySig
+    ToSexagesimalString(): PrivateScope, Public, HideBySig
+    ToHybridString(): PrivateScope, Public, HideBySig
+    op_Explicit(Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConvertFrom(T): PrivateScope, Public, HideBySig
+    ConvertTo(): PrivateScope, Public, HideBySig
+    MemberwiseClone(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(Geographic, Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Geographic, Geographic): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct GeoUtility.GeoSystem.Helper.GeoDatum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GeoUtility.GeoSystem.Helper.GeoDatum WGS84 = 0 : Public, Static, Literal, HasDefault
+    GeoUtility.GeoSystem.Helper.GeoDatum Potsdam = 1 : Public, Static, Literal, HasDefault
+Struct GeoUtility.GeoSystem.Helper.GeoPoint: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(GeoPoint, GeoPoint): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GeoPoint, GeoPoint): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct GeoUtility.GeoSystem.Helper.GeoRect: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Longitude 'get set' : 
+    Double Latitude 'get set' : 
+    Double Width 'get set' : 
+    Double Height 'get set' : 
+    Double LonCenter 'get set' : 
+    Double LatCenter 'get set' : 
+  Methods:
+    get_Longitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Longitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Latitude(): PrivateScope, Public, HideBySig, SpecialName
+    set_Latitude(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LonCenter(): PrivateScope, Public, HideBySig, SpecialName
+    set_LonCenter(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_LatCenter(): PrivateScope, Public, HideBySig, SpecialName
+    set_LatCenter(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(GeoRect, GeoRect): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GeoRect, GeoRect): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GeoUtility.GeoSystem.Helper.Sexagesimal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Degree 'get set' : 
+    Int32 Minutes 'get set' : 
+    Int32 Seconds 'get set' : 
+    Int32 Thirds 'get set' : 
+    Double Millisec 'get set' : 
+  Methods:
+    get_Degree(): PrivateScope, Public, HideBySig, SpecialName
+    set_Degree(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minutes(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minutes(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Seconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_Seconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Thirds(): PrivateScope, Public, HideBySig, SpecialName
+    set_Thirds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Millisec(): PrivateScope, Public, HideBySig, SpecialName
+    set_Millisec(Double): PrivateScope, Public, HideBySig, SpecialName
+    ToDecimal(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+Class GeoUtility.GeoSystem.MGRS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.Geocentric
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.String, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Grid 'get set' : 
+    Boolean isEmpty 'get ' : 
+  Methods:
+    get_Grid(): PrivateScope, Public, HideBySig, SpecialName
+    set_Grid(String): PrivateScope, Public, HideBySig, SpecialName
+    get_isEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    TryParse(String, MGRS&(Out), String&(Out)): PrivateScope, Public, Static, HideBySig
+    TryParse(String, String, String, String, String, MGRS&(Out), String&(Out), Dictionary`2&(Out)): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+    ToLongString(): PrivateScope, Public, Virtual, HideBySig
+    op_Explicit(MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConvertFrom(T): PrivateScope, Public, HideBySig
+    ConvertTo(): PrivateScope, Public, HideBySig
+    MemberwiseClone(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(MGRS, MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(MGRS, MGRS): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GeoUtility.GeoSystem.UTM: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoUtility.GeoSystem.Base.Geocentric
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Double, Double, Hemisphere): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isEmpty 'get ' : 
+  Methods:
+    get_isEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    TryParse(String, String, String, String, UTM&(Out), String&(Out), Dictionary`2&(Out)): PrivateScope, Public, Static, HideBySig
+    TryParse(String, UTM&(Out), String&(Out), Dictionary`2&(Out)): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, HideBySig
+    ToShortString(): PrivateScope, Public, HideBySig
+    ToFormatString(): PrivateScope, Public, HideBySig (Obsolete)
+    ToLongString(): PrivateScope, Public, Virtual, HideBySig
+    ToLongFormatString(): PrivateScope, Public, HideBySig
+    op_Explicit(UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+    ConvertFrom(T): PrivateScope, Public, HideBySig
+    ConvertTo(): PrivateScope, Public, HideBySig
+    MemberwiseClone(): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(UTM, UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(UTM, UTM): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GeoUtility.Conversion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Convert(S): PrivateScope, Public, HideBySig

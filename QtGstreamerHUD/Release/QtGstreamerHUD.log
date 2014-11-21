@@ -1,0 +1,43 @@
+﻿Build started 11/18/2014 9:35:39 PM.
+     1>Project "C:\Users\papa\MissionPlanner 2012\QtGstreamerHUD\QtGstreamerHUD.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\QtGstreamerHUD.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       PreBuildEvent:
+         setlocal
+         cd C:\Users\papa\MissionPlanner\QtGstreamerHUD
+         if %errorlevel% neq 0 goto :cmEnd
+         C:
+         if %errorlevel% neq 0 goto :cmEnd
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe mediaapp.h -o moc_mediaapp.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe player.h -o moc_player.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe GStreamerPlayer.h -o moc_GStreamerPlayer.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe PrimaryFlightDisplayQML.h -o moc_PrimaryFlightDisplayQML.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe UASInterface.h -o moc_UASInterface.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe LinkInterface.h -o moc_LinkInterface.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QtGstreamerHUD.h -o moc_QtGstreamerHUD.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe QCurrentState.h -o moc_QCurrentState.cpp
+         C:\Qt\5.3\msvc2010_opengl\bin\moc.exe HUDApplication.h -o moc_HUDApplication.cpp
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         QtGstreamerHUD.h(34): Note: No relevant classes found. No output generated.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         QtGstreamerHUD.vcxproj -> C:\Users\papa\MissionPlanner 2012\QtGstreamerHUD\..\bin\Release\plugins\QtGstreamerHUD.dll
+       FinalizeBuildStatus:
+         Deleting file "Release\QtGstreamerHUD.unsuccessfulbuild".
+         Touching "Release\QtGstreamerHUD.lastbuildstate".
+     1>Done Building Project "C:\Users\papa\MissionPlanner 2012\QtGstreamerHUD\QtGstreamerHUD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.35

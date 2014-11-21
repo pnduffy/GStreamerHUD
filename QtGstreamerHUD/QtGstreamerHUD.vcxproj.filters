@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="qml\components\AltitudeIndicator.qml" />
+    <None Include="qml\components\Button.qml" />
+    <None Include="qml\components\CompassIndicator.qml" />
+    <None Include="qml\components\DigitalDisplay.qml" />
+    <None Include="qml\components\HeartbeatDisplay.qml" />
+    <None Include="qml\components\InformationOverlayIndicator.qml" />
+    <None Include="qml\components\ModeDisplay.qml" />
+    <None Include="qml\components\PitchIndicator.qml" />
+    <None Include="qml\components\RollPitchIndicator.qml" />
+    <None Include="qml\components\RollPitchIndicatorWithVideo.qml" />
+    <None Include="qml\components\SpeedIndicator.qml" />
+    <None Include="qml\components\StatusDisplay.qml" />
+    <None Include="qml\components\StatusMessageIndicator.qml" />
+    <None Include="qml\components\TextButton.qml" />
+    <None Include="qml\quick2\qmldir" />
+    <None Include="qml\quick2\QtGStreamer\QtGStreamerQuick2.dll" />
+    <None Include="qml\quick2\QtGStreamer\qmldir" />
+    <None Include="qml\resources\components\primaryFlightDisplay\pause.svg" />
+    <None Include="qml\resources\components\primaryFlightDisplay\play.svg" />
+    <None Include="qml\resources\components\primaryFlightDisplay\stop.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\artGroundSky.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\compass.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\compassIndicator.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\crossHair.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\rollGraticule.svg" />
+    <None Include="qml\resources\components\rollPitchIndicator\rollPointer.svg" />
+    <None Include="qml\ApmToolBar.qml" />
+    <None Include="qml\HudQML.qml" />
+    <None Include="qml\PrimaryFlightDisplayQML.qml" />
+    <None Include="qml\PrimaryFlightDisplayWithVideoQML.qml" />
+    <None Include="qml\Storage.js" />
+    <None Include="qml\quick1\qmldir" />
+    <None Include="qml\quick1\QtGStreamer\qmldir" />
+    <None Include="qml\quick1\QtGStreamer\QtGStreamerQuick1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mediaapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QtGStreamerHUD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimaryFlightDisplayQML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UASInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GStreamerPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QCurrentState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CCurrentState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HUDApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtGstreamerHUD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mediaapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimaryFlightDisplayQML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GStreamerPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UASInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QCurrentState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCurrentState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HUDApplicaton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="qml\resources\apmplanner\toolbar\connect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\disconnect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\donate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\flightdata.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\flightplanner.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\hardwareconfig.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\helpwizard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\light_initialsetup_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\light_tuningconfig_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\simulation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\softwareconfig.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\apmplanner\toolbar\terminal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\background_old.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\needle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\needle_shadow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\overlay.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\pitchGraticule.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qml\resources\components\rollPitchIndicator\quit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2889 @@
+  GMap.NET.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class GMap.NET.CacheProviders.MemoryCache: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int32 Capacity 'get set' : 
+    Double Size 'get ' : 
+  Methods:
+    get_Capacity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Capacity(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    GetTileFromMemoryCache(RawTile): PrivateScope, Assembly, HideBySig
+    AddTileToMemoryCache(RawTile, Byte[]): PrivateScope, Assembly, HideBySig
+    RemoveOverload(): PrivateScope, Assembly, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.Internals.SocksHttpWebRequest: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Net.WebRequest
+  Properties:
+    System.Uri RequestUri 'get ' : 
+    System.Net.IWebProxy Proxy 'get set' : 
+    System.Net.WebHeaderCollection Headers 'get set' : 
+    Boolean RequestSubmitted 'get set' : 
+    System.String Method 'get set' : 
+    Int64 ContentLength 'get set' : 
+    System.String ContentType 'get set' : 
+    System.String RequestMessage 'get ' : 
+  Methods:
+    GetResponse(): PrivateScope, Public, Virtual, HideBySig
+    get_RequestUri(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Proxy(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Proxy(IWebProxy): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Headers(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Headers(WebHeaderCollection): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_RequestSubmitted(): PrivateScope, Public, HideBySig, SpecialName
+    get_Method(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Method(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ContentLength(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContentLength(Int64): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ContentType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContentType(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetRequestStream(): PrivateScope, Public, Virtual, HideBySig
+    Create(String): PrivateScope, Public, Static, HideBySig
+    Create(Uri): PrivateScope, Public, Static, HideBySig
+    get_RequestMessage(): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.Internals.SocksHttpWebResponse: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Net.WebResponse
+    Void .ctor(System.IO.MemoryStream, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int64 ContentLength 'get set' : 
+    System.String ContentType 'get set' : 
+    System.Net.WebHeaderCollection Headers 'get ' : 
+  Methods:
+    get_ContentLength(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContentLength(Int64): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ContentType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContentType(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetResponseStream(): PrivateScope, Public, Virtual, HideBySig
+    Close(): PrivateScope, Public, Virtual, HideBySig
+    get_Headers(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct GMap.NET.Internals.DrawTile: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[GMap.NET.Internals.DrawTile]
+    System.IComparable`1[GMap.NET.Internals.DrawTile]
+  Fields:
+    GMap.NET.GPoint PosXY : Public
+    GMap.NET.GPoint PosPixel : Public
+    Double DistanceSqr : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(DrawTile): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(DrawTile): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Org.Mentalis.Network.ProxySocket.Authentication.AuthMethod: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+    Void .ctor(System.Net.Sockets.Socket): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Authenticate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginAuthenticate(HandShakeComplete): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Org.Mentalis.Network.ProxySocket.Authentication.AuthNone: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Org.Mentalis.Network.ProxySocket.Authentication.AuthMethod
+    Void .ctor(System.Net.Sockets.Socket): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Authenticate(): PrivateScope, Public, Virtual, HideBySig
+    BeginAuthenticate(HandShakeComplete): PrivateScope, Public, Virtual, HideBySig
+Class Org.Mentalis.Network.ProxySocket.Authentication.AuthUserPass: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Org.Mentalis.Network.ProxySocket.Authentication.AuthMethod
+    Void .ctor(System.Net.Sockets.Socket, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Authenticate(): PrivateScope, Public, Virtual, HideBySig
+    BeginAuthenticate(HandShakeComplete): PrivateScope, Public, Virtual, HideBySig
+Class Org.Mentalis.Network.ProxySocket.IAsyncProxyResult: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IAsyncResult
+  Fields:
+    Boolean m_Completed : Assembly
+  Properties:
+    Boolean IsCompleted 'get ' : 
+    Boolean CompletedSynchronously 'get ' : 
+    System.Object AsyncState 'get ' : 
+    System.Threading.WaitHandle AsyncWaitHandle 'get ' : 
+  Methods:
+    Init(Object): PrivateScope, Assembly, HideBySig
+    Reset(): PrivateScope, Assembly, HideBySig
+    get_IsCompleted(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CompletedSynchronously(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AsyncState(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AsyncWaitHandle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Org.Mentalis.Network.ProxySocket.ProxyException: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Socks5ToString(Int32): PrivateScope, Public, Static, HideBySig
+Struct Org.Mentalis.Network.ProxySocket.ProxyTypes: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Org.Mentalis.Network.ProxySocket.ProxyTypes None = 0 : Public, Static, Literal, HasDefault
+    Org.Mentalis.Network.ProxySocket.ProxyTypes Socks4 = 1 : Public, Static, Literal, HasDefault
+    Org.Mentalis.Network.ProxySocket.ProxyTypes Socks5 = 2 : Public, Static, Literal, HasDefault
+Class Org.Mentalis.Network.ProxySocket.ProxySocket: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Net.Sockets.Socket
+    Void .ctor(System.Net.Sockets.AddressFamily, System.Net.Sockets.SocketType, System.Net.Sockets.ProtocolType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.Sockets.AddressFamily, System.Net.Sockets.SocketType, System.Net.Sockets.ProtocolType, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.Sockets.AddressFamily, System.Net.Sockets.SocketType, System.Net.Sockets.ProtocolType, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Net.IPEndPoint ProxyEndPoint 'get set' : 
+    Org.Mentalis.Network.ProxySocket.ProxyTypes ProxyType 'get set' : 
+    System.String ProxyUser 'get set' : 
+    System.String ProxyPass 'get set' : 
+  Methods:
+    Connect(EndPoint): PrivateScope, Public, HideBySig
+    Connect(String, Int32): PrivateScope, Public, HideBySig
+    BeginConnect(EndPoint, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    BeginConnect(String, Int32, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndConnect(IAsyncResult): PrivateScope, Public, HideBySig
+    BeginDns(String, HandShakeComplete): PrivateScope, Assembly, HideBySig
+    get_ProxyEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProxyEndPoint(IPEndPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_ProxyType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProxyType(ProxyTypes): PrivateScope, Public, HideBySig, SpecialName
+    get_ProxyUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProxyUser(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ProxyPass(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProxyPass(String): PrivateScope, Public, HideBySig, SpecialName
+Class Org.Mentalis.Network.ProxySocket.SocksHandler: AutoLayout, AnsiClass, Class, Abstract, BeforeFieldInit
+    Void .ctor(System.Net.Sockets.Socket, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Negotiate(String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Negotiate(IPEndPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginNegotiate(IPEndPoint, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    BeginNegotiate(String, Int32, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Org.Mentalis.Network.ProxySocket.Socks4Handler: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Org.Mentalis.Network.ProxySocket.SocksHandler
+    Void .ctor(System.Net.Sockets.Socket, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Negotiate(String, Int32): PrivateScope, Public, Virtual, HideBySig
+    Negotiate(IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+    BeginNegotiate(String, Int32, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+    BeginNegotiate(IPEndPoint, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+Class Org.Mentalis.Network.ProxySocket.Socks5Handler: AutoLayout, AnsiClass, Class, Sealed, BeforeFieldInit
+  :Org.Mentalis.Network.ProxySocket.SocksHandler
+    Void .ctor(System.Net.Sockets.Socket): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.Sockets.Socket, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.Sockets.Socket, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Negotiate(String, Int32): PrivateScope, Public, Virtual, HideBySig
+    Negotiate(IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+    BeginNegotiate(String, Int32, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+    BeginNegotiate(IPEndPoint, HandShakeComplete, IPEndPoint): PrivateScope, Public, Virtual, HideBySig
+Class Org.Mentalis.Network.ProxySocket.HandShakeComplete: AutoLayout, AnsiClass, Class, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Exception): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Exception, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.Internals.TileHttpHost: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Stop(): PrivateScope, Public, HideBySig
+    Start(Int32): PrivateScope, Public, HideBySig
+Class GMap.NET.MapProviders.GMapProvider: AutoLayout, AnsiClass, Class, Public, Abstract
+  Fields:
+    Int32 DbId : Public, InitOnly
+    System.Nullable`1[GMap.NET.RectLatLng] Area : Public
+    Int32 MinZoom : Public
+    System.Nullable`1[System.Int32] MaxZoom : Public
+    System.String RefererUrl : Public
+    System.String Copyright : Public
+    Boolean InvertedAxisY : Public
+    Boolean BypassCache : Public
+    System.Net.IWebProxy WebProxy : Public, Static
+    Boolean IsSocksProxy : Public, Static
+    System.Net.ICredentials Credential : Public, Static
+    System.String UserAgent : Public, Static
+    Int32 TimeoutMs : Public, Static
+    GMap.NET.PureImageProxy TileImageProxy : Assembly, Static
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+    Boolean IsInitialized 'get set' : 
+    System.String LanguageStr 'get ' : 
+    GMap.NET.LanguageType Language 'get set' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsInitialized(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsInitialized(Boolean): PrivateScope, Assembly, HideBySig, SpecialName
+    OnInitialized(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_LanguageStr(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Language(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Language(LanguageType): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Interface GMap.NET.RoutingProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetRoute(PointLatLng, PointLatLng, Boolean, Boolean, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRoute(String, String, Boolean, Boolean, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface GMap.NET.GeocodingProvider: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetPoints(String, List`1&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPoint(String, GeoCoderStatusCode&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPoints(Placemark, List`1&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPoint(Placemark, GeoCoderStatusCode&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPlacemarks(PointLatLng, List`1&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetPlacemark(PointLatLng, GeoCoderStatusCode&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GMap.NET.MapProviders.BingMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.RoutingProvider
+    GMap.NET.GeocodingProvider
+  Fields:
+    System.String Version : Public
+    System.String ClientKey : Public
+    Boolean TryCorrectVersion : Public
+    Boolean TryGetDefaultKey : Public
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    TileXYToQuadKey(Int64, Int64, Int32): PrivateScope, Assembly, HideBySig
+    QuadKeyToTileXY(String, Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Assembly, HideBySig
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    OnInitialized(): PrivateScope, Public, Virtual, HideBySig
+    GetRoute(PointLatLng, PointLatLng, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetRoute(String, String, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(String, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(String, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(Placemark, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(Placemark, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemarks(PointLatLng, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemark(PointLatLng, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapProviders.BingMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.BingMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.BingMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.BingSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.BingMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.BingSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.BingHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.BingMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.BingHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGISMapPlateCarreeProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGISMapMercatorProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_StreetMap_World_2D_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapPlateCarreeProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_StreetMap_World_2D_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_Imagery_World_2D_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapPlateCarreeProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_Imagery_World_2D_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_ShadedRelief_World_2D_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapPlateCarreeProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_ShadedRelief_World_2D_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_Topo_US_2D_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapPlateCarreeProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_Topo_US_2D_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_World_Physical_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapMercatorProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_World_Physical_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_World_Shaded_Relief_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapMercatorProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_World_Shaded_Relief_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_World_Street_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapMercatorProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_World_Street_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_World_Terrain_Base_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapMercatorProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_World_Terrain_Base_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.ArcGIS_World_Topo_MapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.ArcGISMapMercatorProviderBase
+  Fields:
+    GMap.NET.MapProviders.ArcGIS_World_Topo_MapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Interface GMap.NET.DirectionsProvider: AutoLayout, AnsiClass, Class, ClassSemanticsMask, Abstract
+  Methods:
+    GetDirections(GDirections&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDirections(GDirections&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDirections(DirectionsStatusCode&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDirections(DirectionsStatusCode&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDirections(GDirections&(Out), PointLatLng, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetDirections(GDirections&(Out), String, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GMap.NET.MapProviders.CloudMadeMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.RoutingProvider
+    GMap.NET.DirectionsProvider
+  Fields:
+    System.String ServerLetters : Public, InitOnly
+    System.String DoubleResolutionString : Public, InitOnly
+    Boolean DoubleResolution : Public
+    System.String Key : Public
+    Int32 StyleID : Public
+    System.String Version : Public
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetRoute(PointLatLng, PointLatLng, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetRoute(String, String, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(DirectionsStatusCode&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(DirectionsStatusCode&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), PointLatLng, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), String, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapProviders.CloudMadeMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CloudMadeMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CloudMadeMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.WikiMapiaMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetServerNum(GPoint): PrivateScope, Public, Static, HideBySig
+Class GMap.NET.MapProviders.WikiMapiaMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.WikiMapiaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.WikiMapiaMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechHistoryMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CzechMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CzechHistoryMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CzechMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CzechHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CzechMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CzechSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechTuristMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CzechMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CzechTuristMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.CzechMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.CzechMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.CzechMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.TurkeyMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.TurkeyMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.MapBenderWMSProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.MapBenderWMSProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.SpainMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.SpainMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LatviaMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LatviaMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LatviaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LatviaMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaHybridOldMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LithuaniaHybridOldMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class GMap.NET.MapProviders.LithuaniaHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LithuaniaHybridMapProvider Instance : Public, Static, InitOnly
+    System.String UrlFormat : Assembly, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaOrtoFotoOldMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LithuaniaOrtoFotoOldMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaOrtoFotoMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LithuaniaOrtoFotoMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.Lithuania3dMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.Lithuania3dMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.LithuaniaMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.LithuaniaMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.LithuaniaTOP50: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.LithuaniaTOP50 Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenStreetMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.RoutingProvider
+    GMap.NET.GeocodingProvider
+  Fields:
+    System.String ServerLetters : Public, InitOnly
+    Int32 MinExpectedRank : Public
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetRoute(PointLatLng, PointLatLng, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetRoute(String, String, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(String, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(String, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(Placemark, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(Placemark, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemarks(PointLatLng, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemark(PointLatLng, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapProviders.OpenStreet4UMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenStreet4UMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenStreetMapQuestSatteliteProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenStreetMapQuestSatteliteProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenStreetMapQuestHybridProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenStreetMapQuestHybridProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenStreetMapQuestProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenStreetMapQuestProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenCycleTransportMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenCycleTransportMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenCycleLandscapeMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenCycleLandscapeMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YandexMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    System.String Server : Public, InitOnly
+    System.String ServerRu : Public, InitOnly
+    System.String ServerCom : Public, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YandexHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YandexMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.YandexHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YandexSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YandexMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.YandexSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YandexMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YandexMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.YandexMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OviMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OviHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OviMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OviHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OviTerrainMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OviMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OviTerrainMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OviSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OviMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OviSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OviMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OviMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OviMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.NearMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetServerNum(GPoint, Int32): PrivateScope, Public, Static, HideBySig
+    GetSafeString(GPoint): PrivateScope, Public, HideBySig
+Class GMap.NET.MapProviders.NearHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.NearMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.NearHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.NearSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.NearMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.NearSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.NearMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.NearMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.NearMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.RoutingProvider
+    GMap.NET.GeocodingProvider
+    GMap.NET.DirectionsProvider
+  Fields:
+    System.String ServerAPIs : Public, InitOnly
+    System.String Server : Public, InitOnly
+    System.String ServerChina : Public, InitOnly
+    System.String ServerKorea : Public, InitOnly
+    System.String ServerKoreaKr : Public, InitOnly
+    System.String SecureWord : Public
+    Boolean TryCorrectVersion : Public
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    OnInitialized(): PrivateScope, Public, Virtual, HideBySig
+    GetSecureWords(GPoint, String&(Out), String&(Out)): PrivateScope, Assembly, HideBySig
+    GetRoute(PointLatLng, PointLatLng, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetRoute(String, String, Boolean, Boolean, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(String, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(String, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(Placemark, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(Placemark, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemarks(PointLatLng, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemark(PointLatLng, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(DirectionsStatusCode&(Out), String, String, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(DirectionsStatusCode&(Out), PointLatLng, PointLatLng, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), PointLatLng, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetDirections(GDirections&(Out), String, IEnumerable`1, Boolean, Boolean, Boolean, Boolean, Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapProviders.GoogleKoreaHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleKoreaHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleKoreaSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleKoreaSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleKoreaMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleKoreaMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleChinaTerrainMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleChinaTerrainMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleChinaHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleChinaHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleChinaSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleChinaSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleChinaMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleChinaMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleTerrainMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleTerrainMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GoogleMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GoogleMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.GoogleMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YahooMapProviderBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :GMap.NET.MapProviders.GMapProvider
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.GeocodingProvider
+  Fields:
+    System.String AppId : Public
+    Int32 MinExpectedQuality : Public
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetPoints(String, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(String, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoints(Placemark, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPoint(Placemark, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemarks(PointLatLng, List`1&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetPlacemark(PointLatLng, GeoCoderStatusCode&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapProviders.YahooHybridMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YahooMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.YahooHybridMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YahooSatelliteMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YahooMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.YahooSatelliteMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.YahooMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.YahooMapProviderBase
+  Fields:
+    System.String Version : Public
+    GMap.NET.MapProviders.YahooMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenSeaMapHybridProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenSeaMapHybridProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenCycleMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenCycleMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.OpenStreetMapProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.OpenStreetMapProviderBase
+  Fields:
+    GMap.NET.MapProviders.OpenStreetMapProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.GMapProviders: AutoLayout, AnsiClass, Class, Public
+  Fields:
+    GMap.NET.MapProviders.EmptyProvider EmptyProvider : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenStreetMapProvider OpenStreetMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenStreet4UMapProvider OpenStreet4UMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenCycleMapProvider OpenCycleMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenCycleLandscapeMapProvider OpenCycleLandscapeMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenCycleTransportMapProvider OpenCycleTransportMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenStreetMapQuestProvider OpenStreetMapQuest : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenStreetMapQuestSatteliteProvider OpenStreetMapQuestSattelite : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenStreetMapQuestHybridProvider OpenStreetMapQuestHybrid : Public, Static, InitOnly
+    GMap.NET.MapProviders.OpenSeaMapHybridProvider OpenSeaMapHybrid : Public, Static, InitOnly
+    GMap.NET.MapProviders.WikiMapiaMapProvider WikiMapiaMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.BingMapProvider BingMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.BingSatelliteMapProvider BingSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.BingHybridMapProvider BingHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YahooMapProvider YahooMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YahooSatelliteMapProvider YahooSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YahooHybridMapProvider YahooHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleMapProvider GoogleMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleSatelliteMapProvider GoogleSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleHybridMapProvider GoogleHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleTerrainMapProvider GoogleTerrainMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleChinaMapProvider GoogleChinaMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleChinaSatelliteMapProvider GoogleChinaSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleChinaHybridMapProvider GoogleChinaHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleChinaTerrainMapProvider GoogleChinaTerrainMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleKoreaMapProvider GoogleKoreaMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleKoreaSatelliteMapProvider GoogleKoreaSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.GoogleKoreaHybridMapProvider GoogleKoreaHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.NearMapProvider NearMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.NearSatelliteMapProvider NearSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.NearHybridMapProvider NearHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OviMapProvider OviMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OviSatelliteMapProvider OviSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OviHybridMapProvider OviHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.OviTerrainMapProvider OviTerrainMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YandexMapProvider YandexMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YandexSatelliteMapProvider YandexSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.YandexHybridMapProvider YandexHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaMapProvider LithuaniaMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.Lithuania3dMapProvider Lithuania3dMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaOrtoFotoMapProvider LithuaniaOrtoFotoMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaOrtoFotoOldMapProvider LithuaniaOrtoFotoOldMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaHybridMapProvider LithuaniaHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaHybridOldMapProvider LithuaniaHybridOldMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.LithuaniaTOP50 LithuaniaTOP50Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.LatviaMapProvider LatviaMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.MapBenderWMSProvider MapBenderWMSdemoMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.TurkeyMapProvider TurkeyMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CloudMadeMapProvider CloudMadeMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.SpainMapProvider SpainMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CzechMapProvider CzechMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CzechSatelliteMapProvider CzechSatelliteMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CzechHybridMapProvider CzechHybridMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CzechTuristMapProvider CzechTuristMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.CzechHistoryMapProvider CzechHistoryMap : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_Imagery_World_2D_MapProvider ArcGIS_Imagery_World_2D_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_ShadedRelief_World_2D_MapProvider ArcGIS_ShadedRelief_World_2D_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_StreetMap_World_2D_MapProvider ArcGIS_StreetMap_World_2D_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_Topo_US_2D_MapProvider ArcGIS_Topo_US_2D_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_World_Physical_MapProvider ArcGIS_World_Physical_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_World_Shaded_Relief_MapProvider ArcGIS_World_Shaded_Relief_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_World_Street_MapProvider ArcGIS_World_Street_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_World_Terrain_Base_MapProvider ArcGIS_World_Terrain_Base_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_World_Topo_MapProvider ArcGIS_World_Topo_Map : Public, Static, InitOnly
+    GMap.NET.MapProviders.ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_MapProvider ArcGIS_DarbAE_Q2_2011_NAVTQ_Eng_V5_Map : Public, Static, InitOnly
+  Properties:
+    System.Collections.Generic.List`1[GMap.NET.MapProviders.GMapProvider] List 'get ' : 
+  Methods:
+    get_List(): PrivateScope, Public, Static, HideBySig, SpecialName
+    TryGetProvider(Guid): PrivateScope, Public, Static, HideBySig
+    TryGetProvider(Int32): PrivateScope, Public, Static, HideBySig
+Class GMap.NET.MapProviders.EmptyProvider: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.MapProviders.GMapProvider
+  Fields:
+    GMap.NET.MapProviders.EmptyProvider Instance : Public, Static, InitOnly
+  Properties:
+    System.Guid Id 'get ' : 
+    System.String Name 'get ' : 
+    GMap.NET.PureProjection Projection 'get ' : 
+    GMap.NET.MapProviders.GMapProvider[] Overlays 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Projection(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Overlays(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTileImage(GPoint, Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.MapProviders.EmptyWebProxy: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Net.IWebProxy
+  Fields:
+    GMap.NET.MapProviders.EmptyWebProxy Instance : Public, Static, InitOnly
+  Properties:
+    System.Net.ICredentials Credentials 'get set' : 
+  Methods:
+    get_Credentials(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Credentials(ICredentials): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetProxy(Uri): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IsBypassed(Uri): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.PureProjection: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+    GMap.NET.RectLatLng Bounds 'get ' : 
+  Methods:
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FromLatLngToPixel(PointLatLng, Int32): PrivateScope, Public, HideBySig
+    FromLatLngToPixel(PointLatLng, Int32, Boolean): PrivateScope, Public, HideBySig
+    FromPixelToLatLng(GPoint, Int32): PrivateScope, Public, HideBySig
+    FromPixelToLatLng(GPoint, Int32, Boolean): PrivateScope, Public, HideBySig
+    FromPixelToTileXY(GPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FromTileXYToPixel(GPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetTileMatrixSizeXY(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetTileMatrixItemCount(Int32): PrivateScope, Public, HideBySig
+    GetTileMatrixSizePixel(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetAreaTileList(RectLatLng, Int32, Int32): PrivateScope, Public, HideBySig
+    GetGroundResolution(Int32, Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    DegreesToRadians(Double): PrivateScope, Public, Static, HideBySig
+    RadiansToDegrees(Double): PrivateScope, Public, Static, HideBySig
+    GetDistance(PointLatLng, PointLatLng): PrivateScope, Public, HideBySig
+    GetDistanceInPixels(GPoint, GPoint): PrivateScope, Public, HideBySig
+    GetBearing(PointLatLng, PointLatLng): PrivateScope, Public, HideBySig
+    FromGeodeticToCartesian(Double, Double, Double, Double&(Out), Double&(Out), Double&(Out)): PrivateScope, Public, HideBySig
+    FromCartesianTGeodetic(Double, Double, Double, Double&(Out), Double&(Out)): PrivateScope, Public, HideBySig
+Class GMap.NET.Projections.PlateCarreeProjectionDarbAe: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.PlateCarreeProjectionDarbAe Instance : Public, Static, InitOnly
+    Double MinLatitude : Public, Static, InitOnly
+    Double MaxLatitude : Public, Static, InitOnly
+    Double MinLongitude : Public, Static, InitOnly
+    Double MaxLongitude : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixResolution(Int32): PrivateScope, Public, Static, HideBySig
+    GetGroundResolution(Int32, Double): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.GDirections: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Summary : Public
+    System.String Duration : Public
+    UInt32 DurationValue : Public
+    System.String Distance : Public
+    UInt32 DistanceValue : Public
+    GMap.NET.PointLatLng StartLocation : Public
+    GMap.NET.PointLatLng EndLocation : Public
+    System.String StartAddress : Public
+    System.String EndAddress : Public
+    System.String Copyrights : Public
+    System.Collections.Generic.List`1[GMap.NET.GDirectionStep] Steps : Public
+    System.Collections.Generic.List`1[GMap.NET.PointLatLng] Route : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct GMap.NET.GDirectionStep: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    System.String TravelMode : Public
+    GMap.NET.PointLatLng StartLocation : Public
+    GMap.NET.PointLatLng EndLocation : Public
+    System.String Duration : Public
+    System.String Distance : Public
+    System.String HtmlInstructions : Public
+    System.Collections.Generic.List`1[GMap.NET.PointLatLng] Points : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Interface GMap.NET.PureImageCache: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    PutImageToCache(Byte[], Int32, GPoint, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetImageFromCache(Int32, GPoint, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteOlderThan(DateTime, Nullable`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GMap.NET.CacheProviders.MsSQLCePureImageCache: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.PureImageCache
+    System.IDisposable
+  Fields:
+    Boolean Initialized IsVolatile : Public
+  Properties:
+    System.String CacheLocation 'get set' : 
+  Methods:
+    get_CacheLocation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CacheLocation(String): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PutImageToCache(Byte[], Int32, GPoint, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetImageFromCache(Int32, GPoint, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct GMap.NET.Internals.CacheQueueItem: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(GMap.NET.Internals.RawTile, Byte[], GMap.NET.Internals.CacheUsage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Internals.RawTile Tile : Public
+    Byte[] Img : Public
+    GMap.NET.Internals.CacheUsage CacheType : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+Struct GMap.NET.Internals.CacheUsage: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.Internals.CacheUsage First = 2 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheUsage Second = 4 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheUsage Both = 6 : Public, Static, Literal, HasDefault
+Class GMap.NET.Internals.FastReaderWriterLock: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    AcquireReaderLock(): PrivateScope, Public, HideBySig
+    ReleaseReaderLock(): PrivateScope, Public, HideBySig
+    AcquireWriterLock(): PrivateScope, Public, HideBySig
+    ReleaseWriterLock(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.Internals.KiberTileCache: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.Collections.Generic.Dictionary`2[GMap.NET.Internals.RawTile,System.Byte[]]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 MemoryCacheCapacity : Public
+  Properties:
+    Double MemoryCacheSize 'get ' : 
+  Methods:
+    get_MemoryCacheSize(): PrivateScope, Public, HideBySig, SpecialName
+    Add(RawTile, Byte[]): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    RemoveMemoryOverload(): PrivateScope, Assembly, HideBySig
+Class GMap.NET.PureImageProxy: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    FromStream(Stream): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Save(Stream, PureImage): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FromArray(Byte[]): PrivateScope, Public, HideBySig
+Class GMap.NET.PureImage: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.IO.MemoryStream Data : Public
+    Boolean IsParent : Assembly
+    Int64 Ix : Assembly
+    Int64 Xoff : Assembly
+    Int64 Yoff : Assembly
+  Methods:
+    Dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GMap.NET.Internals.LoadTask: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(GMap.NET.GPoint, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[GMap.NET.Internals.LoadTask]
+  Fields:
+    GMap.NET.GPoint Pos : Public
+    Int32 Zoom : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(LoadTask): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.Internals.LoadTaskComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[GMap.NET.Internals.LoadTask]
+  Methods:
+    Equals(LoadTask, LoadTask): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(LoadTask): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct GMap.NET.Internals.RawTile: AutoLayout, AnsiClass, Class, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, GMap.NET.GPoint, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Type : Public
+    GMap.NET.GPoint Pos : Public
+    Int32 Zoom : Public
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Internals.RawTileComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[GMap.NET.Internals.RawTile]
+  Methods:
+    Equals(RawTile, RawTile): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(RawTile): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.Projections.LKS92Projection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.LKS92Projection Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixResolution(Int32): PrivateScope, Public, Static, HideBySig
+    GetGroundResolution(Int32, Double): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Projections.MapyCZProjection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.MapyCZProjection Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    WGSToPP(Double, Double): PrivateScope, Public, HideBySig
+    PPToWGS(Double, Double): PrivateScope, Public, HideBySig
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixSizeXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixSizePixel(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Projections.MercatorProjectionYandex: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.MercatorProjectionYandex Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Projections.LKS94Projection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.LKS94Projection Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixResolution(Int32): PrivateScope, Public, Static, HideBySig
+    GetGroundResolution(Int32, Double): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Projections.MercatorProjection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.MercatorProjection Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Projections.PlateCarreeProjection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.PureProjection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.Projections.PlateCarreeProjection Instance : Public, Static, InitOnly
+  Properties:
+    GMap.NET.RectLatLng Bounds 'get ' : 
+    GMap.NET.GSize TileSize 'get ' : 
+    Double Axis 'get ' : 
+    Double Flattening 'get ' : 
+  Methods:
+    get_Bounds(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TileSize(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Axis(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Flattening(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FromLatLngToPixel(Double, Double, Int32): PrivateScope, Public, Virtual, HideBySig
+    FromPixelToLatLng(Int64, Int64, Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMaxXY(Int32): PrivateScope, Public, Virtual, HideBySig
+    GetTileMatrixMinXY(Int32): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Extensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetValue(SerializationInfo, String): PrivateScope, Public, Static, HideBySig
+    GetValue(SerializationInfo, String, T): PrivateScope, Public, Static, HideBySig
+    GetStruct(SerializationInfo, String, T): PrivateScope, Public, Static, HideBySig
+    GetStruct(SerializationInfo, String, Nullable`1): PrivateScope, Public, Static, HideBySig
+Struct GMap.NET.GeoCoderStatusCode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.GeoCoderStatusCode Unknow = -1 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_SUCCESS = 200 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_BAD_REQUEST = 400 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_SERVER_ERROR = 500 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_MISSING_QUERY = 601 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_MISSING_ADDRESS = 601 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_UNKNOWN_ADDRESS = 602 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_UNAVAILABLE_ADDRESS = 603 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_UNKNOWN_DIRECTIONS = 604 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_BAD_KEY = 610 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode G_GEO_TOO_MANY_QUERIES = 620 : Public, Static, Literal, HasDefault
+    GMap.NET.GeoCoderStatusCode ExceptionInCode = 621 : Public, Static, Literal, HasDefault
+Struct GMap.NET.DirectionsStatusCode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.DirectionsStatusCode OK = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode NOT_FOUND = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode ZERO_RESULTS = 2 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode MAX_WAYPOINTS_EXCEEDED = 3 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode INVALID_REQUEST = 4 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode OVER_QUERY_LIMIT = 5 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode REQUEST_DENIED = 6 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode UNKNOWN_ERROR = 7 : Public, Static, Literal, HasDefault
+    GMap.NET.DirectionsStatusCode ExceptionInCode = 8 : Public, Static, Literal, HasDefault
+Struct GMap.NET.GpsLog: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    System.DateTime TimeUTC : Public
+    Int64 SessionCounter : Public
+    System.Nullable`1[System.Double] Delta : Public
+    System.Nullable`1[System.Double] Speed : Public
+    System.Nullable`1[System.Double] SeaLevelAltitude : Public
+    System.Nullable`1[System.Double] EllipsoidAltitude : Public
+    System.Nullable`1[System.Int16] SatellitesInView : Public
+    System.Nullable`1[System.Int16] SatelliteCount : Public
+    GMap.NET.PointLatLng Position : Public
+    System.Nullable`1[System.Double] PositionDilutionOfPrecision : Public
+    System.Nullable`1[System.Double] HorizontalDilutionOfPrecision : Public
+    System.Nullable`1[System.Double] VerticalDilutionOfPrecision : Public
+    GMap.NET.FixQuality FixQuality : Public
+    GMap.NET.FixType FixType : Public
+    GMap.NET.FixSelection FixSelection : Public
+Struct GMap.NET.FixQuality: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.FixQuality Unknown = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.FixQuality Gps = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.FixQuality DGps = 2 : Public, Static, Literal, HasDefault
+Struct GMap.NET.FixType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.FixType Unknown = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.FixType XyD = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.FixType XyzD = 2 : Public, Static, Literal, HasDefault
+Struct GMap.NET.FixSelection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.FixSelection Unknown = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.FixSelection Auto = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.FixSelection Manual = 2 : Public, Static, Literal, HasDefault
+Class GMap.NET.gpxType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GMap.NET.metadataType metadata 'get set' : 
+    GMap.NET.wptType[] wpt 'get set' : 
+    GMap.NET.rteType[] rte 'get set' : 
+    GMap.NET.trkType[] trk 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+    System.String version 'get set' : 
+    System.String creator 'get set' : 
+  Methods:
+    get_metadata(): PrivateScope, Public, HideBySig, SpecialName
+    set_metadata(metadataType): PrivateScope, Public, HideBySig, SpecialName
+    get_wpt(): PrivateScope, Public, HideBySig, SpecialName
+    set_wpt(wptType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_rte(): PrivateScope, Public, HideBySig, SpecialName
+    set_rte(rteType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_trk(): PrivateScope, Public, HideBySig, SpecialName
+    set_trk(trkType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+    get_version(): PrivateScope, Public, HideBySig, SpecialName
+    set_version(String): PrivateScope, Public, HideBySig, SpecialName
+    get_creator(): PrivateScope, Public, HideBySig, SpecialName
+    set_creator(String): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.metadataType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.String desc 'get set' : 
+    GMap.NET.personType author 'get set' : 
+    GMap.NET.copyrightType copyright 'get set' : 
+    GMap.NET.linkType[] link 'get set' : 
+    System.DateTime time 'get set' : 
+    Boolean timeSpecified 'get set' : 
+    System.String keywords 'get set' : 
+    GMap.NET.boundsType bounds 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_desc(): PrivateScope, Public, HideBySig, SpecialName
+    set_desc(String): PrivateScope, Public, HideBySig, SpecialName
+    get_author(): PrivateScope, Public, HideBySig, SpecialName
+    set_author(personType): PrivateScope, Public, HideBySig, SpecialName
+    get_copyright(): PrivateScope, Public, HideBySig, SpecialName
+    set_copyright(copyrightType): PrivateScope, Public, HideBySig, SpecialName
+    get_link(): PrivateScope, Public, HideBySig, SpecialName
+    set_link(linkType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_time(): PrivateScope, Public, HideBySig, SpecialName
+    set_time(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_timeSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_timeSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_keywords(): PrivateScope, Public, HideBySig, SpecialName
+    set_keywords(String): PrivateScope, Public, HideBySig, SpecialName
+    get_bounds(): PrivateScope, Public, HideBySig, SpecialName
+    set_bounds(boundsType): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.personType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    GMap.NET.emailType email 'get set' : 
+    GMap.NET.linkType link 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_email(): PrivateScope, Public, HideBySig, SpecialName
+    set_email(emailType): PrivateScope, Public, HideBySig, SpecialName
+    get_link(): PrivateScope, Public, HideBySig, SpecialName
+    set_link(linkType): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.emailType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String id 'get set' : 
+    System.String domain 'get set' : 
+  Methods:
+    get_id(): PrivateScope, Public, HideBySig, SpecialName
+    set_id(String): PrivateScope, Public, HideBySig, SpecialName
+    get_domain(): PrivateScope, Public, HideBySig, SpecialName
+    set_domain(String): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.trksegType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    GMap.NET.wptType[] trkpt 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+  Methods:
+    get_trkpt(): PrivateScope, Public, HideBySig, SpecialName
+    set_trkpt(wptType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.wptType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Decimal ele 'get set' : 
+    Boolean eleSpecified 'get set' : 
+    System.DateTime time 'get set' : 
+    Boolean timeSpecified 'get set' : 
+    System.Decimal magvar 'get set' : 
+    Boolean magvarSpecified 'get set' : 
+    System.Decimal geoidheight 'get set' : 
+    Boolean geoidheightSpecified 'get set' : 
+    System.String name 'get set' : 
+    System.String cmt 'get set' : 
+    System.String desc 'get set' : 
+    System.String src 'get set' : 
+    GMap.NET.linkType[] link 'get set' : 
+    System.String sym 'get set' : 
+    System.String type 'get set' : 
+    GMap.NET.fixType fix 'get set' : 
+    Boolean fixSpecified 'get set' : 
+    System.String sat 'get set' : 
+    System.Decimal hdop 'get set' : 
+    Boolean hdopSpecified 'get set' : 
+    System.Decimal vdop 'get set' : 
+    Boolean vdopSpecified 'get set' : 
+    System.Decimal pdop 'get set' : 
+    Boolean pdopSpecified 'get set' : 
+    System.Decimal ageofdgpsdata 'get set' : 
+    Boolean ageofdgpsdataSpecified 'get set' : 
+    System.String dgpsid 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+    System.Decimal lat 'get set' : 
+    System.Decimal lon 'get set' : 
+  Methods:
+    get_ele(): PrivateScope, Public, HideBySig, SpecialName
+    set_ele(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_eleSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_eleSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_time(): PrivateScope, Public, HideBySig, SpecialName
+    set_time(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_timeSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_timeSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_magvar(): PrivateScope, Public, HideBySig, SpecialName
+    set_magvar(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_magvarSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_magvarSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_geoidheight(): PrivateScope, Public, HideBySig, SpecialName
+    set_geoidheight(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_geoidheightSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_geoidheightSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_cmt(): PrivateScope, Public, HideBySig, SpecialName
+    set_cmt(String): PrivateScope, Public, HideBySig, SpecialName
+    get_desc(): PrivateScope, Public, HideBySig, SpecialName
+    set_desc(String): PrivateScope, Public, HideBySig, SpecialName
+    get_src(): PrivateScope, Public, HideBySig, SpecialName
+    set_src(String): PrivateScope, Public, HideBySig, SpecialName
+    get_link(): PrivateScope, Public, HideBySig, SpecialName
+    set_link(linkType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_sym(): PrivateScope, Public, HideBySig, SpecialName
+    set_sym(String): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    set_type(String): PrivateScope, Public, HideBySig, SpecialName
+    get_fix(): PrivateScope, Public, HideBySig, SpecialName
+    set_fix(fixType): PrivateScope, Public, HideBySig, SpecialName
+    get_fixSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_fixSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_sat(): PrivateScope, Public, HideBySig, SpecialName
+    set_sat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_hdop(): PrivateScope, Public, HideBySig, SpecialName
+    set_hdop(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_hdopSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_hdopSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_vdop(): PrivateScope, Public, HideBySig, SpecialName
+    set_vdop(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_vdopSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_vdopSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_pdop(): PrivateScope, Public, HideBySig, SpecialName
+    set_pdop(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_pdopSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_pdopSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ageofdgpsdata(): PrivateScope, Public, HideBySig, SpecialName
+    set_ageofdgpsdata(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_ageofdgpsdataSpecified(): PrivateScope, Public, HideBySig, SpecialName
+    set_ageofdgpsdataSpecified(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_dgpsid(): PrivateScope, Public, HideBySig, SpecialName
+    set_dgpsid(String): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+    get_lat(): PrivateScope, Public, HideBySig, SpecialName
+    set_lat(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_lon(): PrivateScope, Public, HideBySig, SpecialName
+    set_lon(Decimal): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.linkType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String text 'get set' : 
+    System.String type 'get set' : 
+    System.String href 'get set' : 
+  Methods:
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    set_type(String): PrivateScope, Public, HideBySig, SpecialName
+    get_href(): PrivateScope, Public, HideBySig, SpecialName
+    set_href(String): PrivateScope, Public, HideBySig, SpecialName
+Struct GMap.NET.fixType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.fixType none = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.fixType Item2d = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.fixType Item3d = 2 : Public, Static, Literal, HasDefault
+    GMap.NET.fixType dgps = 3 : Public, Static, Literal, HasDefault
+    GMap.NET.fixType pps = 4 : Public, Static, Literal, HasDefault
+Class GMap.NET.extensionsType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Xml.XmlElement[] Any 'get set' : 
+  Methods:
+    get_Any(): PrivateScope, Public, HideBySig, SpecialName
+    set_Any(XmlElement[]): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.trkType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.String cmt 'get set' : 
+    System.String desc 'get set' : 
+    System.String src 'get set' : 
+    GMap.NET.linkType[] link 'get set' : 
+    System.String number 'get set' : 
+    System.String type 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+    GMap.NET.trksegType[] trkseg 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_cmt(): PrivateScope, Public, HideBySig, SpecialName
+    set_cmt(String): PrivateScope, Public, HideBySig, SpecialName
+    get_desc(): PrivateScope, Public, HideBySig, SpecialName
+    set_desc(String): PrivateScope, Public, HideBySig, SpecialName
+    get_src(): PrivateScope, Public, HideBySig, SpecialName
+    set_src(String): PrivateScope, Public, HideBySig, SpecialName
+    get_link(): PrivateScope, Public, HideBySig, SpecialName
+    set_link(linkType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_number(): PrivateScope, Public, HideBySig, SpecialName
+    set_number(String): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    set_type(String): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+    get_trkseg(): PrivateScope, Public, HideBySig, SpecialName
+    set_trkseg(trksegType[]): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.rteType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.String cmt 'get set' : 
+    System.String desc 'get set' : 
+    System.String src 'get set' : 
+    GMap.NET.linkType[] link 'get set' : 
+    System.String number 'get set' : 
+    System.String type 'get set' : 
+    GMap.NET.extensionsType extensions 'get set' : 
+    GMap.NET.wptType[] rtept 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_cmt(): PrivateScope, Public, HideBySig, SpecialName
+    set_cmt(String): PrivateScope, Public, HideBySig, SpecialName
+    get_desc(): PrivateScope, Public, HideBySig, SpecialName
+    set_desc(String): PrivateScope, Public, HideBySig, SpecialName
+    get_src(): PrivateScope, Public, HideBySig, SpecialName
+    set_src(String): PrivateScope, Public, HideBySig, SpecialName
+    get_link(): PrivateScope, Public, HideBySig, SpecialName
+    set_link(linkType[]): PrivateScope, Public, HideBySig, SpecialName
+    get_number(): PrivateScope, Public, HideBySig, SpecialName
+    set_number(String): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    set_type(String): PrivateScope, Public, HideBySig, SpecialName
+    get_extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_extensions(extensionsType): PrivateScope, Public, HideBySig, SpecialName
+    get_rtept(): PrivateScope, Public, HideBySig, SpecialName
+    set_rtept(wptType[]): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.boundsType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Decimal minlat 'get set' : 
+    System.Decimal minlon 'get set' : 
+    System.Decimal maxlat 'get set' : 
+    System.Decimal maxlon 'get set' : 
+  Methods:
+    get_minlat(): PrivateScope, Public, HideBySig, SpecialName
+    set_minlat(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_minlon(): PrivateScope, Public, HideBySig, SpecialName
+    set_minlon(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_maxlat(): PrivateScope, Public, HideBySig, SpecialName
+    set_maxlat(Decimal): PrivateScope, Public, HideBySig, SpecialName
+    get_maxlon(): PrivateScope, Public, HideBySig, SpecialName
+    set_maxlon(Decimal): PrivateScope, Public, HideBySig, SpecialName
+Class GMap.NET.copyrightType: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String year 'get set' : 
+    System.String license 'get set' : 
+    System.String author 'get set' : 
+  Methods:
+    get_year(): PrivateScope, Public, HideBySig, SpecialName
+    set_year(String): PrivateScope, Public, HideBySig, SpecialName
+    get_license(): PrivateScope, Public, HideBySig, SpecialName
+    set_license(String): PrivateScope, Public, HideBySig, SpecialName
+    get_author(): PrivateScope, Public, HideBySig, SpecialName
+    set_author(String): PrivateScope, Public, HideBySig, SpecialName
+Struct GMap.NET.LanguageType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.LanguageType Arabic = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Bulgarian = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Bengali = 2 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Catalan = 3 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Czech = 4 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Danish = 5 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType German = 6 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Greek = 7 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType English = 8 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType EnglishAustralian = 9 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType EnglishGreatBritain = 10 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Spanish = 11 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Basque = 12 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType FARSI = 13 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Finnish = 14 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Filipino = 15 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType French = 16 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Galician = 17 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Gujarati = 18 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Hindi = 19 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Croatian = 20 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Hungarian = 21 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Indonesian = 22 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Italian = 23 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Hebrew = 24 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Japanese = 25 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Kannada = 26 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Korean = 27 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Lithuanian = 28 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Latvian = 29 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Malayalam = 30 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Marathi = 31 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Dutch = 32 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType NorwegianNynorsk = 33 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Norwegian = 34 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Oriya = 35 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Polish = 36 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Portuguese = 37 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType PortugueseBrazil = 38 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType PortuguesePortugal = 39 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Romansch = 40 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Romanian = 41 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Russian = 42 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Slovak = 43 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Slovenian = 44 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Serbian = 45 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Swedish = 46 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType TAGALOG = 47 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Tamil = 48 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Telugu = 49 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Thai = 50 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Turkish = 51 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Ukrainian = 52 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType Vietnamese = 53 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType ChineseSimplified = 54 : Public, Static, Literal, HasDefault
+    GMap.NET.LanguageType ChineseTraditional = 55 : Public, Static, Literal, HasDefault
+Interface GMap.NET.Interface: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    GMap.NET.PointLatLng Position 'get set' : 
+    GMap.NET.GPoint PositionPixel 'get ' : 
+    System.String CacheLocation 'get set' : 
+    Boolean IsDragging 'get ' : 
+    GMap.NET.RectLatLng ViewArea 'get ' : 
+    GMap.NET.MapProviders.GMapProvider MapProvider 'get set' : 
+    Boolean CanDragMap 'get set' : 
+    GMap.NET.RenderMode RenderMode 'get ' : 
+  Events:
+    GMap.NET.PositionChanged OnPositionChanged: 
+    GMap.NET.TileLoadComplete OnTileLoadComplete: 
+    GMap.NET.TileLoadStart OnTileLoadStart: 
+    GMap.NET.MapDrag OnMapDrag: 
+    GMap.NET.MapZoomChanged OnMapZoomChanged: 
+    GMap.NET.MapTypeChanged OnMapTypeChanged: 
+  Methods:
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Position(PointLatLng): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PositionPixel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CacheLocation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CacheLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsDragging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ViewArea(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MapProvider(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MapProvider(GMapProvider): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanDragMap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CanDragMap(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RenderMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnPositionChanged(PositionChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnPositionChanged(PositionChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnTileLoadComplete(TileLoadComplete): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnTileLoadComplete(TileLoadComplete): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnTileLoadStart(TileLoadStart): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnTileLoadStart(TileLoadStart): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnMapDrag(MapDrag): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnMapDrag(MapDrag): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnMapZoomChanged(MapZoomChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnMapZoomChanged(MapZoomChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    add_OnMapTypeChanged(MapTypeChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_OnMapTypeChanged(MapTypeChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ReloadMap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FromLocalToLatLng(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FromLatLngToLocal(PointLatLng): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct GMap.NET.AccessMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.AccessMode ServerOnly = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.AccessMode ServerAndCache = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.AccessMode CacheOnly = 2 : Public, Static, Literal, HasDefault
+Class GMap.NET.PositionChanged: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(PointLatLng): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(PointLatLng, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.TileLoadComplete: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int64, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.TileLoadStart: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.TileCacheComplete: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.TileCacheStart: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.TileCacheProgress: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapDrag: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapZoomChanged: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapTypeChanged: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(GMapProvider): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(GMapProvider, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.EmptyTileError: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, GPoint): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Int32, GPoint, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.MapRoute: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[GMap.NET.PointLatLng], System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+    System.Runtime.Serialization.IDeserializationCallback
+  Fields:
+    System.Collections.Generic.List`1[GMap.NET.PointLatLng] Points : Public, InitOnly
+    System.String Name : Public
+    System.Object Tag : Public
+  Properties:
+    System.Nullable`1[GMap.NET.PointLatLng] From 'get ' : 
+    System.Nullable`1[GMap.NET.PointLatLng] To 'get ' : 
+    Double Distance 'get ' : 
+  Methods:
+    get_From(): PrivateScope, Public, HideBySig, SpecialName
+    get_To(): PrivateScope, Public, HideBySig, SpecialName
+    get_Distance(): PrivateScope, Public, HideBySig, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    GetObjectData(SerializationInfo, StreamingContext): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnDeserialization(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.CacheProviders.MsSQLPureImageCache: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    GMap.NET.PureImageCache
+    System.IDisposable
+  Properties:
+    System.String ConnectionString 'get set' : 
+    Boolean Initialized 'get set' : 
+  Methods:
+    get_ConnectionString(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectionString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Initialized(): PrivateScope, Public, HideBySig, SpecialName
+    Initialize(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PutImageToCache(Byte[], Int32, GPoint, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetImageFromCache(Int32, GPoint, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct GMap.NET.GPoint: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int64, Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GMap.NET.GSize): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.GPoint Empty : Public, Static, InitOnly
+  Properties:
+    Boolean IsEmpty 'get ' : 
+    Int64 X    'get set' : 
+    Int64 Y    'get set' : 
+  Methods:
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int64): PrivateScope, Public, HideBySig, SpecialName
+    op_Explicit(GPoint): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(GPoint, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(GPoint, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(GPoint, GPoint): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GPoint, GPoint): PrivateScope, Public, Static, HideBySig, SpecialName
+    Add(GPoint, GSize): PrivateScope, Public, Static, HideBySig
+    Subtract(GPoint, GSize): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Offset(Int64, Int64): PrivateScope, Public, HideBySig
+    Offset(GPoint): PrivateScope, Public, HideBySig
+    OffsetNegative(GPoint): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.GPointComparer: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[GMap.NET.GPoint]
+  Methods:
+    Equals(GPoint, GPoint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(GPoint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct GMap.NET.GRect: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int64, Int64, Int64, Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GMap.NET.GPoint, GMap.NET.GSize): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.GRect Empty : Public, Static, InitOnly
+  Properties:
+    GMap.NET.GPoint Location 'get set' : 
+    GMap.NET.GPoint RightBottom 'get ' : 
+    GMap.NET.GPoint RightTop 'get ' : 
+    GMap.NET.GPoint LeftBottom 'get ' : 
+    GMap.NET.GSize Size 'get set' : 
+    Int64 X    'get set' : 
+    Int64 Y    'get set' : 
+    Int64 Width 'get set' : 
+    Int64 Height 'get set' : 
+    Int64 Left 'get ' : 
+    Int64 Top  'get ' : 
+    Int64 Right 'get ' : 
+    Int64 Bottom 'get ' : 
+    Boolean IsEmpty 'get ' : 
+  Methods:
+    FromLTRB(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    get_Location(): PrivateScope, Public, HideBySig, SpecialName
+    set_Location(GPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_RightBottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_RightTop(): PrivateScope, Public, HideBySig, SpecialName
+    get_LeftBottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    set_Size(GSize): PrivateScope, Public, HideBySig, SpecialName
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(GRect, GRect): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GRect, GRect): PrivateScope, Public, Static, HideBySig, SpecialName
+    Contains(Int64, Int64): PrivateScope, Public, HideBySig
+    Contains(GPoint): PrivateScope, Public, HideBySig
+    Contains(GRect): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Inflate(Int64, Int64): PrivateScope, Public, HideBySig
+    Inflate(GSize): PrivateScope, Public, HideBySig
+    Inflate(GRect, Int64, Int64): PrivateScope, Public, Static, HideBySig
+    Intersect(GRect): PrivateScope, Public, HideBySig
+    Intersect(GRect, GRect): PrivateScope, Public, Static, HideBySig
+    IntersectsWith(GRect): PrivateScope, Public, HideBySig
+    Union(GRect, GRect): PrivateScope, Public, Static, HideBySig
+    Offset(GPoint): PrivateScope, Public, HideBySig
+    OffsetNegative(GPoint): PrivateScope, Public, HideBySig
+    Offset(Int64, Int64): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Singleton`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T,  DefaultConstructor
+  Properties:
+    T Instance 'get ' : 
+  Methods:
+    get_Instance(): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct GMap.NET.MouseWheelZoomType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.MouseWheelZoomType MousePositionAndCenter = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.MouseWheelZoomType MousePositionWithoutCenter = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.MouseWheelZoomType ViewCenter = 2 : Public, Static, Literal, HasDefault
+Class GMap.NET.Properties.Resources: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String CreateTileDb 'get ' : 
+  Methods:
+    get_ResourceManager(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CreateTileDb(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class GMap.NET.Internals.CacheLocator: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean Delay : Public, Static
+  Properties:
+    System.String Location 'get set' : 
+  Methods:
+    get_Location(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Location(String): PrivateScope, Public, Static, HideBySig, SpecialName
+Class GMap.NET.Internals.Cache: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :GMap.NET.Singleton`1[GMap.NET.Internals.Cache]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.PureImageCache ImageCache : Public
+    GMap.NET.PureImageCache ImageCacheSecond : Public
+  Properties:
+    System.String CacheLocation 'get set' : 
+  Methods:
+    get_CacheLocation(): PrivateScope, Public, HideBySig, SpecialName
+    set_CacheLocation(String): PrivateScope, Public, HideBySig, SpecialName
+    SaveContent(String, CacheType, String): PrivateScope, Public, HideBySig
+    GetContent(String, CacheType, TimeSpan): PrivateScope, Public, HideBySig
+    GetContent(String, CacheType): PrivateScope, Public, HideBySig
+Struct GMap.NET.Internals.CacheType: AutoLayout, AnsiClass, Class, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.Internals.CacheType GeocoderCache = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheType PlacemarkCache = 1 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheType RouteCache = 2 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheType UrlCache = 3 : Public, Static, Literal, HasDefault
+    GMap.NET.Internals.CacheType DirectionsCache = 4 : Public, Static, Literal, HasDefault
+Class GMap.NET.Internals.Core: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    GMap.NET.PointLatLng position : Public
+    GMap.NET.GPoint positionPixel : Public
+    GMap.NET.GPoint renderOffset : Public
+    GMap.NET.GPoint centerTileXYLocation : Public
+    GMap.NET.GPoint centerTileXYLocationLast : Public
+    GMap.NET.GPoint dragPoint : Public
+    GMap.NET.GPoint compensationOffset : Public
+    GMap.NET.GPoint mouseDown : Public
+    GMap.NET.GPoint mouseCurrent : Public
+    GMap.NET.GPoint mouseLastZoom : Public
+    GMap.NET.MouseWheelZoomType MouseWheelZoomType : Public
+    System.Nullable`1[GMap.NET.PointLatLng] LastLocationInBounds : Public
+    Boolean VirtualSizeEnabled : Public
+    GMap.NET.GSize sizeOfMapArea : Public
+    GMap.NET.GSize minOfTiles : Public
+    GMap.NET.GSize maxOfTiles : Public
+    GMap.NET.GRect tileRect : Public
+    GMap.NET.GRect tileRectBearing : Public
+    Single bearing : Public
+    Boolean IsRotated : Public
+    Boolean fillEmptyTiles : Public
+    GMap.NET.Internals.TileMatrix Matrix : Public
+    System.Collections.Generic.List`1[GMap.NET.Internals.DrawTile] tileDrawingList : Public
+    GMap.NET.Internals.FastReaderWriterLock tileDrawingListLock : Public
+    System.Collections.Generic.Stack`1[GMap.NET.Internals.LoadTask] tileLoadQueue : Public, InitOnly
+    Boolean IsStarted IsVolatile : Assembly
+    Double scaleX : Assembly
+    Double scaleY : Assembly
+    Int32 maxZoom : Assembly
+    Int32 minZoom : Assembly
+    Int32 Width : Assembly
+    Int32 Height : Assembly
+    Int32 pxRes100m : Assembly
+    Int32 pxRes1000m : Assembly
+    Int32 pxRes10km : Assembly
+    Int32 pxRes100km : Assembly
+    Int32 pxRes1000km : Assembly
+    Int32 pxRes5000km : Assembly
+    Boolean IsDragging : Public
+    GMap.NET.MapProviders.GMapProvider provider : Public
+    Boolean zoomToArea : Assembly
+    Boolean PolygonsEnabled : Public
+    Boolean RoutesEnabled : Public
+    Boolean MarkersEnabled : Public
+    Boolean CanDragMap : Public
+    Int32 RetryLoadTile : Public
+    Int32 LevelsKeepInMemmory : Public
+    GMap.NET.RenderMode RenderMode : Public
+    System.String SystemType : Assembly
+    System.Object invalidationLock : Assembly, InitOnly
+    System.DateTime lastInvalidation : Assembly
+    Int32 vWidth : Public
+    Int32 vHeight : Public
+    Boolean MouseWheelZooming : Public
+    System.Collections.Generic.Dictionary`2[GMap.NET.Internals.LoadTask,System.Exception] FailedLoads : Assembly
+    System.Threading.AutoResetEvent Refresh : Public
+    Boolean updatingBounds : Public
+    Int32 instances : Assembly, Static
+    Int32 WaitForTileLoadThreadTimeout : Assembly, Static, InitOnly
+  Properties:
+    Int32 Zoom 'get set' : 
+    GMap.NET.GPoint PositionPixel 'get ' : 
+    GMap.NET.PointLatLng Position 'get set' : 
+    GMap.NET.MapProviders.GMapProvider Provider 'get set' : 
+    GMap.NET.RectLatLng ViewArea 'get ' : 
+  Events:
+    GMap.NET.PositionChanged OnCurrentPositionChanged: 
+    GMap.NET.TileLoadComplete OnTileLoadComplete: 
+    GMap.NET.TileLoadStart OnTileLoadStart: 
+    GMap.NET.EmptyTileError OnEmptyTileError: 
+    GMap.NET.MapDrag OnMapDrag: 
+    GMap.NET.MapZoomChanged OnMapZoomChanged: 
+    GMap.NET.MapTypeChanged OnMapTypeChanged: 
+  Methods:
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PositionPixel(): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(PointLatLng): PrivateScope, Public, HideBySig, SpecialName
+    get_Provider(): PrivateScope, Public, HideBySig, SpecialName
+    set_Provider(GMapProvider): PrivateScope, Public, HideBySig, SpecialName
+    SetZoomToFitRect(RectLatLng): PrivateScope, Public, HideBySig
+    add_OnCurrentPositionChanged(PositionChanged): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnCurrentPositionChanged(PositionChanged): PrivateScope, Public, HideBySig, SpecialName
+    add_OnTileLoadComplete(TileLoadComplete): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnTileLoadComplete(TileLoadComplete): PrivateScope, Public, HideBySig, SpecialName
+    add_OnTileLoadStart(TileLoadStart): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnTileLoadStart(TileLoadStart): PrivateScope, Public, HideBySig, SpecialName
+    add_OnEmptyTileError(EmptyTileError): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnEmptyTileError(EmptyTileError): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMapDrag(MapDrag): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMapDrag(MapDrag): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMapZoomChanged(MapZoomChanged): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMapZoomChanged(MapZoomChanged): PrivateScope, Public, HideBySig, SpecialName
+    add_OnMapTypeChanged(MapTypeChanged): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnMapTypeChanged(MapTypeChanged): PrivateScope, Public, HideBySig, SpecialName
+    OnMapOpen(): PrivateScope, Public, HideBySig
+    OnMapClose(): PrivateScope, Public, HideBySig
+    UpdateCenterTileXYLocation(): PrivateScope, Public, HideBySig
+    OnMapSizeChanged(Int32, Int32): PrivateScope, Public, HideBySig
+    get_ViewArea(): PrivateScope, Public, HideBySig, SpecialName
+    FromLocalToLatLng(Int64, Int64): PrivateScope, Public, HideBySig
+    FromLatLngToLocal(PointLatLng): PrivateScope, Public, HideBySig
+    GetMaxZoomToFitRect(RectLatLng): PrivateScope, Public, HideBySig
+    BeginDrag(GPoint): PrivateScope, Public, HideBySig
+    EndDrag(): PrivateScope, Public, HideBySig
+    ReloadMap(): PrivateScope, Public, HideBySig
+    GoToCurrentPosition(): PrivateScope, Public, HideBySig
+    GoToCurrentPositionOnZoom(): PrivateScope, Assembly, HideBySig
+    DragOffset(GPoint): PrivateScope, Public, HideBySig
+    Drag(GPoint): PrivateScope, Public, HideBySig
+    CancelAsyncTasks(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct GMap.NET.Internals.Tile: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, GMap.NET.GPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Boolean NotEmpty : Public, InitOnly
+    GMap.NET.Internals.Tile Empty : Public, Static, InitOnly
+  Properties:
+    System.Collections.Generic.IEnumerable`1[GMap.NET.PureImage] Overlays 'get ' : 
+    Boolean HasAnyOverlays 'get ' : 
+    Int32 Zoom 'get set' : 
+    GMap.NET.GPoint Pos 'get set' : 
+  Methods:
+    get_Overlays(): PrivateScope, Public, HideBySig, SpecialName
+    AddOverlay(PureImage): PrivateScope, Assembly, HideBySig
+    get_HasAnyOverlays(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    get_Pos(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Equality(Tile, Tile): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Tile, Tile): PrivateScope, Public, Static, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Internals.TileMatrix: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    ClearAllLevels(): PrivateScope, Public, HideBySig
+    ClearLevel(Int32): PrivateScope, Public, HideBySig
+    ClearLevelAndPointsNotIn(Int32, List`1): PrivateScope, Public, HideBySig
+    ClearLevelsBelove(Int32): PrivateScope, Public, HideBySig
+    ClearLevelsAbove(Int32): PrivateScope, Public, HideBySig
+    EnterReadLock(): PrivateScope, Public, HideBySig
+    LeaveReadLock(): PrivateScope, Public, HideBySig
+    GetTileWithNoLock(Int32, GPoint): PrivateScope, Public, HideBySig
+    GetTileWithReadLock(Int32, GPoint): PrivateScope, Public, HideBySig
+    SetTile(Tile): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class GMap.NET.GMaps: AutoLayout, AnsiClass, Class, Public
+  :GMap.NET.Singleton`1[GMap.NET.GMaps]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.AccessMode Mode : Public
+    Boolean UseRouteCache : Public
+    Boolean UseGeocoderCache : Public
+    Boolean UseDirectionsCache : Public
+    Boolean UsePlacemarkCache : Public
+    Boolean UseUrlCache : Public
+    Boolean UseMemoryCache : Public
+    GMap.NET.CacheProviders.MemoryCache MemoryCache : Public, InitOnly
+    Boolean ShuffleTilesOnLoad : Public
+    System.Threading.AutoResetEvent WaitForCache : Assembly, InitOnly
+    Boolean noMapInstances IsVolatile : Assembly
+    GMap.NET.TileCacheComplete OnTileCacheComplete : Public
+    GMap.NET.TileCacheStart OnTileCacheStart : Public
+    GMap.NET.TileCacheProgress OnTileCacheProgress : Public
+  Properties:
+    GMap.NET.PureImageCache PrimaryCache 'get set' : 
+    GMap.NET.PureImageCache SecondaryCache 'get set' : 
+    Boolean IsRunningOnMono 'get ' : 
+    Boolean CacheOnIdleRead 'get set' : 
+    Boolean BoostCacheEngine 'get set' : 
+  Methods:
+    get_PrimaryCache(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrimaryCache(PureImageCache): PrivateScope, Public, HideBySig, SpecialName
+    get_SecondaryCache(): PrivateScope, Public, HideBySig, SpecialName
+    set_SecondaryCache(PureImageCache): PrivateScope, Public, HideBySig, SpecialName
+    get_IsRunningOnMono(): PrivateScope, Public, HideBySig, SpecialName
+    SQLitePing(): PrivateScope, Public, HideBySig
+    ExportToGMDB(String): PrivateScope, Public, HideBySig
+    ImportFromGMDB(String): PrivateScope, Public, HideBySig
+    CancelTileCaching(): PrivateScope, Public, HideBySig
+    get_CacheOnIdleRead(): PrivateScope, Public, HideBySig, SpecialName
+    set_CacheOnIdleRead(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BoostCacheEngine(): PrivateScope, Public, HideBySig, SpecialName
+    set_BoostCacheEngine(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    SerializeGPX(gpxType): PrivateScope, Public, HideBySig
+    DeserializeGPX(String): PrivateScope, Public, HideBySig
+    ExportGPX(IEnumerable`1, String): PrivateScope, Public, HideBySig
+    GetImageFrom(GMapProvider, GPoint, Int32, Exception&(Out)): PrivateScope, Public, HideBySig
+    EnableTileHost(Int32): PrivateScope, Public, HideBySig
+    DisableTileHost(): PrivateScope, Public, HideBySig
+Struct GMap.NET.Placemark: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(System.String): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Accuracy : Public
+    System.String ThoroughfareName : Public
+    System.String LocalityName : Public
+    System.String PostalCodeNumber : Public
+    System.String CountryName : Public
+    System.String AdministrativeAreaName : Public
+    System.String DistrictName : Public
+    System.String SubAdministrativeAreaName : Public
+    System.String Neighborhood : Public
+    System.String StreetNumber : Public
+    System.String CountryNameCode : Public
+    System.String HouseNo : Public
+  Properties:
+    System.String Address 'get set' : 
+  Methods:
+    get_Address(): PrivateScope, Public, HideBySig, SpecialName
+    set_Address(String): PrivateScope, Assembly, HideBySig, SpecialName
+Struct GMap.NET.PointLatLng: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.PointLatLng Empty : Public, Static, InitOnly
+  Properties:
+    Boolean IsEmpty 'get ' : 
+    Double Lat 'get set' : 
+    Double Lng 'get set' : 
+  Methods:
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Lat(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lat(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Lng(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lng(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(PointLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(PointLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(PointLatLng, PointLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(PointLatLng, PointLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    Add(PointLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig
+    Subtract(PointLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Offset(PointLatLng): PrivateScope, Public, HideBySig
+    Offset(Double, Double): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct GMap.NET.RectLatLng: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed
+  :System.ValueType
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GMap.NET.PointLatLng, GMap.NET.SizeLatLng): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.RectLatLng Empty : Public, Static, InitOnly
+  Properties:
+    GMap.NET.PointLatLng LocationTopLeft 'get set' : 
+    GMap.NET.PointLatLng LocationRightBottom 'get ' : 
+    GMap.NET.PointLatLng LocationMiddle 'get ' : 
+    GMap.NET.SizeLatLng Size 'get set' : 
+    Double Lng 'get set' : 
+    Double Lat 'get set' : 
+    Double WidthLng 'get set' : 
+    Double HeightLat 'get set' : 
+    Double Left 'get ' : 
+    Double Top 'get ' : 
+    Double Right 'get ' : 
+    Double Bottom 'get ' : 
+    Boolean IsEmpty 'get ' : 
+  Methods:
+    FromLTRB(Double, Double, Double, Double): PrivateScope, Public, Static, HideBySig
+    get_LocationTopLeft(): PrivateScope, Public, HideBySig, SpecialName
+    set_LocationTopLeft(PointLatLng): PrivateScope, Public, HideBySig, SpecialName
+    get_LocationRightBottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocationMiddle(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    set_Size(SizeLatLng): PrivateScope, Public, HideBySig, SpecialName
+    get_Lng(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lng(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Lat(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lat(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_WidthLng(): PrivateScope, Public, HideBySig, SpecialName
+    set_WidthLng(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_HeightLat(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeightLat(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(RectLatLng, RectLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(RectLatLng, RectLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    Contains(Double, Double): PrivateScope, Public, HideBySig
+    Contains(PointLatLng): PrivateScope, Public, HideBySig
+    Contains(RectLatLng): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Inflate(Double, Double): PrivateScope, Public, HideBySig
+    Inflate(SizeLatLng): PrivateScope, Public, HideBySig
+    Inflate(RectLatLng, Double, Double): PrivateScope, Public, Static, HideBySig
+    Intersect(RectLatLng): PrivateScope, Public, HideBySig
+    Intersect(RectLatLng, RectLatLng): PrivateScope, Public, Static, HideBySig
+    IntersectsWith(RectLatLng): PrivateScope, Public, HideBySig
+    Union(RectLatLng, RectLatLng): PrivateScope, Public, Static, HideBySig
+    Offset(PointLatLng): PrivateScope, Public, HideBySig
+    Offset(Double, Double): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct GMap.NET.RenderMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    GMap.NET.RenderMode GDI_PLUS = 0 : Public, Static, Literal, HasDefault
+    GMap.NET.RenderMode WPF = 1 : Public, Static, Literal, HasDefault
+Struct GMap.NET.GSize: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(GMap.NET.GPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int64, Int64): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.GSize Empty : Public, Static, InitOnly
+  Properties:
+    Boolean IsEmpty 'get ' : 
+    Int64 Width 'get set' : 
+    Int64 Height 'get set' : 
+  Methods:
+    op_Addition(GSize, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(GSize, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(GSize, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(GSize, GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(GSize): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int64): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Int64): PrivateScope, Public, HideBySig, SpecialName
+    Add(GSize, GSize): PrivateScope, Public, Static, HideBySig
+    Subtract(GSize, GSize): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct GMap.NET.SizeLatLng: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed
+  :System.ValueType
+    Void .ctor(GMap.NET.SizeLatLng): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(GMap.NET.PointLatLng): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    GMap.NET.SizeLatLng Empty : Public, Static, InitOnly
+  Properties:
+    Boolean IsEmpty 'get ' : 
+    Double WidthLng 'get set' : 
+    Double HeightLat 'get set' : 
+  Methods:
+    op_Addition(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(SizeLatLng): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_WidthLng(): PrivateScope, Public, HideBySig, SpecialName
+    set_WidthLng(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_HeightLat(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeightLat(Double): PrivateScope, Public, HideBySig, SpecialName
+    Add(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig
+    Subtract(SizeLatLng, SizeLatLng): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToPointLatLng(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class GMap.NET.Internals.Stuff: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Random random : Public, Static, InitOnly
+  Methods:
+    EnumToString(Enum): PrivateScope, Public, Static, HideBySig
+    SetCursorPos(Int32, Int32): PrivateScope, Public, Static, HideBySig, PinvokeImpl
+    Shuffle(List`1): PrivateScope, Public, Static, HideBySig
+    CopyStream(Stream, Boolean): PrivateScope, Public, Static, HideBySig
+    IsRunningOnVistaOrLater(): PrivateScope, Public, Static, HideBySig
+    IsRunningOnWin7orLater(): PrivateScope, Public, Static, HideBySig
+    RemoveInvalidPathSymbols(String&): PrivateScope, Public, Static, HideBySig
+    EncryptString(String): PrivateScope, Public, Static, HideBySig
+    GString(String): PrivateScope, Public, Static, HideBySig
+Class <PrivateImplementationDetails>{3207F5F4-62C7-4507-8E10-DBCA3F30AC18}: NotPublic
+  Fields:
+    Int32 $$method0x6000089-1 : Assembly, Static, HasFieldRVA
+    Int32 $$method0x6000091-1 : Assembly, Static, HasFieldRVA
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] $$method0x60000d6-1 : Assembly, Static
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] $$method0x60000e0-1 : Assembly, Static
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] $$method0x6000282-1 : Assembly, Static

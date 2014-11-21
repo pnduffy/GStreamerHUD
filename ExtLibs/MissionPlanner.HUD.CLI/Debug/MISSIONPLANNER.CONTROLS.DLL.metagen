@@ -1,0 +1,1159 @@
+  MissionPlanner.Controls.ValuesControl.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.RangeControl.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.HSI.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.BackstageView.BackstageView.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.ProgressReporterDialogue.resources - Embedded, ContainedInManifestFile, 
+  AGaugeApp.AGauge.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.WindDir.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.OptionForm.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.FileBrowse.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.ImageLabel.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.FlashMessage.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.QuickView.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.Coords.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.RadialGradientBG.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.ProgressStep.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.GradientBG.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.ProgressReporterSphere.resources - Embedded, ContainedInManifestFile, 
+  MissionPlanner.Controls.MyProgressBar.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly MissionPlanner.Controls, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef: 
+	hash=None, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4: 
+	hash=None, flags=None
+Assembly GMap.NET.WindowsForms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a: 
+	hash=None, flags=None
+Assembly GeoUtility, Version=3.1.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4: 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly MissionPlanner.Utilities, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Class MissionPlanner.Controls.PictureBoxMouseOver: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.PictureBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Image ImageNormal 'get set' : 
+    System.Drawing.Image ImageOver 'get set' : 
+    Boolean selected 'get set' : 
+  Methods:
+    get_ImageNormal(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageNormal(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageOver(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageOver(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_selected(): PrivateScope, Public, HideBySig, SpecialName
+    set_selected(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.FileBrowse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String filename 'get set' : 
+    System.String Filter 'get set' : 
+    Boolean OpenFile 'get set' : 
+  Methods:
+    get_filename(): PrivateScope, Public, HideBySig, SpecialName
+    set_filename(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Filter(): PrivateScope, Public, HideBySig, SpecialName
+    set_Filter(String): PrivateScope, Public, HideBySig, SpecialName
+    get_OpenFile(): PrivateScope, Public, HideBySig, SpecialName
+    set_OpenFile(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.HorizontalProgressBar2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :BSE.Windows.Forms.ProgressBar
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean reverse : Public
+  Properties:
+    Int32 Value 'get set' : 
+    Int32 Minimum 'get set' : 
+    Int32 Maximum 'get set' : 
+    System.String Label 'get set' : 
+    Int32 minline 'get set' : 
+    Int32 maxline 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minimum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+    get_minline(): PrivateScope, Public, HideBySig, SpecialName
+    set_minline(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_maxline(): PrivateScope, Public, HideBySig, SpecialName
+    set_maxline(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.VerticalProgressBar2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Controls.HorizontalProgressBar2
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Interface MissionPlanner.Controls.IDynamicParameterControl: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String Name 'get set' : 
+    System.String Value 'get set' : 
+  Events:
+    MissionPlanner.Controls.EventValueChanged ValueChanged: 
+  Methods:
+    add_ValueChanged(EventValueChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    remove_ValueChanged(EventValueChanged): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Name(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class MissionPlanner.Controls.RangeControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.String, Single, Single, Single, Single, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Controls.IDynamicParameterControl
+  Properties:
+    System.Windows.Forms.NumericUpDown NumericUpDownControl 'get set' : 
+    System.String DescriptionText 'get set' : 
+    System.String LabelText 'get set' : 
+    System.Windows.Forms.TrackBar TrackBarControl 'get set' : 
+    Single Increment 'get set' : 
+    Single DisplayScale 'get set' : 
+    Single MinRange 'get set' : 
+    Single MaxRange 'get set' : 
+    System.String Value 'get set' : 
+  Events:
+    MissionPlanner.Controls.EventValueChanged ValueChanged: 
+  Methods:
+    add_ValueChanged(EventValueChanged): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_ValueChanged(EventValueChanged): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NumericUpDownControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumericUpDownControl(NumericUpDown): PrivateScope, Public, HideBySig, SpecialName
+    get_DescriptionText(): PrivateScope, Public, HideBySig, SpecialName
+    set_DescriptionText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_LabelText(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TrackBarControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrackBarControl(TrackBar): PrivateScope, Public, HideBySig, SpecialName
+    get_Increment(): PrivateScope, Public, HideBySig, SpecialName
+    set_Increment(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayScale(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayScale(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_MinRange(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinRange(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxRange(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxRange(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AttachEvents(): PrivateScope, Public, HideBySig
+    DeAttachEvents(): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.ImageLabel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox PictureBox : Public
+    System.Windows.Forms.Label Label : Public
+  Properties:
+    System.Drawing.Image Image 'get set' : 
+    System.String Text 'get set' : 
+  Events:
+    System.EventHandler Click: 
+  Methods:
+    add_Click(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Click(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    setImageandText(Image, String): PrivateScope, Public, HideBySig
+    get_Image(): PrivateScope, Public, HideBySig, SpecialName
+    set_Image(Image): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class MissionPlanner.Controls.ProgressReporterDialogue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MissionPlanner.Controls.MyButton btnCancel : Public
+    MissionPlanner.Controls.ProgressWorkerEventArgs doWorkArgs : Public
+    Boolean Running : Public
+  Events:
+    DoWorkEventHandler DoWork: 
+  Methods:
+    add_DoWork(DoWorkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DoWork(DoWorkEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    RunBackgroundOperationAsync(): PrivateScope, Public, HideBySig
+    UpdateProgressAndStatus(Int32, String): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.ProgressReporterDialogue+DoWorkEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ProgressWorkerEventArgs, Object(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ProgressWorkerEventArgs, Object, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.InputBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String value : Public, Static
+  Events:
+    ThemeManager ApplyTheme: 
+  Methods:
+    add_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    Show(String, String, String&, Boolean(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class MissionPlanner.Controls.InputBox+ThemeManager: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Control, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.ValuesControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    MissionPlanner.Controls.IDynamicParameterControl
+  Properties:
+    System.String LabelText 'get set' : 
+    System.String DescriptionText 'get set' : 
+    System.Windows.Forms.ComboBox ComboBoxControl 'get set' : 
+    System.String Value 'get set' : 
+  Events:
+    MissionPlanner.Controls.EventValueChanged ValueChanged: 
+  Methods:
+    add_ValueChanged(EventValueChanged): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    remove_ValueChanged(EventValueChanged): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LabelText(): PrivateScope, Public, HideBySig, SpecialName
+    set_LabelText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DescriptionText(): PrivateScope, Public, HideBySig, SpecialName
+    set_DescriptionText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ComboBoxControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_ComboBoxControl(ComboBox): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Value(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    DeAttachEvents(): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.ProgressStep: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Maximum 'get set' : 
+    Int32 Step 'get set' : 
+  Methods:
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Step(): PrivateScope, Public, HideBySig, SpecialName
+    set_Step(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.OptionForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.ComboBox Combobox : Public
+    MissionPlanner.Controls.MyButton Button1 : Public
+    MissionPlanner.Controls.MyButton Button2 : Public
+    System.String SelectedItem : Public
+Interface MissionPlanner.Controls.IActivate: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Activate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface MissionPlanner.Controls.IDeactivate: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Deactivate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class MissionPlanner.Controls.HSI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Heading 'get set' : 
+    Int32 NavHeading 'get set' : 
+  Methods:
+    get_Heading(): PrivateScope, Public, HideBySig, SpecialName
+    set_Heading(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NavHeading(): PrivateScope, Public, HideBySig, SpecialName
+    set_NavHeading(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Invalidate(): PrivateScope, Public, HideBySig
+    ThisReallyVisible(): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.GradientBG: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color CenterColor 'get set' : 
+    System.Drawing.Color OutsideColor 'get set' : 
+    System.Windows.Forms.PictureBox Image 'get ' : 
+    System.Windows.Forms.Label Label 'get ' : 
+  Methods:
+    get_CenterColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CenterColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_OutsideColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_OutsideColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Image(): PrivateScope, Public, HideBySig, SpecialName
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+Class System.CustomMessageBox: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Events:
+    ThemeManager ApplyTheme: 
+  Methods:
+    add_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    Show(String): PrivateScope, Public, Static, HideBySig
+    Show(String, String): PrivateScope, Public, Static, HideBySig
+    Show(String, String, MessageBoxButtons): PrivateScope, Public, Static, HideBySig
+    Show(String, String, MessageBoxButtons, MessageBoxIcon): PrivateScope, Public, Static, HideBySig
+Class System.CustomMessageBox+ThemeManager: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Control, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.MyTrackBar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.TrackBar
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Maximum 'get set' : 
+    Single Minimum 'get set' : 
+    Single Value 'get set' : 
+    Single TickFrequency 'get set' : 
+    Single SmallChange 'get set' : 
+    Single LargeChange 'get set' : 
+  Methods:
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minimum(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_TickFrequency(): PrivateScope, Public, HideBySig, SpecialName
+    set_TickFrequency(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_SmallChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmallChange(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_LargeChange(): PrivateScope, Public, HideBySig, SpecialName
+    set_LargeChange(Single): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.BackstageView.BackstageView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    MissionPlanner.Controls.BackstageView.BackstageViewPage SelectedPage 'get ' : 
+    MissionPlanner.Controls.BackstageView.BackstageViewCollection Pages 'get ' : 
+    Boolean Advanced 'get set' : 
+    Int32 WidthMenu 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Color ButtonsAreaPencilColor 'get set' : 
+    System.Drawing.Color ButtonsAreaBgColor 'get set' : 
+    System.Drawing.Color SelectedTextColor 'get set' : 
+    System.Drawing.Color UnSelectedTextColor 'get set' : 
+    System.Drawing.Color HighlightColor1 'get set' : 
+    System.Drawing.Color HighlightColor2 'get set' : 
+  Methods:
+    get_SelectedPage(): PrivateScope, Public, HideBySig, SpecialName
+    get_Pages(): PrivateScope, Public, HideBySig, SpecialName
+    get_Advanced(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Advanced(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_WidthMenu(): PrivateScope, Public, HideBySig, SpecialName
+    set_WidthMenu(Int32): PrivateScope, Public, HideBySig, SpecialName
+    UpdateDisplay(): PrivateScope, Public, HideBySig
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ButtonsAreaPencilColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ButtonsAreaPencilColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ButtonsAreaBgColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ButtonsAreaBgColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_SelectedTextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_SelectedTextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_UnSelectedTextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_UnSelectedTextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HighlightColor1(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighlightColor1(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_HighlightColor2(): PrivateScope, Public, HideBySig, SpecialName
+    set_HighlightColor2(Color): PrivateScope, Public, HideBySig, SpecialName
+    AddPage(UserControl, String, BackstageViewPage, Boolean): PrivateScope, Public, HideBySig
+    AddSpacer(Int32): PrivateScope, Public, HideBySig
+    DrawMenu(BackstageViewPage, Boolean(Optional, HasDefault)): PrivateScope, Public, HideBySig
+    ActivatePage(BackstageViewPage): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, HideBySig
+Class AGaugeApp.AGauge: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AllowDrop 'get set' : 
+    Boolean AutoSize 'get set' : 
+    Boolean ForeColor 'get set' : 
+    Boolean ImeMode 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Font Font 'get set' : 
+    System.Windows.Forms.ImageLayout BackgroundImageLayout 'get set' : 
+    Single Value0 'get set' : 
+    Single Value1 'get set' : 
+    Single Value2 'get set' : 
+    Single Value3 'get set' : 
+    Single Value 'get set' : 
+    Byte Cap_Idx 'get set' : 
+    System.Drawing.Color CapColor 'get set' : 
+    System.Drawing.Color[] CapColors 'get set' : 
+    System.String CapText 'get set' : 
+    System.String[] CapsText 'get set' : 
+    System.Drawing.Point CapPosition 'get set' : 
+    System.Drawing.Point[] CapsPosition 'get set' : 
+    System.Drawing.Point Center 'get set' : 
+    Single MinValue 'get set' : 
+    Single MaxValue 'get set' : 
+    System.Drawing.Color BaseArcColor 'get set' : 
+    Int32 BaseArcRadius 'get set' : 
+    Int32 BaseArcStart 'get set' : 
+    Int32 BaseArcSweep 'get set' : 
+    Int32 BaseArcWidth 'get set' : 
+    System.Drawing.Color ScaleLinesInterColor 'get set' : 
+    Int32 ScaleLinesInterInnerRadius 'get set' : 
+    Int32 ScaleLinesInterOuterRadius 'get set' : 
+    Int32 ScaleLinesInterWidth 'get set' : 
+    Int32 ScaleLinesMinorNumOf 'get set' : 
+    System.Drawing.Color ScaleLinesMinorColor 'get set' : 
+    Int32 ScaleLinesMinorInnerRadius 'get set' : 
+    Int32 ScaleLinesMinorOuterRadius 'get set' : 
+    Int32 ScaleLinesMinorWidth 'get set' : 
+    Single ScaleLinesMajorStepValue 'get set' : 
+    System.Drawing.Color ScaleLinesMajorColor 'get set' : 
+    Int32 ScaleLinesMajorInnerRadius 'get set' : 
+    Int32 ScaleLinesMajorOuterRadius 'get set' : 
+    Int32 ScaleLinesMajorWidth 'get set' : 
+    Byte Range_Idx 'get set' : 
+    Boolean RangeEnabled 'get set' : 
+    Boolean[] RangesEnabled 'get set' : 
+    System.Drawing.Color RangeColor 'get set' : 
+    System.Drawing.Color[] RangesColor 'get set' : 
+    Single RangeStartValue 'get set' : 
+    Single[] RangesStartValue 'get set' : 
+    Single RangeEndValue 'get set' : 
+    Single[] RangesEndValue 'get set' : 
+    Int32 RangeInnerRadius 'get set' : 
+    Int32[] RangesInnerRadius 'get set' : 
+    Int32 RangeOuterRadius 'get set' : 
+    Int32[] RangesOuterRadius 'get set' : 
+    Int32 ScaleNumbersRadius 'get set' : 
+    System.Drawing.Color ScaleNumbersColor 'get set' : 
+    System.String ScaleNumbersFormat 'get set' : 
+    Int32 ScaleNumbersStartScaleLine 'get set' : 
+    Int32 ScaleNumbersStepScaleLines 'get set' : 
+    Int32 ScaleNumbersRotation 'get set' : 
+    Byte Need_Idx 'get set' : 
+    Int32 NeedleType 'get set' : 
+    Int32[] NeedlesType 'get set' : 
+    Int32 NeedleRadius 'get set' : 
+    Int32[] NeedlesRadius 'get set' : 
+    NeedleColorEnum NeedleColor1 'get set' : 
+    NeedleColorEnum[] NeedlesColor1 'get set' : 
+    System.Drawing.Color NeedleColor2 'get set' : 
+    System.Drawing.Color[] NeedlesColor2 'get set' : 
+    Int32 NeedleWidth 'get set' : 
+    Int32[] NeedlesWidth 'get set' : 
+    Boolean NeedleEnabled 'get set' : 
+    Boolean[] NeedlesEnabled 'get set' : 
+    System.Drawing.Size Size 'get set' : 
+  Events:
+    ValueInRangeChangedDelegate ValueInRangeChanged: 
+  Methods:
+    get_RangeEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesEnabled(Boolean[]): PrivateScope, Public, HideBySig, SpecialName
+    get_RangeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesColor(Color[]): PrivateScope, Public, HideBySig, SpecialName
+    get_RangeStartValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeStartValue(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesStartValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesStartValue(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_RangeEndValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeEndValue(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesEndValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesEndValue(Single[]): PrivateScope, Public, HideBySig, SpecialName
+    get_RangeInnerRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeInnerRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesInnerRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesInnerRadius(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    get_RangeOuterRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangeOuterRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_RangesOuterRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_RangesOuterRadius(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersFormat(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersFormat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersStartScaleLine(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersStartScaleLine(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersStepScaleLines(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersStepScaleLines(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleNumbersRotation(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleNumbersRotation(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Need_Idx(): PrivateScope, Public, HideBySig, SpecialName
+    set_Need_Idx(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleType(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleType(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesType(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesType(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesRadius(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleColor1(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleColor1(NeedleColorEnum): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesColor1(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesColor1(NeedleColorEnum[]): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleColor2(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleColor2(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesColor2(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesColor2(Color[]): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesWidth(Int32[]): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedleEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedleEnabled(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NeedlesEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_NeedlesEnabled(Boolean[]): PrivateScope, Public, HideBySig, SpecialName
+    Invalidate(): PrivateScope, Public, HideBySig
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    set_Size(Size): PrivateScope, Public, HideBySig, SpecialName
+    add_ValueInRangeChanged(ValueInRangeChangedDelegate): PrivateScope, Public, HideBySig, SpecialName
+    remove_ValueInRangeChanged(ValueInRangeChangedDelegate): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowDrop(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowDrop(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoSize(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ForeColor(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ImeMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImeMode(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Font(Font): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_BackgroundImageLayout(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackgroundImageLayout(ImageLayout): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Value0(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value0(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value1(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value1(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value2(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value2(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value3(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value3(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Cap_Idx(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cap_Idx(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_CapColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_CapColors(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapColors(Color[]): PrivateScope, Public, HideBySig, SpecialName
+    get_CapText(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CapsText(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapsText(String[]): PrivateScope, Public, HideBySig, SpecialName
+    get_CapPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapPosition(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_CapsPosition(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapsPosition(Point[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    set_Center(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_MinValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinValue(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxValue(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseArcColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseArcColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseArcRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseArcRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseArcStart(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseArcStart(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseArcSweep(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseArcSweep(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseArcWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseArcWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesInterColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesInterColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesInterInnerRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesInterInnerRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesInterOuterRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesInterOuterRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesInterWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesInterWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMinorNumOf(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMinorNumOf(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMinorColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMinorColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMinorInnerRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMinorInnerRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMinorOuterRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMinorOuterRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMinorWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMinorWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMajorStepValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMajorStepValue(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMajorColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMajorColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMajorInnerRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMajorInnerRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMajorOuterRadius(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMajorOuterRadius(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ScaleLinesMajorWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_ScaleLinesMajorWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Range_Idx(): PrivateScope, Public, HideBySig, SpecialName
+    set_Range_Idx(Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct AGaugeApp.AGauge+NeedleColorEnum: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    NeedleColorEnum Gray = 0 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Red = 1 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Green = 2 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Blue = 3 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Yellow = 4 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Violet = 5 : Public, Static, Literal, HasDefault
+    NeedleColorEnum Magenta = 6 : Public, Static, Literal, HasDefault
+Class AGaugeApp.AGauge+ValueInRangeChangedEventArgs: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 valueInRange : Public
+Class AGaugeApp.AGauge+ValueInRangeChangedDelegate: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, ValueInRangeChangedEventArgs): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, ValueInRangeChangedEventArgs, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.WindDir: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Direction 'get set' : 
+    Double Speed 'get set' : 
+  Methods:
+    get_Direction(): PrivateScope, Public, HideBySig, SpecialName
+    set_Direction(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Speed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Speed(Double): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.BackstageView.BackstageViewCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Collections.CollectionBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    MissionPlanner.Controls.BackstageView.BackstageViewPage Item [Int32] 'get ' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Contains(BackstageViewPage): PrivateScope, Public, HideBySig
+    Add(BackstageViewPage): PrivateScope, Public, HideBySig
+    Remove(BackstageViewPage): PrivateScope, Public, HideBySig
+    Insert(Int32, BackstageViewPage): PrivateScope, Public, HideBySig
+    IndexOf(BackstageViewPage): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.QuickView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String desc 'get set' : 
+    Double number 'get set' : 
+    System.String numberformat 'get set' : 
+    System.Drawing.Color numberColor 'get set' : 
+  Methods:
+    get_desc(): PrivateScope, Public, HideBySig, SpecialName
+    set_desc(String): PrivateScope, Public, HideBySig, SpecialName
+    get_number(): PrivateScope, Public, HideBySig, SpecialName
+    set_number(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_numberformat(): PrivateScope, Public, HideBySig, SpecialName
+    set_numberformat(String): PrivateScope, Public, HideBySig, SpecialName
+    get_numberColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_numberColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+Class MissionPlanner.Controls.LabelWithPseudoOpacity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Label
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Opacity 'get set' : 
+    Boolean DoubleBuffered 'get set' : 
+  Methods:
+    get_Opacity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Opacity(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_DoubleBuffered(): PrivateScope, Public, HideBySig, SpecialName
+    set_DoubleBuffered(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.EventValueChanged: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, String, String, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.RadialGradientBG: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color CenterColor 'get set' : 
+    System.Drawing.Color OutsideColor 'get set' : 
+    System.Windows.Forms.PictureBox Image 'get ' : 
+  Methods:
+    get_CenterColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_CenterColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_OutsideColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_OutsideColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Image(): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.MyButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Button
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color BGGradTop 'get set' : 
+    System.Drawing.Color BGGradBot 'get set' : 
+    System.Drawing.Color TextColor 'get set' : 
+    System.Drawing.Color Outline 'get set' : 
+  Methods:
+    get_BGGradTop(): PrivateScope, Public, HideBySig, SpecialName
+    set_BGGradTop(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BGGradBot(): PrivateScope, Public, HideBySig, SpecialName
+    set_BGGradBot(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_TextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Outline(): PrivateScope, Public, HideBySig, SpecialName
+    set_Outline(Color): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.Coords: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String System 'get set' : 
+    Double Lat 'get set' : 
+    Double Lng 'get set' : 
+    Double Alt 'get set' : 
+    Boolean Vertical 'get set' : 
+  Methods:
+    get_System(): PrivateScope, Public, HideBySig, SpecialName
+    set_System(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Lat(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lat(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Lng(): PrivateScope, Public, HideBySig, SpecialName
+    set_Lng(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Alt(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alt(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Vertical(): PrivateScope, Public, HideBySig, SpecialName
+    set_Vertical(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Struct MissionPlanner.Controls.Coords+CoordsSystems: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CoordsSystems GEO = 0 : Public, Static, Literal, HasDefault
+    CoordsSystems UTM = 1 : Public, Static, Literal, HasDefault
+    CoordsSystems MGRS = 2 : Public, Static, Literal, HasDefault
+Class MissionPlanner.Controls.BackstageView.BackstageViewPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.Component
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.UserControl, System.String, MissionPlanner.Controls.BackstageView.BackstageViewPage, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Windows.Forms.IBindableComponent
+  Properties:
+    Boolean Advanced 'get set' : 
+    Boolean Show 'get set' : 
+    System.Windows.Forms.UserControl Page 'get set' : 
+    System.String LinkText 'get set' : 
+    System.String Text 'get set' : 
+    MissionPlanner.Controls.BackstageView.BackstageViewPage Parent 'get set' : 
+    Int32 Spacing 'get set' : 
+    System.Windows.Forms.BindingContext BindingContext 'get set' : 
+    System.Windows.Forms.ControlBindingsCollection DataBindings 'get ' : 
+  Methods:
+    get_Advanced(): PrivateScope, Public, HideBySig, SpecialName
+    set_Advanced(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Show(): PrivateScope, Public, HideBySig, SpecialName
+    set_Show(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    set_Page(UserControl): PrivateScope, Public, HideBySig, SpecialName
+    get_LinkText(): PrivateScope, Public, HideBySig, SpecialName
+    set_LinkText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Parent(): PrivateScope, Public, HideBySig, SpecialName
+    set_Parent(BackstageViewPage): PrivateScope, Public, HideBySig, SpecialName
+    get_Spacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_Spacing(Int32): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, HideBySig
+    get_BindingContext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BindingContext(BindingContext): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataBindings(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class MissionPlanner.Controls.MyLabel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean resize 'get set' : 
+    System.String Text 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+  Methods:
+    get_resize(): PrivateScope, Public, HideBySig, SpecialName
+    set_resize(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class MissionPlanner.Controls.ControlExt: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ThisReallyVisible(Control): PrivateScope, Public, Static, HideBySig
+    ChildReallyVisible(Control): PrivateScope, Public, Static, HideBySig
+Class MissionPlanner.Controls.ProgressWorkerEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String ErrorMessage : Public
+    Boolean CancelRequested IsVolatile : Public
+    Boolean CancelAcknowledged IsVolatile : Public
+Class MissionPlanner.Controls.HUD: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :OpenTK.GLControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean streamjpgenable : Public
+    Boolean HoldInvalidation : Public
+    Int32 huddrawtime : Public
+    Boolean SixteenXNine : Public
+    System.Collections.Hashtable CustomItems : Public
+    Boolean bgon : Public
+    Boolean hudon : Public
+    Boolean batteryon : Public
+    System.Drawing.Bitmap objBitmap : Public
+  Properties:
+    System.IO.MemoryStream streamjpg 'get set' : 
+    Boolean Russian 'get set' : 
+    Boolean opengl 'get set' : 
+    Single roll 'get set' : 
+    Single navroll 'get set' : 
+    Single pitch 'get set' : 
+    Single navpitch 'get set' : 
+    Single heading 'get set' : 
+    Single targetheading 'get set' : 
+    Single alt 'get set' : 
+    Single targetalt 'get set' : 
+    Single groundspeed 'get set' : 
+    Single airspeed 'get set' : 
+    Boolean lowgroundspeed 'get set' : 
+    Boolean lowairspeed 'get set' : 
+    Single targetspeed 'get set' : 
+    Single batterylevel 'get set' : 
+    Single batteryremaining 'get set' : 
+    Single current 'get set' : 
+    Single gpsfix 'get set' : 
+    Single gpshdop 'get set' : 
+    Single disttowp 'get set' : 
+    System.String mode 'get set' : 
+    Int32 wpno 'get set' : 
+    Single groundcourse 'get set' : 
+    Single xtrack_error 'get set' : 
+    Single turnrate 'get set' : 
+    Single verticalspeed 'get set' : 
+    Single linkqualitygcs 'get set' : 
+    System.DateTime datetime 'get set' : 
+    Boolean failsafe 'get set' : 
+    Boolean lowvoltagealert 'get set' : 
+    Boolean connected 'get set' : 
+    Single groundalt 'get set' : 
+    Boolean status 'get set' : 
+    System.String message 'get set' : 
+    System.DateTime messagetime 'get set' : 
+    System.Drawing.Color hudcolor 'get set' : 
+    System.Drawing.Image bgimage 'set' : 
+    Boolean UseOpenGL 'get set' : 
+  Methods:
+    DrawImage(Image, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    DrawPath(Pen, GraphicsPath): PrivateScope, Public, HideBySig
+    FillPath(Brush, GraphicsPath): PrivateScope, Public, HideBySig
+    SetClip(Rectangle): PrivateScope, Public, HideBySig
+    ResetClip(): PrivateScope, Public, HideBySig
+    ResetTransform(): PrivateScope, Public, HideBySig
+    RotateTransform(Single): PrivateScope, Public, HideBySig
+    TranslateTransform(Single, Single): PrivateScope, Public, HideBySig
+    FillPolygon(Brush, Point[]): PrivateScope, Public, HideBySig
+    FillPolygon(Brush, PointF[]): PrivateScope, Public, HideBySig
+    DrawPolygon(Pen, Point[]): PrivateScope, Public, HideBySig
+    DrawPolygon(Pen, PointF[]): PrivateScope, Public, HideBySig
+    FillRectangle(Brush, RectangleF): PrivateScope, Public, HideBySig
+    DrawRectangle(Pen, RectangleF): PrivateScope, Public, HideBySig
+    DrawRectangle(Pen, Double, Double, Double, Double): PrivateScope, Public, HideBySig
+    DrawLine(Pen, Double, Double, Double, Double): PrivateScope, Public, HideBySig
+    GrabScreenshot(): PrivateScope, Public, HideBySig
+    doResize(): PrivateScope, Public, HideBySig
+    get_UseOpenGL(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseOpenGL(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_streamjpg(): PrivateScope, Public, HideBySig, SpecialName
+    set_streamjpg(MemoryStream): PrivateScope, Public, HideBySig, SpecialName
+    get_Russian(): PrivateScope, Public, HideBySig, SpecialName
+    set_Russian(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_opengl(): PrivateScope, Public, HideBySig, SpecialName
+    set_opengl(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_roll(): PrivateScope, Public, HideBySig, SpecialName
+    set_roll(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_navroll(): PrivateScope, Public, HideBySig, SpecialName
+    set_navroll(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_pitch(): PrivateScope, Public, HideBySig, SpecialName
+    set_pitch(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_navpitch(): PrivateScope, Public, HideBySig, SpecialName
+    set_navpitch(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_heading(): PrivateScope, Public, HideBySig, SpecialName
+    set_heading(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_targetheading(): PrivateScope, Public, HideBySig, SpecialName
+    set_targetheading(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_alt(): PrivateScope, Public, HideBySig, SpecialName
+    set_alt(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_targetalt(): PrivateScope, Public, HideBySig, SpecialName
+    set_targetalt(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_groundspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_groundspeed(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_airspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_airspeed(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_lowgroundspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_lowgroundspeed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_lowairspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_lowairspeed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_targetspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_targetspeed(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_batterylevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_batterylevel(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_batteryremaining(): PrivateScope, Public, HideBySig, SpecialName
+    set_batteryremaining(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_current(): PrivateScope, Public, HideBySig, SpecialName
+    set_current(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_gpsfix(): PrivateScope, Public, HideBySig, SpecialName
+    set_gpsfix(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_gpshdop(): PrivateScope, Public, HideBySig, SpecialName
+    set_gpshdop(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_disttowp(): PrivateScope, Public, HideBySig, SpecialName
+    set_disttowp(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_mode(): PrivateScope, Public, HideBySig, SpecialName
+    set_mode(String): PrivateScope, Public, HideBySig, SpecialName
+    get_wpno(): PrivateScope, Public, HideBySig, SpecialName
+    set_wpno(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_groundcourse(): PrivateScope, Public, HideBySig, SpecialName
+    set_groundcourse(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_xtrack_error(): PrivateScope, Public, HideBySig, SpecialName
+    set_xtrack_error(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_turnrate(): PrivateScope, Public, HideBySig, SpecialName
+    set_turnrate(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_verticalspeed(): PrivateScope, Public, HideBySig, SpecialName
+    set_verticalspeed(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_linkqualitygcs(): PrivateScope, Public, HideBySig, SpecialName
+    set_linkqualitygcs(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_datetime(): PrivateScope, Public, HideBySig, SpecialName
+    set_datetime(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_failsafe(): PrivateScope, Public, HideBySig, SpecialName
+    set_failsafe(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_lowvoltagealert(): PrivateScope, Public, HideBySig, SpecialName
+    set_lowvoltagealert(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_connected(): PrivateScope, Public, HideBySig, SpecialName
+    set_connected(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_groundalt(): PrivateScope, Public, HideBySig, SpecialName
+    set_groundalt(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_status(): PrivateScope, Public, HideBySig, SpecialName
+    set_status(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_message(): PrivateScope, Public, HideBySig, SpecialName
+    set_message(String): PrivateScope, Public, HideBySig, SpecialName
+    get_messagetime(): PrivateScope, Public, HideBySig, SpecialName
+    set_messagetime(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_hudcolor(): PrivateScope, Public, HideBySig, SpecialName
+    set_hudcolor(Color): PrivateScope, Public, HideBySig, SpecialName
+    set_bgimage(Image): PrivateScope, Public, HideBySig, SpecialName
+    Refresh(): PrivateScope, Public, Virtual, HideBySig
+    Invalidate(): PrivateScope, Public, HideBySig
+    ThisReallyVisible(): PrivateScope, Public, HideBySig
+    DrawArc(Pen, RectangleF, Single, Single): PrivateScope, Public, HideBySig
+    DrawEllipse(Pen, Rectangle): PrivateScope, Public, HideBySig
+Struct MissionPlanner.Controls.HUD+Custom: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    System.String Header : Public
+    System.Reflection.PropertyInfo Item : Public
+  Properties:
+    Double GetValue 'get ' : 
+    System.Object src 'get set' : 
+  Methods:
+    get_GetValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_src(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_src(Object): PrivateScope, Public, Static, HideBySig, SpecialName
+Class MissionPlanner.Controls.BackstageView.BackStageViewMenuPanel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Panel
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    PaintBackground(PaintEventArgs): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.HorizontalProgressBar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.ProgressBar
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Value 'get set' : 
+    Int32 Minimum 'get set' : 
+    Int32 Maximum 'get set' : 
+    System.String Label 'get set' : 
+    Int32 minline 'get set' : 
+    Int32 maxline 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minimum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Label(): PrivateScope, Public, HideBySig, SpecialName
+    set_Label(String): PrivateScope, Public, HideBySig, SpecialName
+    get_minline(): PrivateScope, Public, HideBySig, SpecialName
+    set_minline(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_maxline(): PrivateScope, Public, HideBySig, SpecialName
+    set_maxline(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.VerticalProgressBar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Controls.HorizontalProgressBar
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MissionPlanner.Controls.MyProgressBar: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 BarSize : Public
+  Properties:
+    Int32 Maximum 'get set' : 
+    Int32 Minimum 'get set' : 
+    Int32 Value 'get set' : 
+    System.Drawing.Color BGGradTop 'get set' : 
+    System.Drawing.Color BGGradBot 'get set' : 
+    System.Drawing.Color TextColor 'get set' : 
+    System.Drawing.Color Outline 'get set' : 
+    System.Windows.Forms.ProgressBarStyle Style 'get set' : 
+  Methods:
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Maximum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_Minimum(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BGGradTop(): PrivateScope, Public, HideBySig, SpecialName
+    set_BGGradTop(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_BGGradBot(): PrivateScope, Public, HideBySig, SpecialName
+    set_BGGradBot(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_TextColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Outline(): PrivateScope, Public, HideBySig, SpecialName
+    set_Outline(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Style(): PrivateScope, Public, HideBySig, SpecialName
+    set_Style(ProgressBarStyle): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.FlashMessage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Label
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.AutoScaleMode AutoScaleMode : Public
+  Methods:
+    FadeInOut(String, Boolean): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.Sphere: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :OpenTK.GLControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    OpenTK.Vector3 CenterPoint : Public
+    Single scale : Public
+  Properties:
+    Boolean rotatewithdata 'get set' : 
+  Methods:
+    get_rotatewithdata(): PrivateScope, Public, HideBySig, SpecialName
+    set_rotatewithdata(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    Clear(): PrivateScope, Public, HideBySig
+    AimClear(): PrivateScope, Public, HideBySig
+    AimFor(Vector3): PrivateScope, Public, HideBySig
+    AddPoint(Vector3): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.PictureBoxWithPseudoOpacity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.PictureBox
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Opacity 'get set' : 
+  Methods:
+    get_Opacity(): PrivateScope, Public, HideBySig, SpecialName
+    set_Opacity(Single): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.MainSwitcher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Control): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.Collections.Generic.List`1[MissionPlanner.Controls.MainSwitcher+Screen] screens : Public
+    Screen current : Public
+  Properties:
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    ControlCollection Controls 'get ' : 
+  Events:
+    ThemeManager ApplyTheme: 
+  Methods:
+    add_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_ApplyTheme(ThemeManager): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Controls(): PrivateScope, Public, HideBySig, SpecialName
+    AddScreen(Screen): PrivateScope, Public, HideBySig
+    Reload(): PrivateScope, Public, HideBySig
+    ShowScreen(String): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.MainSwitcher+ThemeManager: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Control): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Control, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class MissionPlanner.Controls.MainSwitcher+Screen: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.String, System.Windows.Forms.MyUserControl, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Name : Public
+    System.Windows.Forms.MyUserControl Control : Public
+    Boolean Persistent : Public
+  Properties:
+    Boolean Visible 'get set' : 
+  Methods:
+    get_Visible(): PrivateScope, Public, HideBySig, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class MissionPlanner.Controls.ProgressReporterSphere: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MissionPlanner.Controls.ProgressReporterDialogue
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MissionPlanner.Controls.Sphere sphere2 : Public
+    MissionPlanner.Controls.Sphere sphere1 : Public
+Class MissionPlanner.Controls.LineSeparator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Color PrimaryColor 'get set' : 
+    System.Drawing.Color SecondaryColor 'get set' : 
+    Single Opacity1 'get set' : 
+    Single Opacity2 'get set' : 
+    Single Opacity3 'get set' : 
+  Methods:
+    get_PrimaryColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrimaryColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_SecondaryColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_SecondaryColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_Opacity1(): PrivateScope, Public, HideBySig, SpecialName
+    set_Opacity1(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Opacity2(): PrivateScope, Public, HideBySig, SpecialName
+    set_Opacity2(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Opacity3(): PrivateScope, Public, HideBySig, SpecialName
+    set_Opacity3(Single): PrivateScope, Public, HideBySig, SpecialName
+Class System.Windows.Forms.MyUserControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    System.Windows.Forms.FormClosingEventHandler FormClosing: 
+  Methods:
+    add_FormClosing(FormClosingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_FormClosing(FormClosingEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    Close(Object, FormClosingEventArgs): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, HideBySig
+Class MissionPlanner.Controls.myGMAP: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GMap.NET.WindowsForms.GMapControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean inOnPaint : Public
+Class MissionPlanner.Controls.BackstageView.BackstageViewButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Control
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsSelected 'get set' : 
+  Methods:
+    get_IsSelected(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsSelected(Boolean): PrivateScope, Public, HideBySig, SpecialName
